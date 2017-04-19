@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="9"
+   name=""
+   committed-date="2005-04-25T06:36:41.455333Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/metamod/hpb_bot_plugin/tools"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   name="bot_logo"
+   kind="dir"/>
+<entry
+   committed-rev="9"
+   name="exports.c"
+   text-time="2006-04-11T01:01:12.073750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="0e5e0454304e295081aeaa989f8271c6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:11.964375Z"/>
+<entry
+   committed-rev="9"
+   name="floyd.c"
+   text-time="2006-04-11T01:01:12.089375Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="b2077b982f0274fd36cff9d2d7221e8a"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:12.073750Z"/>
+</wc-entries>

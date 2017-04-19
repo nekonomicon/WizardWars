@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="43"
+   name=""
+   committed-date="2005-08-02T12:34:21.394796Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/engine"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="12"
+   name="progdefs.h"
+   text-time="2006-04-11T01:02:50.464375Z"
+   committed-date="2005-04-30T01:13:24.587702Z"
+   checksum="f16f6793d525a487ab703bfdea9044d0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:48.417500Z"/>
+<entry
+   committed-rev="2"
+   name="custom.h"
+   text-time="2006-04-11T01:02:50.464375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="3e7c455993667bd67664911589efe1b9"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:48.589375Z"/>
+<entry
+   committed-rev="2"
+   name="keydefs.h"
+   text-time="2006-04-11T01:02:50.480000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="35619359dfaf789348c6a4e34fafce11"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:48.636250Z"/>
+<entry
+   committed-rev="2"
+   name="progs.h"
+   text-time="2006-04-11T01:02:50.480000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="76263daa7ed8bfda4936acad4ea7b3c7"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:48.745625Z"/>
+<entry
+   committed-rev="2"
+   name="shake.h"
+   text-time="2006-04-11T01:02:50.495625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="94cfcf1e743c24f19699d40b289ea599"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:48.839375Z"/>
+<entry
+   committed-rev="43"
+   name="eiface.h"
+   text-time="2006-04-11T01:02:50.495625Z"
+   committed-date="2005-08-02T12:34:21.394796Z"
+   checksum="c06b7398d67e5f95735d523b3f0f6976"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:49.495625Z"/>
+<entry
+   committed-rev="2"
+   name="anorms.h"
+   text-time="2006-04-11T01:02:50.495625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d0a2f4a19d1531b250746c950bfe7404"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:49.589375Z"/>
+<entry
+   committed-rev="10"
+   name="archtypes.h"
+   text-time="2006-04-11T01:02:50.511250Z"
+   committed-date="2005-04-25T06:43:02.445776Z"
+   checksum="9edc87dc0726a3b03607d2b8eaa95863"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:49.589375Z"/>
+<entry
+   committed-rev="2"
+   name="customentity.h"
+   text-time="2006-04-11T01:02:50.526875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="a71c56596de396210ab719208f8671f2"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:49.698750Z"/>
+<entry
+   committed-rev="2"
+   name="studio.h"
+   text-time="2006-04-11T01:02:50.542500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="25664c1384bd67876604c4d90e480418"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:49.855000Z"/>
+<entry
+   committed-rev="10"
+   name="Sequence.h"
+   text-time="2006-04-11T01:02:50.542500Z"
+   committed-date="2005-04-25T06:43:02.445776Z"
+   checksum="7504b754bbe6fc90a3ba9a52568e0429"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:50.011250Z"/>
+<entry
+   committed-rev="8"
+   name="cdll_int.h"
+   text-time="2006-04-11T01:02:50.542500Z"
+   committed-date="2005-04-25T06:26:04.695377Z"
+   checksum="aaf58eeb1b1d8d9c68deb3f8d27422ea"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:50.386250Z"/>
+<entry
+   committed-rev="2"
+   name="edict.h"
+   text-time="2006-04-11T01:02:50.558125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="cf862d0f59baafd670bc97e1f5ce1c64"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:50.433125Z"/>
+</wc-entries>

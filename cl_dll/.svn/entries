@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="79"
+   name=""
+   committed-date="2006-02-14T14:09:39.207532Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/cl_dll"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="vgui_SchemeManager.h"
+   text-time="2006-04-11T01:01:45.089375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="03910119aa0e2a631d822911c6f025e6"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:21.230000Z"/>
+<entry
+   committed-rev="2"
+   name="tri.cpp"
+   text-time="2006-04-11T01:01:45.089375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="f289a3857df55b676b1ffd9ee171eeed"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:21.183125Z"/>
+<entry
+   committed-rev="2"
+   name="eventscripts.h"
+   text-time="2006-04-11T01:01:45.073750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="7da40a85cba24c8b44dc862df17dc5d9"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:21.105000Z"/>
+<entry
+   committed-rev="2"
+   name="input.cpp"
+   text-time="2006-04-11T01:01:45.105000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9a45289d8e298ec96330799dfb66d074"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:21.714375Z"/>
+<entry
+   committed-rev="2"
+   name="cl_util.h"
+   text-time="2006-04-11T01:01:45.105000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ebb51a5a333a7487ee40184a8b7e0f72"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:21.870625Z"/>
+<entry
+   committed-rev="2"
+   name="events.cpp"
+   text-time="2006-04-11T01:01:45.167500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ba02a88515414fa1fd5412ed604d645c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:23.089375Z"/>
+<entry
+   committed-rev="2"
+   name="cl_dll.dsw"
+   text-time="2006-04-11T01:01:45.151875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9a61be74addcf44f00b2ea6c1ebbfa9d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:23.042500Z"/>
+<entry
+   committed-rev="2"
+   name="hud_spectator.cpp"
+   text-time="2006-04-11T01:01:45.151875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="007bcfc3f07a2fe14a452676e5f05e33"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:22.980000Z"/>
+<entry
+   committed-rev="2"
+   name="menu.cpp"
+   text-time="2006-04-11T01:01:45.136250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="46c545425953b4ef5b2f94b521a3b7c7"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:22.183125Z"/>
+<entry
+   committed-rev="2"
+   name="studio_util.cpp"
+   text-time="2006-04-11T01:01:45.136250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9a0b3977661d18f7228b4f85e7d3e91d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:22.042500Z"/>
+<entry
+   committed-rev="74"
+   name="cl_dll.vcproj"
+   text-time="2006-04-11T01:01:45.167500Z"
+   committed-date="2005-12-21T12:52:59.232131Z"
+   checksum="14a689f045e45f5a318f0d27440241ae"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:23.464375Z"/>
+<entry
+   committed-rev="2"
+   name="battery.cpp"
+   text-time="2006-04-11T01:01:45.167500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8bb872ed5d192c5d5fe3fe0d71fdde22"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:23.198750Z"/>
+<entry
+   committed-rev="2"
+   name="hud_iface.h"
+   text-time="2006-04-11T01:01:45.183125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="520d8e2a439b0630f3f5090f66f545f7"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:23.464375Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_TeamFortressViewport.h"
+   text-time="2006-04-11T01:01:45.183125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="0377495d01ae76cdbbfae3331f17e4ed"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:24.120625Z"/>
+<entry
+   committed-rev="2"
+   name="GameStudioModelRenderer.h"
+   text-time="2006-04-11T01:01:45.198750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="db1bbbd64adca517a88858fd77188e9f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:24.151875Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_ControlConfigPanel.cpp"
+   text-time="2006-04-11T01:01:45.198750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5b21e38db2786947d8dc8c2f6de45dd4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:24.261250Z"/>
+<entry
+   committed-rev="2"
+   name="ev_common.cpp"
+   text-time="2006-04-11T01:01:45.198750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="2c3dd890bfc6075cb1fe3e563e8b805a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:24.417500Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_int.cpp"
+   text-time="2006-04-11T01:01:45.214375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="90d278518b70bfe43e8860091004aa28"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:24.526875Z"/>
+<entry
+   committed-rev="2"
+   name="death.cpp"
+   text-time="2006-04-11T01:01:45.214375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c70cf7fbbc52953e21803d8722824e2d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:24.730000Z"/>
+<entry
+   committed-rev="73"
+   name="flashlight.cpp"
+   text-time="2006-04-11T01:01:45.230000Z"
+   committed-date="2005-12-20T13:56:12.284677Z"
+   checksum="67730fbb7200ff723812a23a942816f7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:24.839375Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_ScorePanel.cpp"
+   text-time="2006-04-11T01:01:45.230000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="78257c9374645ae84e18e0ee803ff90e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:25.480000Z"/>
+<entry
+   committed-rev="2"
+   name="demo.h"
+   text-time="2006-04-11T01:01:45.261250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="32eaf5ad0d11dbcd931945c2631ae625"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:25.542500Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_SchemeManager.cpp"
+   text-time="2006-04-11T01:01:45.261250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="a660235bf5f8bb264e12ff1163624e4a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:25.808125Z"/>
+<entry
+   committed-rev="2"
+   name="wrect.h"
+   text-time="2006-04-11T01:01:45.261250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="3da0285d6d98740e9245d36d08938b0a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:25.855000Z"/>
+<entry
+   committed-rev="2"
+   name="saytext.cpp"
+   text-time="2006-04-11T01:01:45.276875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="14be652cf51dfdaa43188414879a8350"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:26.073750Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_teammenu.cpp"
+   text-time="2006-04-11T01:01:45.276875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="97fcaf06ad6233b00e5de959c54b347c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:26.339375Z"/>
+<entry
+   committed-rev="2"
+   name="studio_util.h"
+   text-time="2006-04-11T01:01:45.292500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8ea51913b972c605ca282011b5d457e8"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:26.386250Z"/>
+<entry
+   committed-rev="2"
+   name="hud_spectator.h"
+   text-time="2006-04-11T01:01:45.292500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="0c0d66d1d2a3a8c72f6a5357736757cb"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:26.542500Z"/>
+<entry
+   committed-rev="2"
+   name="GameStudioModelRenderer.cpp"
+   text-time="2006-04-11T01:01:45.292500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="2adb545347202ce7da7b363c29da1880"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:26.651875Z"/>
+<entry
+   committed-rev="2"
+   name="com_weapons.cpp"
+   text-time="2006-04-11T01:01:45.339375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="648c1016b075ce4617a0788b4fff2259"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:27.511250Z"/>
+<entry
+   committed-rev="2"
+   name="GameStudioModelRenderer_Sample.cpp"
+   text-time="2006-04-11T01:01:45.323750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="20a579814f06d86f86127a65d49f0a07"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:27.245625Z"/>
+<entry
+   committed-rev="2"
+   name="health.h"
+   text-time="2006-04-11T01:01:45.323750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="89284e7a5c6a027d99bc38ae40c89397"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:26.761250Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_ConsolePanel.cpp"
+   text-time="2006-04-11T01:01:45.339375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="23f9e5738efecfe45191b350057c3dfc"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:27.620625Z"/>
+<entry
+   committed-rev="2"
+   name="in_defs.h"
+   text-time="2006-04-11T01:01:45.339375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c483f443e962e719b94197b32c0880a6"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:27.558125Z"/>
+<entry
+   committed-rev="2"
+   name="util.cpp"
+   text-time="2006-04-11T01:01:45.355000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="13216124bf903313e51e90a04b9ef4ae"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:27.823750Z"/>
+<entry
+   committed-rev="2"
+   name="train.cpp"
+   text-time="2006-04-11T01:01:45.355000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ac5e98e6bcc0b1c70fe6be5dd2108797"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:27.714375Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_SpectatorPanel.cpp"
+   text-time="2006-04-11T01:01:45.386250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9716f92577fd6c232d68698ae0315c7d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:28.370625Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_CustomObjects.cpp"
+   text-time="2006-04-11T01:01:45.370625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4cc010531cc3575da71dd8faf535ab91"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:28.089375Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_WorldMap.cpp"
+   text-time="2006-04-11T01:01:45.401875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="1aa74cb06de465cb570136b55bb5d8ef"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:28.573750Z"/>
+<entry
+   committed-rev="2"
+   name="tf_defs.h"
+   text-time="2006-04-11T01:01:45.386250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="60223eb715577c9a95619841696aae62"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:28.417500Z"/>
+<entry
+   committed-rev="2"
+   name="ammohistory.h"
+   text-time="2006-04-11T01:01:45.401875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b1f9de0a52c39c3840492450d4cc7cd4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:28.683125Z"/>
+<entry
+   committed-rev="2"
+   name="hud_update.cpp"
+   text-time="2006-04-11T01:01:45.417500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e791cc53ce91ca9209bbaa5c9f45b6ab"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:28.730000Z"/>
+<entry
+   committed-rev="2"
+   name="hud_redraw.cpp"
+   text-time="2006-04-11T01:01:45.417500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="dc2e1b24771ac21546016b2d2560a3d9"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:28.995625Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_ControlConfigPanel.h"
+   text-time="2006-04-11T01:01:45.433125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="f8ac5fa5404ba15968bdf01203e9dc59"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:29.042500Z"/>
+<entry
+   committed-rev="2"
+   name="hud_msg.cpp"
+   text-time="2006-04-11T01:01:45.448750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="dfcf796096f2c57ded12275222f75508"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:29.167500Z"/>
+<entry
+   committed-rev="2"
+   name="parsemsg.h"
+   text-time="2006-04-11T01:01:45.433125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="00fcade08aac449d8b8a2c22eba2dd6d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:29.105000Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_int.h"
+   text-time="2006-04-11T01:01:45.464375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="3c191f09c75960328aaee72252479b5f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:29.214375Z"/>
+<entry
+   committed-rev="2"
+   name="camera.h"
+   text-time="2006-04-11T01:01:45.464375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="dd5333faeb81ded3b0492993f9a2b933"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:29.370625Z"/>
+<entry
+   committed-rev="2"
+   name="soundsystem.cpp"
+   text-time="2006-04-11T01:01:45.464375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="df08d4bd6cb3839d49ac12c95918c5e0"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:29.308125Z"/>
+<entry
+   committed-rev="2"
+   name="cl_dll.h"
+   text-time="2006-04-11T01:01:45.480000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="129da2d0db97e3a10f31fd3a18dd35ae"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:29.480000Z"/>
+<entry
+   committed-rev="2"
+   name="ammo.h"
+   text-time="2006-04-11T01:01:45.480000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="3f408fc1d6745992f3a8535889f50a3a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:29.433125Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_KickMenu.cpp"
+   text-time="2006-04-11T01:01:45.495625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="15af061f3428832355b28873bb88c03f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:29.636250Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_ServerBrowser.cpp"
+   text-time="2006-04-11T01:01:45.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ce8acc18b758145a42138e03b55c9c7c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:30.026875Z"/>
+<entry
+   committed-rev="2"
+   name="util_vector.h"
+   text-time="2006-04-11T01:01:45.495625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d9374081391c2ddb1cc3f2ec374269a5"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:29.745625Z"/>
+<entry
+   committed-rev="2"
+   name="health.cpp"
+   text-time="2006-04-11T01:01:45.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="891799233bed518af03513a4dd3730aa"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:30.276875Z"/>
+<entry
+   committed-rev="2"
+   name="overview.cpp"
+   text-time="2006-04-11T01:01:45.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="cb35b28b8e337e8f671bc74667c2801d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:30.370625Z"/>
+<entry
+   committed-rev="2"
+   name="statusbar.cpp"
+   text-time="2006-04-11T01:01:45.526875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="30c561332d548ecbce1f0692e267e9e5"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:30.589375Z"/>
+<entry
+   committed-rev="2"
+   name="view.cpp"
+   text-time="2006-04-11T01:01:45.526875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e7ee47e5816f4fd11d1fc96acb198115"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:31.573750Z"/>
+<entry
+   committed-rev="2"
+   name="ammohistory.cpp"
+   text-time="2006-04-11T01:01:45.542500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="bc172e9ba49164a6cb80db6fc1797552"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:31.651875Z"/>
+<entry
+   name="ww"
+   kind="dir"/>
+<entry
+   committed-rev="2"
+   name="ev_hldm.cpp"
+   text-time="2006-04-11T01:01:45.558125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5636771a6e9cd898dfeb07f41ba5eda7"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:36.292500Z"/>
+<entry
+   committed-rev="2"
+   name="in_camera.cpp"
+   text-time="2006-04-11T01:01:45.542500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="0e8ae8a97131313f05d790e67e7680f8"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:35.964375Z"/>
+<entry
+   committed-rev="2"
+   name="GameStudioModelRenderer_Sample.h"
+   text-time="2006-04-11T01:01:45.573750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="69a5f5dbd0def20cbeabd0dac166a7b3"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:36.339375Z"/>
+<entry
+   committed-rev="2"
+   name="com_weapons.h"
+   text-time="2006-04-11T01:01:45.573750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="04f37adceb8ac8250e51127578b641b5"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:36.448750Z"/>
+<entry
+   committed-rev="60"
+   name="hud.cpp"
+   text-time="2006-04-11T01:01:45.589375Z"
+   committed-date="2005-12-12T00:04:42.468917Z"
+   checksum="f7e462c392ac3603f88fe40839fe2588"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:36.761250Z"/>
+<entry
+   committed-rev="2"
+   name="parsemsg.cpp"
+   text-time="2006-04-11T01:01:45.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="f512bfa50cd6273925d36f7b49b397e0"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:36.870625Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_ConsolePanel.h"
+   text-time="2006-04-11T01:01:45.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9b9b6eaeae3722dae6c98adfe9532f61"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:36.933125Z"/>
+<entry
+   name="hl"
+   kind="dir"/>
+<entry
+   committed-rev="2"
+   name="vgui_SpectatorPanel.h"
+   text-time="2006-04-11T01:01:45.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="257b7ea82824a9d92c5a88669b8dfb89"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:38.261250Z"/>
+<entry
+   committed-rev="2"
+   name="StudioModelRenderer.h"
+   text-time="2006-04-11T01:01:45.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="16938140e46ff96d16340469fcb88faa"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:38.417500Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_ClassMenu.cpp"
+   text-time="2006-04-11T01:01:45.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d1b474773bbdf465fc6ab562d1b5d8e8"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:38.730000Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_MOTDWindow.cpp"
+   text-time="2006-04-11T01:01:45.636250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="1235c794be4f7a0a9c635f74ff491ac0"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:38.901875Z"/>
+<entry
+   committed-rev="2"
+   name="ammo.cpp"
+   text-time="2006-04-11T01:01:45.651875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9b90f454c312cb8662647a6c6038c143"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:39.433125Z"/>
+<entry
+   committed-rev="49"
+   name="resource.h"
+   text-time="2006-04-11T01:01:45.651875Z"
+   committed-date="2005-10-24T21:41:54.594056Z"
+   checksum="0df8a7688773047cba28d317b610d309"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:39.433125Z"/>
+<entry
+   committed-rev="2"
+   name="hud_servers_priv.h"
+   text-time="2006-04-11T01:01:45.651875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="56213b38d32a037882b1fc46a2f61198"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:39.542500Z"/>
+<entry
+   committed-rev="2"
+   name="hud_servers.h"
+   text-time="2006-04-11T01:01:45.667500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5148e2566c3eb8c0d4f915c23ca0ab14"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:39.589375Z"/>
+<entry
+   committed-rev="2"
+   name="ammo_secondary.cpp"
+   text-time="2006-04-11T01:01:45.667500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="cf0386ec57018754559ee8ec7039b3ba"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:39.698750Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_TeamFortressViewport.cpp"
+   text-time="2006-04-11T01:01:45.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="47590d8b93f8403ac26a89452c0560e9"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:40.870625Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_ServerBrowser.h"
+   text-time="2006-04-11T01:01:45.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="2fe57d4642d25043989cba41893a6f36"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:40.917500Z"/>
+<entry
+   committed-rev="2"
+   name="overview.h"
+   text-time="2006-04-11T01:01:45.698750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="0775dbccb5047308a90f98872fefce59"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:40.933125Z"/>
+<entry
+   committed-rev="49"
+   name="cl_dll.rc"
+   text-time="2006-04-11T01:01:45.714375Z"
+   committed-date="2005-10-24T21:41:54.594056Z"
+   checksum="d7862703e394bd27c8c3d8fde2c32e67"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:40.980000Z"/>
+<entry
+   committed-rev="74"
+   name="entity.cpp"
+   text-time="2006-04-11T01:01:45.714375Z"
+   committed-date="2005-12-21T12:52:59.232131Z"
+   checksum="90e7173f1cb0afbcf3f6367df2f5b46d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:41.667500Z"/>
+<entry
+   committed-rev="2"
+   name="status_icons.cpp"
+   text-time="2006-04-11T01:01:45.730000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="086d0f519ec8082e038ebc7e1a2820bc"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:41.823750Z"/>
+<entry
+   committed-rev="2"
+   name="StudioModelRenderer.cpp"
+   text-time="2006-04-11T01:01:45.730000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="11125f361bc08196e219a8e6da821f00"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:42.573750Z"/>
+<entry
+   committed-rev="2"
+   name="view.h"
+   text-time="2006-04-11T01:01:45.745625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="57a0bc5f3fc70a382bcd93a5e51eaeb1"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:42.573750Z"/>
+<entry
+   committed-rev="2"
+   name="ev_hldm.h"
+   text-time="2006-04-11T01:01:45.745625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="84ad4c70a2a712c5eab82268c90d27fb"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:42.683125Z"/>
+<entry
+   committed-rev="2"
+   name="message.cpp"
+   text-time="2006-04-11T01:01:45.745625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="a8249965a1f7af32836fc05d41b0a11d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:42.964375Z"/>
+<entry
+   committed-rev="2"
+   name="demo.cpp"
+   text-time="2006-04-11T01:01:45.761250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="6f124ea3ae0d632bc6ac37162733abbe"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:43.042500Z"/>
+<entry
+   committed-rev="60"
+   name="hud.h"
+   text-time="2006-04-11T01:01:45.761250Z"
+   committed-date="2005-12-12T00:04:42.468917Z"
+   checksum="43afb009ec3477856375b73854447867"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:43.417500Z"/>
+<entry
+   committed-rev="2"
+   name="cdll_int.cpp"
+   text-time="2006-04-11T01:01:45.792500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="14c811125b72cba2cc218122ac36dd9e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:43.589375Z"/>
+<entry
+   committed-rev="2"
+   name="text_message.cpp"
+   text-time="2006-04-11T01:01:45.792500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="0fa87a144473a6bd552d7e6774ac2c2f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:43.808125Z"/>
+<entry
+   committed-rev="2"
+   name="hud_servers.cpp"
+   text-time="2006-04-11T01:01:45.808125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="73168623bf3fcbc5daa820aefcf94635"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:44.167500Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_ScorePanel.h"
+   text-time="2006-04-11T01:01:45.808125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="2f254ef5d48aa7b0b929280e2b49afb8"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:44.323750Z"/>
+<entry
+   committed-rev="2"
+   name="kbutton.h"
+   text-time="2006-04-11T01:01:45.808125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ad9e5d54fb29ffdb9a059bc6782a3512"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:44.386250Z"/>
+<entry
+   committed-rev="2"
+   name="inputw32.cpp"
+   text-time="2006-04-11T01:01:45.823750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="3f0623fd8e794b791374a8b9adf48706"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:44.870625Z"/>
+<entry
+   committed-rev="15"
+   name="cl_dll.dsp"
+   text-time="2006-04-11T01:01:45.886250Z"
+   committed-date="2005-04-30T04:04:34.788845Z"
+   checksum="8bf1dc95a74ce9137d33ecb4269c5a64"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:45.073750Z"/>
+</wc-entries>

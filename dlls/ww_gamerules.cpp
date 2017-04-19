@@ -1,0 +1,1059 @@
+#include "extdll.h"
+#include "util.h"
+#include "cbase.h"
+#include "monsters.h"
+#include "player.h"
+#include "weapons.h"
+#include "gamerules.h"
+#include "game.h"
+#include "voice_gamemgr.h"
+
+#include "ww_shared/ww_defs.h"
+#include "ww_gamerules.h"
+#include "ww_dragon.h"
+
+#include "tf_globals.h"
+#include "tf_globalinfo.h"
+#include "tf_ent.h"
+#include "tf_item_goal.h"
+
+//#include	"monsters/dragon.h"
+
+extern int				gmsgGameMode;
+extern int				gmsgSayText;
+extern int				gmsgTeamInfo;
+extern int				gmsgTeamNames;
+extern int				gmsgTeamScore;
+extern int				gmsgScoreInfo;
+extern int				gmsgDeathMsg;
+extern int				gmsgVGUIMenu;
+extern int				gmsgAllowSpec;
+extern int				gmsgDragon;
+extern int				gmsgValClass;
+extern int				gmsgValTeams;
+extern int				gmsgSetTimer;
+extern int				gmsgSpectator;
+
+extern cvar_t			timeleft, fragsleft;
+
+extern DLL_GLOBAL BOOL	g_fGameOver;
+extern CVoiceGameMgr	g_VoiceGameMgr;
+
+extern unsigned short	g_usGibs;
+extern unsigned short	g_usDeathFlash;
+extern unsigned short	g_usBurn;
+extern unsigned short	g_usPoison;
+extern unsigned short	g_usSpark;
+extern unsigned short	g_usTaunt;
+extern unsigned short	g_usIceGibs;
+
+int						g_iYuckSprite;
+int						g_iArrowSprite;
+
+
+WWGameRules :: WWGameRules()
+{
+	m_DisableDeathMessages	= FALSE;
+	m_DisableDeathPenalty	= FALSE;
+
+	g_iYuckSprite  = PRECACHE_MODEL( "sprites/icons/yuck.spr"  );
+	g_iArrowSprite = PRECACHE_MODEL( "sprites/icons/arrow.spr" );
+	
+	PRECACHE_SOUND( "items/gunpickup3.wav"			);
+	PRECACHE_SOUND( "items/9mmclip1.wav"			);
+	PRECACHE_SOUND( "items/smallmedkit1.wav"		);
+	PRECACHE_SOUND( "buttons/spark5.wav"			);
+
+	// Wizard Specials
+	PRECACHE_SOUND( "spells/necro_grimfeast.wav"	);
+	PRECACHE_SOUND( "spells/healer_sacrifice.wav"	);
+	PRECACHE_SOUND( "spells/draco_explode.wav"		);
+	PRECACHE_SOUND( "spells/fissure_cast.wav"		);
+
+	PRECACHE_MODEL( "sprites/xspark1.spr"			);
+	PRECACHE_MODEL( "sprites/fire.spr"				);
+	PRECACHE_MODEL( "sprites/firez.spr"				);
+	PRECACHE_MODEL( "sprites/poison.spr"  );
+	PRECACHE_MODEL( "sprites/weather/rain1.spr"		);
+
+	PRECACHE_MODEL( "models/icecage.mdl"			);
+	PRECACHE_MODEL( "models/icegibs.mdl"			);
+	PRECACHE_MODEL( "models/skeleton.mdl"			);
+
+	g_usGibs		= PRECACHE_EVENT( 1, "events/gibs.sc"		);
+	g_usDeathFlash	= PRECACHE_EVENT( 1, "events/deathflash.sc"	);
+	g_usBurn		= PRECACHE_EVENT( 1, "events/burn.sc"		);
+	g_usPoison		= PRECACHE_EVENT( 1, "events/poison.sc"		);
+	g_usSpark		= PRECACHE_EVENT( 1, "events/spark.sc"		);
+	g_usTaunt		= PRECACHE_EVENT( 1, "events/taunt.sc"		);
+	g_usIceGibs		= PRECACHE_EVENT( 1, "events/icegibs.sc"	);
+}
+
+
+void WWGameRules::Think( void )
+{
+	static int last_time;
+
+	if( !g_fGameOver && last_time != timelimit.value )
+	{
+	 	MESSAGE_BEGIN( MSG_ALL, gmsgSetTimer );
+			WRITE_LONG( ( timelimit.value ? ( timelimit.value * 60 ) - gpGlobals->time : 0 ) );
+		MESSAGE_END();
+
+		last_time = timelimit.value;
+	}
+
+
+	CHalfLifeMultiplay::Think();
+}
+
+
+BOOL WWGameRules::ClientCommand( CBasePlayer * pPlayer, const char * pcmd )
+{
+	if( g_VoiceGameMgr.ClientCommand( pPlayer, pcmd ) )
+		return TRUE;
+
+	else if( g_pTFGlobalInfo->ClientCommand( pPlayer, pcmd ) )
+		return TRUE;
+
+	else if( FStrEq( pcmd, "menuselect" ) )
+		return TRUE;
+
+	else if( FStrEq( pcmd, "changeteam" ) || FStrEq( pcmd, "jointeam" ) )
+	{
+		if( pPlayer->IsTimerActive( TIMER_TEAMCHANGE ) )
+		{
+			if( !pPlayer->IsTimerActive( TIMER_FLOODCHECK ) )
+			{
+				MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+					WRITE_BYTE( MENU_TEAM );
+				MESSAGE_END();
+
+				ClientPrint( pPlayer->pev, HUD_PRINTTALK, "You have changed teams to soon, please wait a second." );
+
+				pPlayer->SetTimer( TIMER_FLOODCHECK, 1.0f );
+			}
+
+			return TRUE;
+		}
+
+		pPlayer->SetTimer( TIMER_TEAMCHANGE, 1.0f );
+
+		if( !IsTeamplay() )
+		{
+			pPlayer->pev->team = 0;
+
+			MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+				WRITE_BYTE( MENU_CLASS );
+				WRITE_BYTE( 0 );
+			MESSAGE_END();
+
+			return TRUE;
+		}
+
+		if( CMD_ARGC() < 2 )
+		{
+			MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+				WRITE_BYTE( MENU_TEAM );
+			MESSAGE_END();
+
+			return TRUE;
+		}
+
+		int iTeam = atoi( CMD_ARGV(1) );
+
+		if( iTeam == 6 )
+		{
+			if( !pPlayer->IsObserver() )
+				pPlayer->StartObserver( pPlayer->pev->origin, pPlayer->pev->angles );
+
+			return TRUE;
+		}
+
+		if( iTeam == 5 )
+			iTeam = TeamWithFewestPlayers(pPlayer);
+
+		if( !g_pTFGlobalInfo->IsValidTeam( iTeam ) )
+		{
+			MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+				WRITE_BYTE( MENU_TEAM );
+			MESSAGE_END();
+
+			return TRUE;
+		}
+
+		MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+			WRITE_BYTE( MENU_CLASS );
+			WRITE_BYTE( iTeam );
+		MESSAGE_END();
+
+		ChangePlayerTeam( pPlayer, iTeam, FALSE, FALSE );
+
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "changeclass" ) )
+	{
+		if( pPlayer->IsTimerActive( TIMER_CLASSCHANGE ) )
+		{
+			if( !pPlayer->IsTimerActive( TIMER_FLOODCHECK ) )
+			{
+				MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+					WRITE_BYTE( MENU_CLASS );
+					WRITE_BYTE( pPlayer->pev->team );
+				MESSAGE_END();
+
+				ClientPrint( pPlayer->pev, HUD_PRINTTALK, "You have changed classes to soon, please wait a second." );
+
+				pPlayer->SetTimer( TIMER_FLOODCHECK, 1.0f );
+			}
+
+			return TRUE;
+		}
+
+		pPlayer->SetTimer( TIMER_CLASSCHANGE, 1.0f );
+
+/*
+		// they could be trying to cheat and change classes with out a valid team
+		if( IsTeamplay() && !g_pTFGlobalInfo->IsValidTeam( pPlayer->pev->team ) )
+		{
+			MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+				WRITE_BYTE( MENU_TEAM );
+			MESSAGE_END();
+
+			return TRUE;
+		}
+*/
+
+		if( CMD_ARGC() < 2 )
+		{
+			MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+				WRITE_BYTE( MENU_CLASS );
+				WRITE_BYTE( pPlayer->pev->team );
+			MESSAGE_END();
+
+			return TRUE;
+		}
+
+		int iClass = atoi( CMD_ARGV(1) );
+
+		if( !g_pTFGlobalInfo->IsValidClass( pPlayer->pev->team, iClass ) )
+		{
+			MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+				WRITE_BYTE( MENU_CLASS );
+				WRITE_BYTE( pPlayer->pev->team );
+			MESSAGE_END();
+
+			return TRUE;
+		}
+
+		ChangePlayerClass( pPlayer, iClass, FALSE, FALSE );
+
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "+gren1" ) || FStrEq( pcmd, "primeone" ) )
+	{
+		if( pPlayer->IsObserver() )
+			return TRUE;
+
+		if( pPlayer->m_pClass != NULL && pPlayer->IsAlive() )
+			pPlayer->m_pClass->ArmGrenade();
+
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "-gren1" ) || FStrEq( pcmd, "throwgren" ) )
+	{
+		if( pPlayer->IsObserver() )
+			return TRUE;
+
+		if( pPlayer->m_pClass != NULL && pPlayer->IsAlive() )
+			pPlayer->m_pClass->TossGrenade();
+
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "_special" ) )
+	{
+		if( pPlayer->IsObserver() )
+			return TRUE;
+
+		if( !pPlayer->IsAlive() || pPlayer->m_pClass == NULL )
+			return TRUE;
+
+		if( pPlayer->IsTimerActive( TIMER_FROZEN ) )
+			return TRUE;
+
+		if( CMD_ARGC() != 2 )
+			pPlayer->m_pClass->DoSpecial( 0 );
+		else
+			pPlayer->m_pClass->DoSpecial( atoi( CMD_ARGV(1) ) );
+
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "tf_debugoutput" ) )
+	{
+		TFEntity::DebugOutputAll();
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "dropitems" ) )
+	{
+		TFItemGoal::DropItems( pPlayer );
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "discard" ) )
+	{
+		if( pPlayer->IsObserver() )
+			return TRUE;
+
+		if( pPlayer->m_pClass == NULL || !pPlayer->IsAlive() )
+			return TRUE;
+
+		if( pPlayer->m_pClass->IsBear() )
+		{
+			ClientPrint( pPlayer->pev, HUD_PRINTTALK, "#Earth_AmmoAsBear" );
+			return TRUE;
+		}
+		
+		int ammo = pPlayer->m_rgAmmo[ pPlayer->GetAmmoIndex( "mana" ) ];
+
+		if( ammo <= 50 )
+			return TRUE;
+
+		pPlayer->m_rgAmmo[ pPlayer->GetAmmoIndex( "mana" ) ] = 50;
+
+		CWeaponBox * pWeaponBox = (CWeaponBox *)CBaseEntity::Create( "weaponbox", pPlayer->pev->origin, pPlayer->pev->angles, pPlayer->edict() );
+
+		pWeaponBox->pev->angles.x = 0;
+		pWeaponBox->pev->angles.z = 0;
+
+		pWeaponBox->SetThink(& CWeaponBox::Kill );
+		pWeaponBox->pev->nextthink = gpGlobals->time + 120;
+
+		pWeaponBox->PackAmmo( MAKE_STRING("mana"), ammo - 50 );
+
+		UTIL_MakeVectors( pPlayer->pev->v_angle );
+
+		pWeaponBox->pev->velocity = gpGlobals->v_forward * 300;
+		
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "saveme" ) )
+	{
+		if( pPlayer->IsObserver() )
+			return TRUE;
+
+		if( pPlayer->m_pClass == NULL || !pPlayer->IsAlive() )
+			return TRUE;
+		
+		if( pPlayer->m_pClass->IsBear() )
+		{
+			if( !pPlayer->IsTimerActive( TIMER_FLOODCHECK ) )
+			{
+				ClientPrint( pPlayer->pev, HUD_PRINTCENTER, "#Earth_SaveAsBear" );
+				pPlayer->SetTimer( TIMER_FLOODCHECK, 1.0f );
+			}
+			return TRUE;
+		}
+		
+		if( pPlayer->IsTimerActive( TIMER_SAVEME ) )
+			return TRUE;
+
+		pPlayer->SetTimer( TIMER_SAVEME, 5.0f );
+
+		if( pPlayer->m_bitsDamageType & DMG_POISON )
+		{
+			MESSAGE_BEGIN( MSG_PVS, SVC_TEMPENTITY, pPlayer->pev->origin );
+				WRITE_BYTE ( TE_PLAYERATTACHMENT );
+				WRITE_BYTE ( pPlayer->entindex() );
+				WRITE_COORD( 60 );
+				WRITE_SHORT( g_iYuckSprite );
+				WRITE_SHORT( 30 );
+			MESSAGE_END();
+
+			EMIT_SOUND( pPlayer->edict(), CHAN_VOICE,
+				UTIL_VarArgs( "player/poison%i.wav", RANDOM_LONG( 1, 2 ) ), 1, ATTN_NORM );
+		}
+		else
+		{
+			MESSAGE_BEGIN( MSG_PVS, SVC_TEMPENTITY, pPlayer->pev->origin );
+				WRITE_BYTE ( TE_PLAYERATTACHMENT );
+				WRITE_BYTE ( pPlayer->entindex() );
+				WRITE_COORD( 60 );
+				WRITE_SHORT( g_iArrowSprite );
+				WRITE_SHORT( 30 );
+			MESSAGE_END();
+
+			EMIT_SOUND( pPlayer->edict(), CHAN_VOICE,
+				UTIL_VarArgs( "player/health%i.wav", RANDOM_LONG( 1, 3 ) ), 1, ATTN_NORM );
+		}
+
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "taunt" ) )
+	{
+		if( pPlayer->IsObserver() )
+			return TRUE;
+
+		if( pPlayer->m_pClass == NULL || !pPlayer->IsAlive() )
+			return TRUE;
+		
+		if( pPlayer->IsTimerActive( TIMER_TAUNT ) )
+			return TRUE;
+
+		pPlayer->SetTimer( TIMER_TAUNT, 2.5f );
+		pPlayer->m_flNextAttack = UTIL_WeaponTimeBase() + 1.5f;
+
+		//	iparam1 signals the client that his is a bear doing the taunt
+		PLAYBACK_EVENT_FULL( 0, pPlayer->edict(), g_usTaunt, 0, (float *)&g_vecZero, (float *)&g_vecZero,
+			0.0, 0.0, pPlayer->m_pClass->IsBear(), 0, 0, 0 );
+
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "flaginfo" ) )
+	{
+		return TRUE;
+	}
+
+	else if( FStrEq( pcmd, "info" ) )
+	{
+		ALERT( at_console, "%f, %f, %f\n",
+			pPlayer->pev->origin.x, pPlayer->pev->origin.y, pPlayer->pev->origin.z );
+
+		return TRUE;
+	}
+	else if( FStrEq( pcmd, "dismount" ) )
+	{
+		if( !pPlayer->m_pClass->m_bOnDragon || FNullEnt( (CBaseEntity *)pPlayer->m_pClass->m_hMounted ) )
+			return TRUE;
+
+		((WWDragon *)((CBaseEntity*)pPlayer->m_pClass->m_hMounted))->DeMount();
+
+		return TRUE;
+	}
+	
+	return FALSE;
+}
+
+
+void WWGameRules::UpdateGameMode( CBasePlayer * pPlayer )
+{
+	MESSAGE_BEGIN( MSG_ONE, gmsgGameMode, NULL, pPlayer->edict() );
+		WRITE_BYTE( ( IsTeamplay() ? 1 : 0 ) );
+	MESSAGE_END();
+}
+
+
+void WWGameRules::InitHUD( CBasePlayer * pPlayer )
+{
+	// notify other clients of player joining the game
+	UTIL_ClientPrintAll( HUD_PRINTTALK, UTIL_VarArgs( "%s has joined the game\n", 
+		( pPlayer->pev->netname && STRING(pPlayer->pev->netname)[0] != 0 ) ? STRING(pPlayer->pev->netname) : "unconnected" ) );
+
+	UTIL_LogPrintf( "\"%s<%i><%s>\" entered the game\n",  
+		STRING( pPlayer->pev->netname ), 
+		GETPLAYERUSERID( pPlayer->edict() ),
+		GETPLAYERAUTHID( pPlayer->edict() ) );
+
+	UpdateGameMode( pPlayer );
+
+	pPlayer->SetTimer( TIMER_FLOODCHECK,  0.0f );
+	pPlayer->SetTimer( TIMER_TEAMCHANGE,  0.0f );
+	pPlayer->SetTimer( TIMER_CLASSCHANGE, 0.0f );
+
+	if( g_fGameOver )
+	{
+		MESSAGE_BEGIN( MSG_ONE, SVC_INTERMISSION, NULL, pPlayer->edict() );
+		MESSAGE_END();
+
+		return;
+	}
+
+	MESSAGE_BEGIN( MSG_ONE, gmsgAllowSpec, NULL, pPlayer->pev );
+		WRITE_BYTE( 1 );
+	MESSAGE_END();
+
+	MESSAGE_BEGIN( MSG_ONE, gmsgSetTimer, NULL, pPlayer->pev );
+		WRITE_LONG( ( timelimit.value ? ( timelimit.value * 60 ) - gpGlobals->time : 0 ) );
+	MESSAGE_END();
+
+	MESSAGE_BEGIN( MSG_ONE, gmsgValTeams, NULL, pPlayer->edict() );
+		WRITE_BYTE( g_pTFGlobalInfo->NumTeams() );
+		WRITE_BYTE( g_pTFGlobalInfo->ValidTeams() );
+	MESSAGE_END();
+
+	MESSAGE_BEGIN( MSG_ONE, gmsgTeamNames, NULL, pPlayer->edict() ); 
+		WRITE_BYTE( g_pTFGlobalInfo->NumTeams() );
+
+		int i;
+		for( i = 1; i <= g_pTFGlobalInfo->NumTeams(); i++ )
+			WRITE_STRING( g_pTFGlobalInfo->TeamName( i ) );
+
+	MESSAGE_END();
+
+	MESSAGE_BEGIN( MSG_ONE, gmsgValClass, NULL, pPlayer->edict() );
+		WRITE_SHORT( g_pTFGlobalInfo->ValidClasses( 0 ) );
+		WRITE_SHORT( g_pTFGlobalInfo->ValidClasses( 1 ) );
+		WRITE_SHORT( g_pTFGlobalInfo->ValidClasses( 2 ) );
+		WRITE_SHORT( g_pTFGlobalInfo->ValidClasses( 3 ) );
+		WRITE_SHORT( g_pTFGlobalInfo->ValidClasses( 4 ) );
+	MESSAGE_END();
+
+	for( i = 1; i <= g_pTFGlobalInfo->NumTeams(); i++ )
+	{
+		MESSAGE_BEGIN( MSG_ONE, gmsgTeamScore, NULL, pPlayer->edict());
+			WRITE_SHORT( i );
+			WRITE_SHORT( g_pTFGlobalInfo->TeamScore( i ) );
+		MESSAGE_END();
+	}
+
+	for( i = 1; i <= gpGlobals->maxClients; i++ )
+	{
+		// FIXME:  Probably don't need to cast this just to read m_iDeaths
+		CBasePlayer *plr = (CBasePlayer *)UTIL_PlayerByIndex( i );
+
+		if ( plr )
+		{
+			MESSAGE_BEGIN( MSG_ONE, gmsgTeamInfo, NULL, pPlayer->edict() );
+				WRITE_BYTE( plr->entindex() );
+				WRITE_BYTE( plr->pev->team );
+			MESSAGE_END();
+
+			MESSAGE_BEGIN( MSG_ONE, gmsgScoreInfo, NULL, pPlayer->edict() );
+				WRITE_BYTE ( plr->entindex() );
+				WRITE_SHORT( plr->pev->frags );
+				WRITE_SHORT( plr->m_iDeaths );
+				WRITE_BYTE ( plr->pev->playerclass );
+				WRITE_BYTE ( plr->pev->team );
+			MESSAGE_END();
+		}
+	}
+
+	SendMOTDToClient( pPlayer->edict() );
+
+	pPlayer->m_pClass = new WWBaseWizard( pPlayer );
+	pPlayer->m_iLives = -1;
+
+	// XYPHN - 040228
+	//	Make everyone change to the info_player_start view on start
+	CBaseEntity * pStart = UTIL_FindEntityByClassname( NULL, "info_player_start" );
+
+	if( pStart != NULL )
+		pPlayer->StartObserver( pStart->pev->origin, pStart->pev->angles, TRUE );
+}
+
+
+void WWGameRules::ClientDisconnected( edict_t * pClient )
+{
+	if( pClient != NULL )
+	{
+		CBasePlayer * pPlayer = (CBasePlayer *)CBaseEntity::Instance( pClient );
+
+		if( pPlayer != NULL )
+		{
+			 //1.2.1 Drop Grail when disconnected
+			TFItemGoal::DropItems( pPlayer, TRUE );
+
+			if( pPlayer->m_pFreezeCage != NULL )
+			{
+				UTIL_Remove( pPlayer->m_pFreezeCage );
+				pPlayer->m_pFreezeCage = NULL;
+			}
+			
+
+			if( pPlayer->m_pClass != NULL )
+			{
+				pPlayer->m_pClass->Remove();
+				delete pPlayer->m_pClass;
+				pPlayer->m_pClass = NULL;
+			}
+		}
+	}
+
+	CHalfLifeMultiplay::ClientDisconnected( pClient );
+}
+
+
+
+void WWGameRules::PlayerThink( CBasePlayer * pPlayer )
+{
+	if( !pPlayer->IsObserver() )
+	{
+		if( !g_pTFGlobalInfo->IsValidTeam( pPlayer->pev->team ) )
+		{
+			pPlayer->StartObserver( pPlayer->pev->origin, pPlayer->pev->angles );
+
+			MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+				WRITE_BYTE( MENU_TEAM );
+			MESSAGE_END();
+		}
+		else if( !g_pTFGlobalInfo->IsValidClass( pPlayer->pev->team, pPlayer->pev->playerclass ) )
+		{
+			pPlayer->StartObserver( pPlayer->pev->origin, pPlayer->pev->angles );
+
+			MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+				WRITE_BYTE( MENU_CLASS );
+				WRITE_BYTE( pPlayer->pev->team );
+			MESSAGE_END();
+		}
+
+	}
+
+	CHalfLifeMultiplay::PlayerThink( pPlayer );
+}
+
+
+void WWGameRules::ClientUserInfoChanged( CBasePlayer *pPlayer, char *infobuffer )
+{
+}
+
+
+void WWGameRules::DeathNotice( CBasePlayer * pVictim, entvars_t * pKiller, entvars_t * pInflictor )
+{
+	if( m_DisableDeathMessages )
+		return;
+	
+	if( pVictim && pKiller && pKiller->flags & FL_CLIENT )
+	{
+		CBasePlayer * pk = (CBasePlayer *)CBaseEntity::Instance( pKiller );
+
+		if( pk != NULL && pk != pVictim )
+		{
+			if( pVictim->IRelationship( pk ) == R_AL )
+			{
+				MESSAGE_BEGIN( MSG_ALL, gmsgDeathMsg );
+
+					WRITE_BYTE( ENTINDEX( ENT( pKiller ) ) );		// the killer
+					WRITE_BYTE( ENTINDEX( pVictim->edict() ) );		// the victim
+					WRITE_STRING( "teammate" );						// flag this as a teammate kill
+
+				MESSAGE_END();
+				
+				return;
+			}
+		}
+	}
+
+	CHalfLifeMultiplay::DeathNotice( pVictim, pKiller, pInflictor );
+}
+
+
+void WWGameRules::PlayerKilled( CBasePlayer * pVictim, entvars_t * pKiller, entvars_t * pInflictor )
+{
+	TFItemGoal::DropItems( pVictim, TRUE );
+
+	if( pVictim->m_pClass->m_bOnDragon )
+		((WWDragon *)((CBaseEntity*)pVictim->m_pClass->m_hMounted))->DeMount();
+
+	pVictim->m_pClass->RemoveGiantPlant();
+
+	if( m_DisableDeathPenalty )
+		return;
+
+	CHalfLifeMultiplay::PlayerKilled( pVictim, pKiller, pInflictor );
+}
+
+
+BOOL WWGameRules::IsTeamplay( void )
+{
+	return ( g_pTFGlobalInfo->NumTeams() > 0 ? TRUE : FALSE );
+}
+
+
+
+BOOL WWGameRules::CanHavePlayerItem( CBasePlayer *pPlayer, CBasePlayerItem *pWeapon )
+{
+	if( !pPlayer || !pPlayer->m_pClass || !pWeapon )
+		return FALSE;
+
+	return pPlayer->m_pClass->CanHavePlayerItem( pWeapon );
+}
+
+
+
+BOOL WWGameRules::FPlayerCanTakeDamage( CBasePlayer * pPlayer, CBaseEntity * pAttacker )
+{
+	// you can always hurt your own lame ass
+	if( pAttacker == pPlayer )
+		return TRUE;
+
+	if( !pAttacker->IsPlayer() )
+		return TRUE;
+
+	if( pPlayer->IRelationship( pAttacker ) < R_NO )
+	{
+		 if( friendlyfire.value == 0 )
+			 return FALSE;
+	}
+
+	return TRUE;
+}
+
+
+int WWGameRules::PlayerRelationship( CBaseEntity * pPlayer, CBaseEntity * pTarget )
+{
+	if ( !pPlayer || !pTarget || !pTarget->IsPlayer() )
+		return GR_NOTTEAMMATE;
+
+	if( IsTeamplay() )
+	{
+		if( pPlayer->pev->team == pTarget->pev->team )
+			return GR_TEAMMATE;
+
+		if( g_pTFGlobalInfo->IsFriendTeam( pPlayer->pev->team, pTarget->pev->team ) )
+			return GR_ALLY;
+	}
+
+	if( pPlayer == pTarget )
+		return GR_ALLY;
+
+	return GR_ENEMY;
+}
+
+
+int WWGameRules::IPointsForKill( CBasePlayer *pAttacker, CBasePlayer *pKilled )
+{
+	if ( !pKilled )
+		return 0;
+
+	if ( !pAttacker )
+		return 0;
+
+	if( pAttacker == pKilled )
+	{
+		if( pAttacker->m_bitsDamageType & DMG_SACRAFICE )
+			return 0;
+
+		return -1;
+	}
+
+	if ( pAttacker != pKilled && PlayerRelationship( pAttacker, pKilled ) == GR_TEAMMATE )
+		return -1;
+
+	return 1;
+}
+
+
+void WWGameRules::ChangePlayerTeam( CBasePlayer * pPlayer, int iTeam, BOOL bKill, BOOL bGib )
+{
+	int i;
+
+	// no point in changing to the same team
+	if( pPlayer->pev->team == iTeam )
+		return;
+
+	// can't change teams if this isn't teamplay
+	if( !IsTeamplay() )
+	{
+		if( pPlayer->pev->playerclass == 0 )
+		{
+			MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+				WRITE_BYTE( MENU_CLASS );
+				WRITE_BYTE( 0 );
+			MESSAGE_END();
+		}
+
+		return;
+	}
+
+	// cant change teams if this isn't a valid team
+	if( !g_pTFGlobalInfo->IsValidTeam( iTeam ) )
+	{
+		ClientPrint( pPlayer->pev, HUD_PRINTTALK, "That is not a valid team.\n" );
+
+		MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+			WRITE_BYTE( MENU_TEAM );
+		MESSAGE_END();
+
+		return;
+	}
+
+	if( iTeam != 0 )
+	{
+		int count = 0;
+		for( i = 1; i <= gpGlobals->maxClients; i++ )
+		{
+			CBaseEntity * plr = UTIL_PlayerByIndex( i );
+
+			if( plr && plr != pPlayer )
+			{
+				if( plr->pev->team == iTeam )
+					count++;
+			}
+		}
+
+		if( g_pTFGlobalInfo->MaxPlayers( iTeam ) != 0 && count >= g_pTFGlobalInfo->MaxPlayers( iTeam ) )
+		{
+			ClientPrint( pPlayer->pev, HUD_PRINTTALK, "There are to many players on that team.\n" );
+
+			MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+				WRITE_BYTE( MENU_TEAM );
+			MESSAGE_END();
+
+			return;
+		}
+	}
+
+	if( !pPlayer->IsObserver() )
+		pPlayer->StartObserver( pPlayer->pev->origin, pPlayer->pev->angles, TRUE );
+
+	pPlayer->m_iDeaths = 0;
+	pPlayer->pev->frags = 0;
+
+	pPlayer->pev->team = iTeam;
+	pPlayer->pev->playerclass = 0;
+	pPlayer->m_iLives = g_pTFGlobalInfo->TeamLives( pPlayer->pev->team );
+
+	for(i = 1; i <= g_pTFGlobalInfo->NumTeams(); i++)
+	{
+		MESSAGE_BEGIN( MSG_ONE, gmsgTeamScore, NULL, pPlayer->edict());
+			WRITE_SHORT( i );
+			WRITE_SHORT( g_pTFGlobalInfo->TeamScore( i ) );
+		MESSAGE_END();
+	}
+
+	MESSAGE_BEGIN( MSG_ALL, gmsgTeamInfo );
+		WRITE_BYTE( pPlayer->entindex() );
+		WRITE_BYTE( pPlayer->pev->team );
+	MESSAGE_END();
+
+	MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+		WRITE_BYTE( MENU_CLASS );
+		WRITE_BYTE( pPlayer->pev->team );
+	MESSAGE_END();
+}
+
+
+void WWGameRules::ChangePlayerClass( CBasePlayer * pPlayer, int iClass, BOOL bKill, BOOL bGib )
+{
+	if( iClass == -1 )
+		iClass = TF_CLASS_CIVILIAN;
+
+	if( !g_pTFGlobalInfo->IsValidClass( pPlayer->pev->team, iClass ) )
+	{
+		MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+			WRITE_BYTE( MENU_CLASS );
+			WRITE_BYTE( pPlayer->pev->team );
+		MESSAGE_END();
+
+		return;
+	}
+
+	pPlayer->m_iNextClass = iClass;
+
+	if( pPlayer->IsObserver() )
+	{
+		if( pPlayer->m_pClass != NULL )
+		{
+			pPlayer->m_pClass->Remove();
+			delete pPlayer->m_pClass;
+
+			pPlayer->m_pClass = NULL;
+		}
+
+		pPlayer->m_pClass = new WWBaseWizard( pPlayer );
+
+		pPlayer->StopObserver();
+		pPlayer->Spawn();
+
+		return;
+	}
+
+	ClientPrint( pPlayer->pev, HUD_PRINTTALK,
+		UTIL_VarArgs( "#RespawnAs%s", WWBaseWizard::GetWizard( pPlayer->m_iNextClass ) ) );
+}
+
+void WWGameRules::PlayerSpawn( CBasePlayer * pPlayer )
+{
+	if( !pPlayer->m_fGameHUDInitialized )
+		return;
+
+	if( pPlayer->IsObserver() )
+		return;
+
+	if( !g_pTFGlobalInfo->IsValidTeam( pPlayer->pev->team ) )
+	{
+		pPlayer->StartObserver( pPlayer->pev->origin, pPlayer->pev->angles );
+
+		MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+			WRITE_BYTE( MENU_TEAM );
+		MESSAGE_END();
+
+		return;
+	}
+
+	if( !g_pTFGlobalInfo->IsValidClass( pPlayer->pev->team, pPlayer->m_iNextClass ) )
+	{
+		pPlayer->StartObserver( pPlayer->pev->origin, pPlayer->pev->angles );
+
+		MESSAGE_BEGIN( MSG_ONE, gmsgVGUIMenu, NULL, pPlayer->pev );
+			WRITE_BYTE( MENU_CLASS );
+			WRITE_BYTE( pPlayer->pev->team );
+		MESSAGE_END();
+
+		return;
+	}
+
+	if( pPlayer->m_iLives == 0 )
+	{
+		pPlayer->StartObserver( pPlayer->pev->origin, pPlayer->pev->angles );
+		ClientPrint( pPlayer->pev, HUD_PRINTCENTER, "#OutOfLives" );
+
+		return;
+	}
+
+	if( pPlayer->m_pClass != NULL )
+	{
+		if( pPlayer->m_pClass->m_bOnDragon)
+			GetClassPtr( (WWDragon *)pPlayer->m_pClass->m_hMounted->pev )->DeMount();
+
+		if( pPlayer->m_pClass->GetClassNumber() != pPlayer->m_iNextClass )
+		{
+			pPlayer->m_pClass->Remove();
+			delete pPlayer->m_pClass;
+			pPlayer->m_pClass = NULL;
+			pPlayer->m_pClass = WWBaseWizard::GetNumberedClass( pPlayer, pPlayer->m_iNextClass );
+		}
+	}
+	else
+	{
+		pPlayer->m_pClass = WWBaseWizard::GetNumberedClass( pPlayer, pPlayer->m_iNextClass );
+	}
+
+	ASSERTSZ( pPlayer->m_pClass != NULL, "WWGameRules()::PlayerSpawn() set dead class.\n" );
+
+	pPlayer->pev->weapons |= ( 1 << WEAPON_SUIT );
+
+	pPlayer->pev->playerclass = pPlayer->m_pClass->GetClassNumber();
+//	pPlayer->m_pClass->m_iComboHits = 0;
+//	pPlayer->m_pClass->m_bOnDragon = false;
+//	pPlayer->m_pClass->m_hMounted = NULL;
+
+	pPlayer->SetPlayerModel();
+	pPlayer->m_pClass->SetTeamColor( pPlayer->pev->team );
+	
+	pPlayer->pev->max_health	= pPlayer->m_pClass->MaxHealth();
+	pPlayer->pev->health		= pPlayer->pev->max_health;
+
+	pPlayer->SetTimer( TIMER_INVULNERABILITY, CVAR_GET_FLOAT( "mp_respawninvincibility" ) );
+
+	pPlayer->m_pClass->Equip();
+
+	g_engfuncs.pfnSetPhysicsKeyValue( pPlayer->edict(), "dragon", "0" );
+
+	MESSAGE_BEGIN( MSG_ONE, gmsgDragon, NULL, pPlayer->pev );
+		WRITE_BYTE( 0 );
+		WRITE_BYTE( 0 );
+	MESSAGE_END();
+
+	MESSAGE_BEGIN( MSG_ALL, gmsgScoreInfo );
+		WRITE_BYTE ( pPlayer->entindex() );
+		WRITE_SHORT( pPlayer->pev->frags );
+		WRITE_SHORT( pPlayer->m_iDeaths );
+		WRITE_BYTE ( pPlayer->pev->playerclass );
+		WRITE_BYTE ( pPlayer->pev->team );
+	MESSAGE_END();
+
+	MESSAGE_BEGIN( MSG_ALL, gmsgTeamInfo );
+		WRITE_BYTE( pPlayer->entindex() );
+		WRITE_BYTE( pPlayer->pev->team );
+	MESSAGE_END();
+}
+
+
+int WWGameRules::TeamWithFewestPlayers( CBasePlayer *pPlayer )
+{
+	// 1.2.6 #19 Auto Team never picks team 4 (green)
+	int count[TF_TEAM_MAXTEAMS];
+	int i;
+
+	count[0] = -1;
+
+	for(i = 1; i < TF_TEAM_MAXTEAMS; i++)
+	{
+		count[i] = -1;
+		if( g_pTFGlobalInfo->IsValidTeam( i ) )
+			count[i] = 0;
+	}
+
+	for ( i = 1; i <= gpGlobals->maxClients; i++ )
+	{
+		CBaseEntity * plr = UTIL_PlayerByIndex( i );
+
+		if( !plr )
+			continue;
+
+		if( g_pTFGlobalInfo->IsValidTeam( plr->pev->team ) )
+			count[ plr->pev->team ]++;
+	}
+
+	int iTeam = 0;
+	int iMaxC = 32;
+
+	for( i = 1; i < TF_TEAM_MAXTEAMS; i++ )
+	{
+		// 1.2.9 Not bots on archmage team
+		if( (!g_pTFGlobalInfo->IsValidClass(i, WWCLASS_ARCHMAGE))  &&
+			count[i] != -1 &&
+			count[i] < iMaxC
+		  )
+		{
+			iTeam = i;
+			iMaxC = count[i];
+		}
+	}
+
+	if( !g_pTFGlobalInfo->IsValidTeam( iTeam ) )
+		iTeam = 1;
+
+	return iTeam;
+}
+
+
+BOOL WWGameRules::FPlayerCanRespawn( CBasePlayer * pPlayer )
+{
+	if( pPlayer->m_flNextRespawn > gpGlobals->time )
+		return FALSE;
+
+	return TRUE;
+}
+
+
+float WWGameRules :: FlPlayerSpawnTime( CBasePlayer * pPlayer )
+{
+	float flDelay = g_pTFGlobalInfo->GetSpawnDelay();
+
+	if( flDelay == 0.0f )
+		flDelay = CVAR_GET_FLOAT( "mp_respawndelay" );
+
+	return gpGlobals->time + flDelay;
+}
+
+
+edict_t * WWGameRules::GetPlayerSpawnSpot( CBasePlayer * pPlayer )
+{
+	CBaseEntity * pSpawn = NULL;
+	pSpawn = g_pTFGlobalInfo->GetPlayerSpawn( pPlayer );
+
+	if( !pSpawn )
+	{
+		return CHalfLifeMultiplay::GetPlayerSpawnSpot( pPlayer );
+	}
+
+	pPlayer->pev->origin = pSpawn->pev->origin;
+	pPlayer->pev->angles = pSpawn->pev->angles;
+	pPlayer->pev->fixangle = 1;
+
+	SET_ORIGIN( pPlayer->edict(), pPlayer->pev->origin );
+
+	g_pTFGlobalInfo->PlayerSpawn(pPlayer, pSpawn);
+
+	return pSpawn->edict();
+}

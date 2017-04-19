@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2005-03-14T13:32:23.046351Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/utils/vgui/lib/win32_vc6"
+   last-author="eggy"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="vgui.lib"
+   text-time="2006-04-11T01:02:45.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c1b0fe7622750a16349c5f6b76a90282"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:45.495625Z"/>
+</wc-entries>

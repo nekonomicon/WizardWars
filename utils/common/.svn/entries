@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2005-03-14T13:32:23.046351Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/utils/common"
+   last-author="eggy"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="cmdlib.h"
+   text-time="2006-04-11T01:02:37.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="af23d09adeaf0b3377c16b136325b849"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:34.198750Z"/>
+<entry
+   committed-rev="2"
+   name="threads.h"
+   text-time="2006-04-11T01:02:37.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4cd3ca0394a421c7ffbaf146b2b43d3c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:34.089375Z"/>
+<entry
+   committed-rev="2"
+   name="lbmlib.c"
+   text-time="2006-04-11T01:02:37.526875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5251a24906064dd5c385f748af6e1cbf"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:34.526875Z"/>
+<entry
+   committed-rev="2"
+   name="wadlib.c"
+   text-time="2006-04-11T01:02:37.526875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="24562f74b61c66e493fcfccf8e363f1e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:34.683125Z"/>
+<entry
+   committed-rev="2"
+   name="lbmlib.h"
+   text-time="2006-04-11T01:02:37.542500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="000309db0a7ee8e181809dad8918137b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:34.730000Z"/>
+<entry
+   committed-rev="2"
+   name="wadlib.h"
+   text-time="2006-04-11T01:02:37.573750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d0a8f42a17cf886acfb79c0a9f7f9f65"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:34.948750Z"/>
+<entry
+   committed-rev="2"
+   name="scriplib.c"
+   text-time="2006-04-11T01:02:37.558125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c9377d1152162d5d3448660e00d8fe8b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:34.886250Z"/>
+<entry
+   committed-rev="2"
+   name="polylib.c"
+   text-time="2006-04-11T01:02:37.573750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="17e0b6867788b3c15c4386af91953659"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:35.151875Z"/>
+<entry
+   committed-rev="2"
+   name="scriplib.h"
+   text-time="2006-04-11T01:02:37.573750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4ededfa9964b589662d4969dc47bc05e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:35.214375Z"/>
+<entry
+   committed-rev="2"
+   name="polylib.h"
+   text-time="2006-04-11T01:02:37.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ac6e51b9bcbbd4a11ff0e158e9671181"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:35.261250Z"/>
+<entry
+   committed-rev="2"
+   name="mathlib.c"
+   text-time="2006-04-11T01:02:37.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="40f779517715e4479bff996d60d1ef4d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:35.480000Z"/>
+<entry
+   committed-rev="2"
+   name="bspfile.c"
+   text-time="2006-04-11T01:02:37.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d76bf893f46e97bfe2625c597514b385"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:35.870625Z"/>
+<entry
+   committed-rev="2"
+   name="movie.h"
+   text-time="2006-04-11T01:02:37.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="38f694a40a67c18d5d555c195c263b91"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:35.480000Z"/>
+<entry
+   committed-rev="2"
+   name="mathlib.h"
+   text-time="2006-04-11T01:02:37.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e7a3f8b4d93f087ec76289ee229ca0a9"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:36.339375Z"/>
+<entry
+   committed-rev="2"
+   name="trilib.c"
+   text-time="2006-04-11T01:02:37.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5446c94180da4c010e35c37928bee6be"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:36.089375Z"/>
+<entry
+   committed-rev="2"
+   name="bspfile.h"
+   text-time="2006-04-11T01:02:37.636250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="127a5f4ba1d2091fe4b8e080e34d535e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:36.480000Z"/>
+<entry
+   committed-rev="2"
+   name="threads.c"
+   text-time="2006-04-11T01:02:37.636250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="6dd3029704d3d9df833db578e9f89a22"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:36.730000Z"/>
+<entry
+   committed-rev="2"
+   name="cmdlib.c"
+   text-time="2006-04-11T01:02:37.651875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="0bd6b203acb3ecd218b03fa8e2d5ab98"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:37.386250Z"/>
+<entry
+   committed-rev="2"
+   name="trilib.h"
+   text-time="2006-04-11T01:02:37.651875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="f8de09236dda3163e699cf7b37ee22ba"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:37.495625Z"/>
+</wc-entries>

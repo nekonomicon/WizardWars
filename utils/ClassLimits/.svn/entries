@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2005-03-14T13:32:23.046351Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/utils/ClassLimits"
+   last-author="eggy"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="wwClassLimitsTool.vbw"
+   text-time="2006-04-11T01:02:34.058125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4e65ba7f01c64fb964228f4e3eee40a9"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:33.761250Z"/>
+<entry
+   committed-rev="2"
+   name="frmMain.frx"
+   text-time="2006-04-11T01:02:34.058125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="bc2cbd7e3e7b8804690f69e98234eee9"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:33.886250Z"/>
+<entry
+   committed-rev="2"
+   name="wwClassLimitsTool.vbp"
+   text-time="2006-04-11T01:02:34.058125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="038e944b7a65fc1ccee3b9fc5b9271bf"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:33.933125Z"/>
+<entry
+   committed-rev="2"
+   name="frmMain.frm"
+   text-time="2006-04-11T01:02:34.073750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="16fa14d4974b5573521939daade5f892"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:34.042500Z"/>
+</wc-entries>

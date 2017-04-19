@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="12"
+   name=""
+   committed-date="2005-04-30T01:13:24.587702Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/metamod/metamod"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="9"
+   name="conf_meta.h"
+   text-time="2006-04-11T01:01:05.667500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="e6945ad4b5f641892a3b5904f24efc08"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:47.995625Z"/>
+<entry
+   committed-rev="9"
+   name="game_support.cpp"
+   text-time="2006-04-11T01:01:05.698750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="b2d91f4bef6001b724bb96abcea9757b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:48.745625Z"/>
+<entry
+   committed-rev="9"
+   name="commands_meta.cpp"
+   text-time="2006-04-11T01:01:05.730000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="e07cc75b28229216904557dc5c992fa6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:49.276875Z"/>
+<entry
+   committed-rev="9"
+   name="thread_logparse.h"
+   text-time="2006-04-11T01:01:05.745625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="1d337cf4f004740c0d4bd80b17fb2259"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:49.370625Z"/>
+<entry
+   committed-rev="9"
+   name="dllapi.h"
+   text-time="2006-04-11T01:01:05.761250Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="a6c04b4716be3e5e5f6846735292bd9b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:50.073750Z"/>
+<entry
+   committed-rev="9"
+   name="types_meta.h"
+   text-time="2006-04-11T01:01:05.776875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="2f9318e74bf547e3088606756a3d84e3"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:50.542500Z"/>
+<entry
+   committed-rev="9"
+   name="res_meta.rc"
+   text-time="2006-04-11T01:01:05.792500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="903893c3db62b2a10b6c899927bb2126"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:51.026875Z"/>
+<entry
+   committed-rev="9"
+   name="mhook.h"
+   text-time="2006-04-11T01:01:05.808125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="bde4e73caaf903cda3e79c12f7b64aa9"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:51.245625Z"/>
+<entry
+   committed-rev="9"
+   name="meta_api.h"
+   text-time="2006-04-11T01:01:05.808125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="b4690f0c01e1593433e98542a9dc4836"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:51.511250Z"/>
+<entry
+   name="msvc"
+   kind="dir"/>
+<entry
+   name="ents"
+   kind="dir"/>
+<entry
+   committed-rev="9"
+   name="mreg.cpp"
+   text-time="2006-04-11T01:01:05.823750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="c7212880724d882f92664742cd10fb6d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:56.558125Z"/>
+<entry
+   committed-rev="9"
+   name="mutil.cpp"
+   text-time="2006-04-11T01:01:05.839375Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="dd919827ac0edd5a330c9acb6b3ec687"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:56.589375Z"/>
+<entry
+   committed-rev="9"
+   name="conf_meta.cpp"
+   text-time="2006-04-11T01:01:05.870625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="23af8d728b4fdc3bba4d65e120bd5603"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:57.167500Z"/>
+<entry
+   committed-rev="9"
+   name="Config.mak"
+   text-time="2006-04-11T01:01:05.870625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="0747eab5ce0aa73f8b07e2ce2931fb2a"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:56.948750Z"/>
+<entry
+   committed-rev="12"
+   name="Makefile"
+   text-time="2006-04-11T01:01:05.886250Z"
+   committed-date="2005-04-30T01:13:24.587702Z"
+   checksum="49428f5cf712938cb183992b2b3a4ead"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:57.589375Z"/>
+<entry
+   committed-rev="9"
+   name="engine_api.cpp"
+   text-time="2006-04-11T01:01:05.901875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="753356ba6ece5cbf828e7abf003a0ecb"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:58.558125Z"/>
+<entry
+   committed-rev="9"
+   name="thread_logparse.cpp"
+   text-time="2006-04-11T01:01:05.948750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="718448dd5b7fc790643daba740204e02"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:59.245625Z"/>
+<entry
+   committed-rev="9"
+   name="linkent.cpp"
+   text-time="2006-04-11T01:01:05.964375Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="d48f3b06c64aec50a2ac14b82d28bde3"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:59.355000Z"/>
+<entry
+   committed-rev="9"
+   name="dllapi.cpp"
+   text-time="2006-04-11T01:01:05.964375Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="adfc941ede8291f7b7619a24a4b94225"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:59.776875Z"/>
+<entry
+   committed-rev="9"
+   name="mklinkgame.sh"
+   text-time="2006-04-11T01:01:05.980000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="6b23c39e96067b6b3b771b748e293643"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:59.886250Z"/>
+<entry
+   committed-rev="9"
+   name="vdate.h"
+   text-time="2006-04-11T01:01:05.980000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="dad284140d7b9a3d72ec4c80f36f10da"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:59.995625Z"/>
+<entry
+   committed-rev="9"
+   name="mhook.cpp"
+   text-time="2006-04-11T01:01:06.026875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="e0784836d612ab838237494f1eb1aafa"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:01.323750Z"/>
+<entry
+   committed-rev="9"
+   name="reg_support.h"
+   text-time="2006-04-11T01:01:06.042500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="650ddaaf2a20d9763b53297f20b881fa"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:01.542500Z"/>
+<entry
+   committed-rev="9"
+   name="support_meta.cpp"
+   text-time="2006-04-11T01:01:06.058125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="caceeeba2515916d8f4c8199c5e96cf1"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:02.073750Z"/>
+<entry
+   committed-rev="9"
+   name="metamod.cpp"
+   text-time="2006-04-11T01:01:06.089375Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="21631555ec6caf4d1e96a7b415ae61b0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:02.698750Z"/>
+<entry
+   committed-rev="9"
+   name="linkgame.cpp"
+   text-time="2006-04-11T01:01:06.105000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="c723e2822819cf1a301d0c64be1b7e78"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:04.198750Z"/>
+<entry
+   committed-rev="9"
+   name="mlist.cpp"
+   text-time="2006-04-11T01:01:06.120625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="0008807e02ba01ea63e90556d58094dd"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:04.776875Z"/>
+<entry
+   committed-rev="9"
+   name="h_export.cpp"
+   text-time="2006-04-11T01:01:06.105000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="204e8df405e2d375c72a53105184ea74"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:04.355000Z"/>
+<entry
+   name="msgs"
+   kind="dir"/>
+<entry
+   committed-rev="9"
+   name="mutil.h"
+   text-time="2006-04-11T01:01:05.651875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="8ce460b42bb88a3124c345a61598a895"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:47.776875Z"/>
+<entry
+   committed-rev="9"
+   name="mreg.h"
+   text-time="2006-04-11T01:01:05.636250Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="6d3074a5681ffe14730aff18bf84d093"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:47.620625Z"/>
+<entry
+   committed-rev="9"
+   name="info_name.h"
+   text-time="2006-04-11T01:01:05.667500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="f8312eecad4e913d728bddefca5050cd"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:47.886250Z"/>
+<entry
+   committed-rev="9"
+   name="vdate.cpp"
+   text-time="2006-04-11T01:01:05.683125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="0d7d394f626b78368667b47d5879f97e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:48.573750Z"/>
+<entry
+   committed-rev="9"
+   name="engine_api.h"
+   text-time="2006-04-11T01:01:05.683125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="bbaf4fd0cea7ce86273c0c407763cc0b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:48.464375Z"/>
+<entry
+   committed-rev="9"
+   name="studioapi.h"
+   text-time="2006-04-11T01:01:05.698750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="1372edc9e19ff280c9f9ad0f3ffac633"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:48.948750Z"/>
+<entry
+   committed-rev="9"
+   name="mqueue.h"
+   text-time="2006-04-11T01:01:05.698750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="3ca92e65933f4c42bbe8ecaa7ba3e17f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:48.839375Z"/>
+<entry
+   committed-rev="9"
+   name="Rules.depend"
+   text-time="2006-04-11T01:01:05.714375Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:48.948750Z"/>
+<entry
+   committed-rev="9"
+   name="linkent.h"
+   text-time="2006-04-11T01:01:05.745625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="8996e821ba87e44b9f4cbf864f305d53"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:49.542500Z"/>
+<entry
+   committed-rev="9"
+   name="reg_support.cpp"
+   text-time="2006-04-11T01:01:05.745625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="aac5c6485fa4ea9a5e9efcbc3777eca6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:49.855000Z"/>
+<entry
+   committed-rev="9"
+   name="osdep.cpp"
+   text-time="2006-04-11T01:01:05.761250Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="0d2326916db1e1f2d025c05d59770405"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:50.339375Z"/>
+<entry
+   committed-rev="9"
+   name="sdk_util.cpp"
+   text-time="2006-04-11T01:01:05.776875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="537f1e35bff17d2be2439eec936a2929"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:50.448750Z"/>
+<entry
+   committed-rev="9"
+   name="mplugin.h"
+   text-time="2006-04-11T01:01:05.792500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="beeb9522ae73a9ff20b7ec304b4b29be"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:50.933125Z"/>
+<entry
+   committed-rev="9"
+   name="api_info.cpp"
+   text-time="2006-04-11T01:01:05.823750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="99e2cdc48e467e1df6481f5ff7b89e3b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:51.776875Z"/>
+<entry
+   committed-rev="9"
+   name="support_meta.h"
+   text-time="2006-04-11T01:01:05.823750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="9edb41963281a156bee35c94a9b895a1"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:52.214375Z"/>
+<entry
+   committed-rev="9"
+   name="metamod.h"
+   text-time="2006-04-11T01:01:05.855000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="5f4f45cf78f10386dd8c2a15ac9410e7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:56.901875Z"/>
+<entry
+   committed-rev="9"
+   name="log_meta.h"
+   text-time="2006-04-11T01:01:05.870625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="8bf4babe0eab0d1863958c18c528b680"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:57.323750Z"/>
+<entry
+   committed-rev="9"
+   name="mlist.h"
+   text-time="2006-04-11T01:01:05.901875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="08daf61449cecd799b39f496127f2f0f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:57.808125Z"/>
+<entry
+   committed-rev="9"
+   name="h_export.h"
+   text-time="2006-04-11T01:01:05.886250Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="96857134199386cdf9f8a42c103efc7a"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:57.651875Z"/>
+<entry
+   committed-rev="9"
+   name="studioapi.cpp"
+   text-time="2006-04-11T01:01:05.948750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="c208fc2a2b17fbf8e553aaa66358b052"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:58.980000Z"/>
+<entry
+   committed-rev="9"
+   name="mqueue.cpp"
+   text-time="2006-04-11T01:01:05.948750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="1794a6e4b9ef446c881eda9043c84c94"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:58.823750Z"/>
+<entry
+   committed-rev="9"
+   name="games.h"
+   text-time="2006-04-11T01:01:05.933125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="3e6b9d14e7325f11dd8fe09f149979ab"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:58.714375Z"/>
+<entry
+   committed-rev="9"
+   name="game_support.h"
+   text-time="2006-04-11T01:01:05.980000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="34b7625f73810b61f82c5817651dc451"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:00.089375Z"/>
+<entry
+   committed-rev="9"
+   name="mplugin.cpp"
+   text-time="2006-04-11T01:01:05.995625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="639b60ef59c5663144f6ba16915631c7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:00.901875Z"/>
+<entry
+   committed-rev="9"
+   name="commands_meta.h"
+   text-time="2006-04-11T01:01:06.011250Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="a4c2c4a69cc6677b039494878697a744"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:01.058125Z"/>
+<entry
+   committed-rev="9"
+   name="tqueue.h"
+   text-time="2006-04-11T01:01:06.026875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="45c2513a8cb201e0e967998c52981c50"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:01.433125Z"/>
+<entry
+   committed-rev="9"
+   name="osdep.h"
+   text-time="2006-04-11T01:01:06.042500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="da16174adc566dfab1b085787a8351d8"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:01.901875Z"/>
+<entry
+   committed-rev="9"
+   name="sdk_util.h"
+   text-time="2006-04-11T01:01:06.073750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="b9024d3ec4e3c47214fa57d4ebffec44"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:02.230000Z"/>
+<entry
+   committed-rev="9"
+   name="linkplug.cpp"
+   text-time="2006-04-11T01:01:06.073750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="db83915ba97398dfa213640cec5f83a5"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:02.276875Z"/>
+<entry
+   committed-rev="9"
+   name="log_meta.cpp"
+   text-time="2006-04-11T01:01:06.089375Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="927cff834cbbcb188ef721ceab9db3de"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:02.870625Z"/>
+<entry
+   committed-rev="9"
+   name="api_info.h"
+   text-time="2006-04-11T01:01:06.120625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="49af985c319a75b1af006bc88ab3a7bd"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:05.417500Z"/>
+<entry
+   committed-rev="9"
+   name="vers_meta.h"
+   text-time="2006-04-11T01:01:06.151875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="13bb1f3c0a5e7fb05560b14ca0db77c4"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:05.526875Z"/>
+<entry
+   committed-rev="9"
+   name="plinfo.h"
+   text-time="2006-04-11T01:01:06.183125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="16ce30281607141df8fa743d722f3ab6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:05.636250Z"/>
+</wc-entries>

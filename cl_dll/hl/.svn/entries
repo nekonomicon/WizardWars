@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="43"
+   name=""
+   committed-date="2005-08-02T12:34:21.394796Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/cl_dll/hl"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="43"
+   name="hl_weapons.cpp"
+   text-time="2006-04-11T01:01:38.167500Z"
+   committed-date="2005-08-02T12:34:21.394796Z"
+   checksum="391f23d6499cfcd9e3d50a2448b711a7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:37.558125Z"/>
+<entry
+   committed-rev="2"
+   name="hl_events.cpp"
+   text-time="2006-04-11T01:01:38.167500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="2747d2423e5a833e3ec0ef249fb24bff"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:37.620625Z"/>
+<entry
+   committed-rev="2"
+   name="hl_baseentity.cpp"
+   text-time="2006-04-11T01:01:38.183125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="817e501e9da17a83d799f802014589ae"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:38.042500Z"/>
+<entry
+   committed-rev="2"
+   name="hl_objects.cpp"
+   text-time="2006-04-11T01:01:38.183125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="dde5d53e71b5985ba07c760a1ce2ad41"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:38.151875Z"/>
+</wc-entries>

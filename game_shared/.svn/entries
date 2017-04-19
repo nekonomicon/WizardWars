@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2005-03-14T13:32:23.046351Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/game_shared"
+   last-author="eggy"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="vgui_slider2.cpp"
+   text-time="2006-04-11T01:02:33.573750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="bd316c24612e1ff79adf5bdec6ce159b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.386250Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_scrollbar2.cpp"
+   text-time="2006-04-11T01:02:33.573750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b9fd93d54147fbab49074138cf24ae28"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.386250Z"/>
+<entry
+   committed-rev="2"
+   name="voice_banmgr.h"
+   text-time="2006-04-11T01:02:33.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8bfcb06651ecd6fa8aa616f012cea0bd"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.386250Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_defaultinputsignal.h"
+   text-time="2006-04-11T01:02:33.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="88982988492a2cf40c3be8e3bd653013"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.401875Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_helpers.h"
+   text-time="2006-04-11T01:02:33.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="aadd8ae4487062c376c53444d05e6a7e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.386250Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_slider2.h"
+   text-time="2006-04-11T01:02:33.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="14a5f461079d920aad63494c67996934"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.401875Z"/>
+<entry
+   committed-rev="2"
+   name="voice_gamemgr.cpp"
+   text-time="2006-04-11T01:02:33.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="fa54798e6006858a40f72ea6ea183c33"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.401875Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_scrollbar2.h"
+   text-time="2006-04-11T01:02:33.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="45386d9bbfa4298f5176eb416d172f06"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.401875Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_loadtga.cpp"
+   text-time="2006-04-11T01:02:33.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="7b516e13cf9aa0f3243fc08ba4dbc0bb"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.401875Z"/>
+<entry
+   committed-rev="2"
+   name="voice_status.cpp"
+   text-time="2006-04-11T01:02:33.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="bb77395812757559f47c02786201d094"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.417500Z"/>
+<entry
+   committed-rev="2"
+   name="voice_gamemgr.h"
+   text-time="2006-04-11T01:02:33.636250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c7c9f046623d85f7d1255cf6dc05bc1d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.417500Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_loadtga.h"
+   text-time="2006-04-11T01:02:33.636250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="eccdc54cb6aea82ef7c51ff7eef5c3fc"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.417500Z"/>
+<entry
+   committed-rev="2"
+   name="voice_status.h"
+   text-time="2006-04-11T01:02:33.636250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8028b59f7ea8a98d8dcfa0d409243235"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.417500Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_listbox.cpp"
+   text-time="2006-04-11T01:02:33.651875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e64a891dd4e64d3c41bf0d796455d6e2"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.495625Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_grid.cpp"
+   text-time="2006-04-11T01:02:33.651875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="f524f03564cfc318943162e35d471caf"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.651875Z"/>
+<entry
+   committed-rev="2"
+   name="bitvec.h"
+   text-time="2006-04-11T01:02:33.651875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="0782a174c1a6897e1c759c40768306e5"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.761250Z"/>
+<entry
+   committed-rev="2"
+   name="voice_vgui_tweakdlg.cpp"
+   text-time="2006-04-11T01:02:33.667500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c9e1c76d04380ae60e4ebf085c3b2970"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.933125Z"/>
+<entry
+   committed-rev="2"
+   name="voice_common.h"
+   text-time="2006-04-11T01:02:33.667500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="253f157a905e7dbaf4e7dddbc9d690dc"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:32.980000Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_listbox.h"
+   text-time="2006-04-11T01:02:33.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e190721733157f9e892951e2b4af63e2"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:33.089375Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_grid.h"
+   text-time="2006-04-11T01:02:33.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5968f86f91043da597ba674c6ee569c4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:33.183125Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_checkbutton2.cpp"
+   text-time="2006-04-11T01:02:33.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="2e881aca37ab2e7fccf9db25a889a23f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:33.292500Z"/>
+<entry
+   committed-rev="2"
+   name="voice_vgui_tweakdlg.h"
+   text-time="2006-04-11T01:02:33.698750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="16aef14ba8324dbdd2961c5486ca60f5"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:33.355000Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_checkbutton2.h"
+   text-time="2006-04-11T01:02:33.698750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="30edcafa8f41e992c41d3696e56ec49f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:33.448750Z"/>
+<entry
+   committed-rev="2"
+   name="voice_banmgr.cpp"
+   text-time="2006-04-11T01:02:33.714375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9c54bed590bb4e98bb31a2caea77f6ea"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:33.558125Z"/>
+<entry
+   committed-rev="2"
+   name="vgui_helpers.cpp"
+   text-time="2006-04-11T01:02:33.714375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="585f589286542ad8e3f235180e485e20"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:33.558125Z"/>
+</wc-entries>

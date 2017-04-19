@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="9"
+   name=""
+   committed-date="2005-04-25T06:36:41.455333Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/metamod/tools"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="9"
+   name="getents.sh"
+   text-time="2006-04-11T01:00:38.855000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="db0eb8916fdb9e738e8399cbd10f9705"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:38.808125Z"/>
+<entry
+   committed-rev="9"
+   name="stlfilter"
+   text-time="2006-04-11T01:00:38.855000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="e02abd9102a825b535aa0f6450a6b859"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:38.839375Z"/>
+</wc-entries>

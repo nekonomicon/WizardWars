@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hl", "dlls\hl.vcproj", "{2858A133-67EA-406F-A424-D28AD0258CCF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cl_dll", "cl_dll\cl_dll.vcproj", "{EBCF34AF-928B-4D47-A9ED-1CA71FE6F398}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HPB_bot_mm", "metamod\hpb_bot_plugin\HPB_bot_mm.vcproj", "{91789062-1BE4-4369-B7F0-D292D4CC10E1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Profile = Profile
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2858A133-67EA-406F-A424-D28AD0258CCF}.Debug.ActiveCfg = Debug|Win32
+		{2858A133-67EA-406F-A424-D28AD0258CCF}.Debug.Build.0 = Debug|Win32
+		{2858A133-67EA-406F-A424-D28AD0258CCF}.Profile.ActiveCfg = Profile|Win32
+		{2858A133-67EA-406F-A424-D28AD0258CCF}.Profile.Build.0 = Profile|Win32
+		{2858A133-67EA-406F-A424-D28AD0258CCF}.Release.ActiveCfg = Release|Win32
+		{2858A133-67EA-406F-A424-D28AD0258CCF}.Release.Build.0 = Release|Win32
+		{EBCF34AF-928B-4D47-A9ED-1CA71FE6F398}.Debug.ActiveCfg = Debug|Win32
+		{EBCF34AF-928B-4D47-A9ED-1CA71FE6F398}.Debug.Build.0 = Debug|Win32
+		{EBCF34AF-928B-4D47-A9ED-1CA71FE6F398}.Profile.ActiveCfg = Release|Win32
+		{EBCF34AF-928B-4D47-A9ED-1CA71FE6F398}.Profile.Build.0 = Release|Win32
+		{EBCF34AF-928B-4D47-A9ED-1CA71FE6F398}.Release.ActiveCfg = Release|Win32
+		{EBCF34AF-928B-4D47-A9ED-1CA71FE6F398}.Release.Build.0 = Release|Win32
+		{91789062-1BE4-4369-B7F0-D292D4CC10E1}.Debug.ActiveCfg = Debug|Win32
+		{91789062-1BE4-4369-B7F0-D292D4CC10E1}.Debug.Build.0 = Debug|Win32
+		{91789062-1BE4-4369-B7F0-D292D4CC10E1}.Profile.ActiveCfg = Debug|Win32
+		{91789062-1BE4-4369-B7F0-D292D4CC10E1}.Profile.Build.0 = Debug|Win32
+		{91789062-1BE4-4369-B7F0-D292D4CC10E1}.Release.ActiveCfg = Release|Win32
+		{91789062-1BE4-4369-B7F0-D292D4CC10E1}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

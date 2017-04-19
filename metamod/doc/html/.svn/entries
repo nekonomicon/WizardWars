@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="9"
+   name=""
+   committed-date="2005-04-25T06:36:41.455333Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/metamod/doc/html"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="9"
+   name="dllapi_notes.html"
+   text-time="2006-04-11T01:00:46.323750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="184c16c78271e2ef462669d45c6443be"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:43.792500Z"/>
+<entry
+   committed-rev="9"
+   name="engine_notes.html"
+   text-time="2006-04-11T01:00:46.308125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="15996851031ca64a101dd60bba1fa607"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:43.370625Z"/>
+<entry
+   committed-rev="9"
+   name="maillist.html"
+   text-time="2006-04-11T01:00:46.323750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="f7237844410a1de873fc554ee6c76bbc"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:43.839375Z"/>
+<entry
+   committed-rev="9"
+   name="a.html"
+   text-time="2006-04-11T01:00:46.355000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="3896a6a10babe640976aee60d30d187c"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:44.214375Z"/>
+<entry
+   committed-rev="9"
+   name="links.html"
+   text-time="2006-04-11T01:00:46.339375Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="8b5fed69ff8f0c7fbee641e581b42043"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:44.073750Z"/>
+<entry
+   committed-rev="9"
+   name="metamod.html"
+   text-time="2006-04-11T01:00:46.386250Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="69fba5d37de12706ae2aefc007bdcf2e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:44.855000Z"/>
+<entry
+   committed-rev="9"
+   name="wdmisc.html"
+   text-time="2006-04-11T01:00:46.355000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="f01ca12c990fc4a3c9bb9841d8fdba9a"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:44.323750Z"/>
+<entry
+   committed-rev="9"
+   name="release_notes.html"
+   text-time="2006-04-11T01:00:46.401875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="d626282ff1cbc960e9e686a6ee2935c2"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:45.026875Z"/>
+<entry
+   committed-rev="9"
+   name="newapi_notes.html"
+   text-time="2006-04-11T01:00:46.401875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="357e0564833778131b7c291a19fe537f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:45.058125Z"/>
+<entry
+   committed-rev="9"
+   name="trace.html"
+   text-time="2006-04-11T01:00:46.417500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="349862dc0d515ddc691e890204737332"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:45.167500Z"/>
+<entry
+   committed-rev="9"
+   name="coding.html"
+   text-time="2006-04-11T01:00:46.417500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="b37ecf72c6edc14ba0386ca020d34e6e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:45.589375Z"/>
+<entry
+   committed-rev="9"
+   name="gamesupport.html"
+   text-time="2006-04-11T01:00:46.417500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="086174b7dc1682b1e086d0b57bf4ab0d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:45.698750Z"/>
+<entry
+   committed-rev="9"
+   name="Index.html"
+   text-time="2006-04-11T01:00:46.433125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="2dd2a5455daa580d4adc550cc822139b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:46.026875Z"/>
+<entry
+   committed-rev="9"
+   name="faq.html"
+   text-time="2006-04-11T01:00:46.433125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="9174254f389136db359bea7d2e41c3e6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:45.964375Z"/>
+<entry
+   committed-rev="9"
+   name="supportedmods.html"
+   text-time="2006-04-11T01:00:46.448750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="89085acf6951d0be36b8d661eb4c4f07"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:46.183125Z"/>
+<entry
+   committed-rev="9"
+   name="about.html"
+   text-time="2006-04-11T01:00:46.448750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="83950bf44c56dd8e114e7f65517c8273"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:46.292500Z"/>
+</wc-entries>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="79"
+   name=""
+   committed-date="2006-02-14T14:09:39.207532Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/cl_dll/ww"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="ww_particlemanger.cpp"
+   text-time="2006-04-11T01:01:35.730000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b67d1775cd77526efca13492d56956ca"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:35.120625Z"/>
+<entry
+   committed-rev="2"
+   name="ww_weather.cpp"
+   text-time="2006-04-11T01:01:35.745625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="edb7f7da3b3054fd98d97313dcb001d7"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:35.386250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_emitterloader.cpp"
+   text-time="2006-04-11T01:01:35.761250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="846830e6341de9aecbec1bc4ad3d9676"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:35.651875Z"/>
+<entry
+   committed-rev="79"
+   name="dragonstatus.cpp"
+   text-time="2006-04-11T01:01:35.651875Z"
+   committed-date="2006-02-14T14:09:39.207532Z"
+   checksum="f1dbfbd191f045d00eb4bb2a93306159"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:31.823750Z"/>
+<entry
+   committed-rev="2"
+   name="ww_particlemanger.h"
+   text-time="2006-04-11T01:01:35.667500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5ea1f0046dcc65efc9bd8bf2f0b6df58"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:31.870625Z"/>
+<entry
+   committed-rev="2"
+   name="ww_particle.cpp"
+   text-time="2006-04-11T01:01:35.667500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="232bebc1042b28e7263308f1d47c303d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:32.183125Z"/>
+<entry
+   committed-rev="2"
+   name="ww_emittermanger.cpp"
+   text-time="2006-04-11T01:01:35.667500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="7fc198b18a1306107fa8322ba0aa2c86"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:31.980000Z"/>
+<entry
+   committed-rev="2"
+   name="ww_weather.h"
+   text-time="2006-04-11T01:01:35.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="33a98cab7f77f264b95cad87e3b69225"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:32.245625Z"/>
+<entry
+   name="events"
+   kind="dir"/>
+<entry
+   committed-rev="2"
+   name="ww_particle.h"
+   text-time="2006-04-11T01:01:35.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="431141b35b8235486a0921c66d9ec766"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:34.776875Z"/>
+<entry
+   committed-rev="2"
+   name="ww_emittermanger.h"
+   text-time="2006-04-11T01:01:35.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8e703aabf5a28b44e83446fa04db1286"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:34.776875Z"/>
+<entry
+   committed-rev="2"
+   name="ww_emitter.cpp"
+   text-time="2006-04-11T01:01:35.714375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="718ad55a0bc88f6f74dfa11243935ffe"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:34.855000Z"/>
+<entry
+   committed-rev="2"
+   name="ww_customhud.cpp"
+   text-time="2006-04-11T01:01:35.714375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="f546de75687a1b0979557c8abbe59d62"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:35.011250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_emitter.h"
+   text-time="2006-04-11T01:01:35.730000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="3d0d0cfdf49f4b949f0ab47baef3f57d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:35.230000Z"/>
+<entry
+   committed-rev="2"
+   name="ww_customhud.h"
+   text-time="2006-04-11T01:01:35.745625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d4b442a63afc8f90db7a3e6041c28c3a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:35.448750Z"/>
+</wc-entries>

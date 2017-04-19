@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="79"
+   name=""
+   committed-date="2006-02-14T14:09:39.207532Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/ww_shared"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="43"
+   name="ww_weapons.h"
+   text-time="2006-04-11T01:00:38.198750Z"
+   committed-date="2005-08-02T12:34:21.394796Z"
+   checksum="b2456c394803ace8d3f74015081ddc5f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:31.901875Z"/>
+<entry
+   committed-rev="2"
+   name="ww_icepoke.h"
+   text-time="2006-04-11T01:00:38.198750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="81c00027a9fd0c4b93573d922d67aeca"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:32.136250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_forceblast.cpp"
+   text-time="2006-04-11T01:00:38.214375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4582f5d36c57a8741a58689537256ed4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:32.292500Z"/>
+<entry
+   committed-rev="2"
+   name="ww_pebbleblast.h"
+   text-time="2006-04-11T01:00:38.214375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="0a28fa73cf66112a2f826c163ea29e63"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:32.292500Z"/>
+<entry
+   committed-rev="69"
+   name="ww_seal.cpp"
+   text-time="2006-04-11T01:00:38.230000Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="08362541dc0cbcd4224eb07afaec24a2"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:32.573750Z"/>
+<entry
+   committed-rev="2"
+   name="ww_fireball.h"
+   text-time="2006-04-11T01:00:38.230000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b88d6be8513e3aaf0d698b0c9937e598"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:32.636250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_thornblast.h"
+   text-time="2006-04-11T01:00:38.245625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="44590d2c346181568eb420b7c96f2077"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:32.636250Z"/>
+<entry
+   committed-rev="15"
+   name="ww_skull.cpp"
+   text-time="2006-04-11T01:00:38.261250Z"
+   committed-date="2005-04-30T04:04:34.788845Z"
+   checksum="1f6e7e4d56ed56272189e981ede778ef"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:32.839375Z"/>
+<entry
+   committed-rev="2"
+   name="ww_flamelick.h"
+   text-time="2006-04-11T01:00:38.276875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="f3b7dd2623b8bf44e960d81302afdd0d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:32.839375Z"/>
+<entry
+   committed-rev="55"
+   name="ww_whiteray.cpp"
+   text-time="2006-04-11T01:00:38.276875Z"
+   committed-date="2005-12-11T10:51:57.738583Z"
+   checksum="a4e45b9ae259139d02b77de2dedb3810"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.011250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_wyvern.h"
+   text-time="2006-04-11T01:00:38.276875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="a3651547396578c08e5653dc9733e28b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.073750Z"/>
+<entry
+   committed-rev="2"
+   name="ww_freezeray.h"
+   text-time="2006-04-11T01:00:38.292500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4b30c1d49118c5cc19f076697c5976b5"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.120625Z"/>
+<entry
+   committed-rev="77"
+   name="ww_staff.cpp"
+   text-time="2006-04-11T01:00:38.308125Z"
+   committed-date="2005-12-27T08:10:48.508722Z"
+   checksum="e19983a57dbd9fc82063aa3c838c6f22"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.386250Z"/>
+<entry
+   committed-rev="5"
+   name="ww_beanstalk.cpp"
+   text-time="2006-04-11T01:00:38.323750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="1ca4ad1f73a699b1e20e0396033ba0d7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.839375Z"/>
+<entry
+   committed-rev="2"
+   name="ww_lightningbolt.cpp"
+   text-time="2006-04-11T01:00:38.323750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="2d044e4a3199d35cb3bc9c3a41153096"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.651875Z"/>
+<entry
+   committed-rev="2"
+   name="ww_build.h"
+   text-time="2006-04-11T01:00:38.308125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="26e8783c3b5eda82cadd931ac1015f1d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.433125Z"/>
+<entry
+   committed-rev="49"
+   name="ww_combospell.h"
+   text-time="2006-04-11T01:00:38.308125Z"
+   committed-date="2005-10-24T21:41:54.594056Z"
+   checksum="8bb3acbdc21d8999decdb978379f8e31"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.433125Z"/>
+<entry
+   committed-rev="2"
+   name="ww_dragonbreath.h"
+   text-time="2006-04-11T01:00:38.339375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e689deed4239a6cb98f1b13f7163ba11"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.917500Z"/>
+<entry
+   committed-rev="2"
+   name="ww_doublemissile.h"
+   text-time="2006-04-11T01:00:38.339375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="660e134f018aa96971eb9e1c1e9ad2ba"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.870625Z"/>
+<entry
+   committed-rev="21"
+   name="ww_spotbolt.cpp"
+   text-time="2006-04-11T01:00:38.355000Z"
+   committed-date="2005-05-15T22:53:08.426070Z"
+   checksum="e9b3d669ea878b5daa5417ecf4e4732b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.136250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_deathray.h"
+   text-time="2006-04-11T01:00:38.355000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="7b8c7c36a3a64c41d97da02f5a805a62"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:33.980000Z"/>
+<entry
+   committed-rev="65"
+   name="ww_shield.cpp"
+   text-time="2006-04-11T01:00:38.370625Z"
+   committed-date="2005-12-12T08:18:12.488183Z"
+   checksum="234664b2caffa885a2b2ae743fe972a7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.292500Z"/>
+<entry
+   committed-rev="2"
+   name="ww_updraft.h"
+   text-time="2006-04-11T01:00:38.370625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="807a2eda21409b0998157127f71fe773"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.401875Z"/>
+<entry
+   committed-rev="2"
+   name="ww_missile.h"
+   text-time="2006-04-11T01:00:38.370625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="fe125249301f88127024195be95af0aa"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.339375Z"/>
+<entry
+   committed-rev="2"
+   name="ww_pebbleblast.cpp"
+   text-time="2006-04-11T01:00:38.386250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="877d7f871ed447440b065a35b291cee1"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.620625Z"/>
+<entry
+   committed-rev="5"
+   name="ww_icepoke.cpp"
+   text-time="2006-04-11T01:00:38.386250Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="37cf869cca005060b3af95cdd6adb9e7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.589375Z"/>
+<entry
+   committed-rev="2"
+   name="ww_thornblast.cpp"
+   text-time="2006-04-11T01:00:38.401875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5488e0957973e6fc16600e1a21204591"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.886250Z"/>
+<entry
+   committed-rev="5"
+   name="ww_fireball.cpp"
+   text-time="2006-04-11T01:00:38.401875Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="b78f60ce0811849c8ec56bc7c9c63289"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.792500Z"/>
+<entry
+   committed-rev="2"
+   name="ww_bearbite.h"
+   text-time="2006-04-11T01:00:38.433125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8fb03ea7fd8a7bd870ac8ed7233f1b51"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.995625Z"/>
+<entry
+   committed-rev="2"
+   name="ww_levitate.h"
+   text-time="2006-04-11T01:00:38.401875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="60e2371a2b02edc3306137168138fcb2"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.980000Z"/>
+<entry
+   committed-rev="2"
+   name="ww_rollingstone.h"
+   text-time="2006-04-11T01:00:38.433125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="165e518d97ffa1db922fe50193c7a0ad"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:34.995625Z"/>
+<entry
+   committed-rev="2"
+   name="ww_bird.h"
+   text-time="2006-04-11T01:00:38.448750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d8459bfa9adf436161773243a40dbe19"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:35.058125Z"/>
+<entry
+   committed-rev="2"
+   name="ww_defs.h"
+   text-time="2006-04-11T01:00:38.448750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="459d11f057899704c70135b10ae5230f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:35.167500Z"/>
+<entry
+   committed-rev="41"
+   name="ww_flamelick.cpp"
+   text-time="2006-04-11T01:00:38.448750Z"
+   committed-date="2005-05-31T05:10:36.133233Z"
+   checksum="f44e706b6e7133c5f7aaad4c6bde02e7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:35.261250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_forceblast.h"
+   text-time="2006-04-11T01:00:38.464375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="081fb4e42accdd9d9d015c06abf16379"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:35.323750Z"/>
+<entry
+   committed-rev="2"
+   name="ww_seal.h"
+   text-time="2006-04-11T01:00:38.464375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="60e82e20ad297fdb03547b2e6a40e501"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:35.370625Z"/>
+<entry
+   committed-rev="15"
+   name="ww_wyvern.cpp"
+   text-time="2006-04-11T01:00:38.464375Z"
+   committed-date="2005-04-30T04:04:34.788845Z"
+   checksum="eb6e02ce178c34e371c178b77f97fb9f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:35.542500Z"/>
+<entry
+   committed-rev="55"
+   name="ww_freezeray.cpp"
+   text-time="2006-04-11T01:00:38.495625Z"
+   committed-date="2005-12-11T10:51:57.738583Z"
+   checksum="2d01565a783c03af66a4a3fe4a3666e8"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:35.698750Z"/>
+<entry
+   committed-rev="79"
+   name="ww_combospell.cpp"
+   text-time="2006-04-11T01:00:38.511250Z"
+   committed-date="2006-02-14T14:09:39.207532Z"
+   checksum="50ff5e0cae09a9ded7a168e95206c1b8"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:36.698750Z"/>
+<entry
+   committed-rev="2"
+   name="ww_skull.h"
+   text-time="2006-04-11T01:00:38.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ad0613b11f55f6d3bc7fe39e4e98f4e4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:36.761250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_doublemissile.cpp"
+   text-time="2006-04-11T01:00:38.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="de1d004d4b107a1a2240e8028a3e45a8"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:36.870625Z"/>
+<entry
+   committed-rev="2"
+   name="ww_dragonbreath.cpp"
+   text-time="2006-04-11T01:00:38.526875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="912ff07a5eca1bcf6ce5ee2d57e458fa"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:36.964375Z"/>
+<entry
+   committed-rev="55"
+   name="ww_deathray.cpp"
+   text-time="2006-04-11T01:00:38.526875Z"
+   committed-date="2005-12-11T10:51:57.738583Z"
+   checksum="b881eff7927cd685e5a5061461719d60"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.120625Z"/>
+<entry
+   committed-rev="2"
+   name="ww_whiteray.h"
+   text-time="2006-04-11T01:00:38.558125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="357c14ac4da2850513e032a829427a9c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.183125Z"/>
+<entry
+   committed-rev="5"
+   name="ww_missile.cpp"
+   text-time="2006-04-11T01:00:38.573750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="5e03ad7bdee04e49b1358b3422774418"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.292500Z"/>
+<entry
+   committed-rev="2"
+   name="ww_updraft.cpp"
+   text-time="2006-04-11T01:00:38.573750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="fd8336e29daff3ad0e3f9794255178dc"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.448750Z"/>
+<entry
+   committed-rev="43"
+   name="ww_staff.h"
+   text-time="2006-04-11T01:00:38.589375Z"
+   committed-date="2005-08-02T12:34:21.394796Z"
+   checksum="6d35b9c74ee756fe4b4318a73c259dfa"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.495625Z"/>
+<entry
+   committed-rev="2"
+   name="ww_lightningbolt.h"
+   text-time="2006-04-11T01:00:38.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="a1f0f7cc20730b4ea38bf116a91d4027"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.558125Z"/>
+<entry
+   committed-rev="2"
+   name="ww_beanstalk.h"
+   text-time="2006-04-11T01:00:38.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9123d2443c9e40c6de93f3834a44c914"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.636250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_spotbolt.h"
+   text-time="2006-04-11T01:00:38.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="32ad96243fe0cb5da97d729a41da3815"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.636250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_levitate.cpp"
+   text-time="2006-04-11T01:00:38.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="21fec1f26be495fa7f2239b35dad12e4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.714375Z"/>
+<entry
+   committed-rev="2"
+   name="ww_bearbite.cpp"
+   text-time="2006-04-11T01:00:38.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="bf3c262f773108468abca56740f44418"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.823750Z"/>
+<entry
+   committed-rev="2"
+   name="ww_shield.h"
+   text-time="2006-04-11T01:00:38.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="efaebb166f92cf78bb053cdde900fd0d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:00:37.870625Z"/>
+<entry
+   committed-rev="5"
+   name="ww_rollingstone.cpp"
+   text-time="2006-04-11T01:00:38.620625Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="465b63caaa4ebeb94ceb4ada488ff0e7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:38.026875Z"/>
+<entry
+   committed-rev="5"
+   name="ww_bird.cpp"
+   text-time="2006-04-11T01:00:38.667500Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="28aac1343f434f38cc4b9548749c035a"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:38.198750Z"/>
+</wc-entries>

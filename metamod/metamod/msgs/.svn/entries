@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="9"
+   name=""
+   committed-date="2005-04-25T06:36:41.455333Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/metamod/metamod/msgs"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="9"
+   name="log"
+   text-time="2006-04-11T01:01:05.214375Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="2c1c54a42d8d73947250d9059a65eff0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:04.839375Z"/>
+<entry
+   committed-rev="9"
+   name="debug"
+   text-time="2006-04-11T01:01:05.214375Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="04f68e44055ed5128b5ae4054133d969"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:04.995625Z"/>
+<entry
+   committed-rev="9"
+   name="error"
+   text-time="2006-04-11T01:01:05.230000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="120cd8af8dd58ff00887b8c4e75edee8"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:05.214375Z"/>
+</wc-entries>

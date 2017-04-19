@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="71"
+   name=""
+   committed-date="2005-12-13T06:47:15.360604Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/cl_dll/ww/events"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="ww_natureevents.cpp"
+   text-time="2006-04-11T01:01:34.651875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="f681d81b9ed442d55c6f5d59167bd817"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:32.292500Z"/>
+<entry
+   committed-rev="26"
+   name="ww_plantevents.cpp"
+   text-time="2006-04-11T01:01:34.651875Z"
+   committed-date="2005-05-23T02:03:49.500127Z"
+   checksum="7002acd76a671d895820ca6d641a44c9"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:32.401875Z"/>
+<entry
+   committed-rev="71"
+   name="ww_events.cpp"
+   text-time="2006-04-11T01:01:34.667500Z"
+   committed-date="2005-12-13T06:47:15.360604Z"
+   checksum="a7ce99478e5e789e47c8fadef1248f9d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:32.667500Z"/>
+<entry
+   committed-rev="2"
+   name="ww_lifeevents.cpp"
+   text-time="2006-04-11T01:01:34.667500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="01674607c345c11b96188d331b5e9d3a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:32.776875Z"/>
+<entry
+   committed-rev="2"
+   name="ww_iceevents.cpp"
+   text-time="2006-04-11T01:01:34.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="1ced1d3921d3766baba1a9a27c81b06c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:32.933125Z"/>
+<entry
+   committed-rev="2"
+   name="ww_windevents.cpp"
+   text-time="2006-04-11T01:01:34.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ac2cdd1c67244c6ed972a06e1f9a7d56"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:33.120625Z"/>
+<entry
+   committed-rev="4"
+   name="ww_earthevents.cpp"
+   text-time="2006-04-11T01:01:34.683125Z"
+   committed-date="2005-04-04T12:03:59.561682Z"
+   checksum="9a50fe2783cf75982c10cf757568b9ca"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:33.261250Z"/>
+<entry
+   committed-rev="2"
+   name="ww_lightningevents.cpp"
+   text-time="2006-04-11T01:01:34.698750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d2c5aac44b1fcd1a626d50a3b5d816c7"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:33.417500Z"/>
+<entry
+   committed-rev="2"
+   name="ww_satchelevents.cpp"
+   text-time="2006-04-11T01:01:34.714375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4dc044aa06745c7e695908295967731b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:33.573750Z"/>
+<entry
+   committed-rev="2"
+   name="ww_sealevents.cpp"
+   text-time="2006-04-11T01:01:34.730000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="3ea9ab1c8ac5d110de3796b73adf9f6f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:33.792500Z"/>
+<entry
+   committed-rev="2"
+   name="ww_deathevents.cpp"
+   text-time="2006-04-11T01:01:34.730000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="63cb27a2f28d1a7e0b12d1f2d3ff5db4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:33.886250Z"/>
+<entry
+   committed-rev="15"
+   name="ww_fireevents.cpp"
+   text-time="2006-04-11T01:01:34.745625Z"
+   committed-date="2005-04-30T04:04:34.788845Z"
+   checksum="ceaf8e9d0eb093891a39de3fc1a9ea30"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:34.151875Z"/>
+<entry
+   committed-rev="2"
+   name="ww_weaponevents.cpp"
+   text-time="2006-04-11T01:01:34.745625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="abe0759893a671b1c8985ef6257cb169"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:34.370625Z"/>
+<entry
+   committed-rev="62"
+   name="ww_dragonevents.cpp"
+   text-time="2006-04-11T01:01:34.745625Z"
+   committed-date="2005-12-12T02:10:03.870217Z"
+   checksum="9450cd442bfc0bac63d66ce4971a8b9b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:34.651875Z"/>
+</wc-entries>

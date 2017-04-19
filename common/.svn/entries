@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2005-03-14T13:32:23.046351Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/common"
+   last-author="eggy"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="nowin.h"
+   text-time="2006-04-11T01:01:20.761250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="62f0d71507c823c45e41b2726adf1534"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:16.964375Z"/>
+<entry
+   committed-rev="2"
+   name="input.cpp"
+   text-time="2006-04-11T01:01:20.761250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:16.980000Z"/>
+<entry
+   committed-rev="2"
+   name="cl_entity.h"
+   text-time="2006-04-11T01:01:20.776875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d2cff92ad174bb428be6ae30427f1f27"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:16.980000Z"/>
+<entry
+   committed-rev="2"
+   name="pmtrace.h"
+   text-time="2006-04-11T01:01:20.776875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="301a4a702ee4fb015dd0e87383cd19ff"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:17.073750Z"/>
+<entry
+   committed-rev="2"
+   name="event_args.h"
+   text-time="2006-04-11T01:01:20.776875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d0c08a02a6dba2aa707e6f6c2f01ed51"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:17.136250Z"/>
+<entry
+   committed-rev="2"
+   name="com_model.h"
+   text-time="2006-04-11T01:01:20.792500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="db186201aeb6a689fd2f4b819f608a15"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:17.339375Z"/>
+<entry
+   committed-rev="2"
+   name="triangleapi.h"
+   text-time="2006-04-11T01:01:20.808125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="74d16f8a2fdb0d57a64f2638a29b9812"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:17.448750Z"/>
+<entry
+   committed-rev="2"
+   name="interface.h"
+   text-time="2006-04-11T01:01:20.823750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="70cd50806ee9a3da8ae15928076287c6"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:17.558125Z"/>
+<entry
+   committed-rev="2"
+   name="entity_types.h"
+   text-time="2006-04-11T01:01:20.823750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="af975439ca6cde618dac2d275cd08a4c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:17.605000Z"/>
+<entry
+   committed-rev="2"
+   name="usercmd.h"
+   text-time="2006-04-11T01:01:20.839375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b278adf4e11d2993264dc58178b86695"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:17.714375Z"/>
+<entry
+   committed-rev="2"
+   name="r_efx.h"
+   text-time="2006-04-11T01:01:20.839375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="7fdbde263b809974b573c2a04d2a8526"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:17.933125Z"/>
+<entry
+   committed-rev="2"
+   name="r_studioint.h"
+   text-time="2006-04-11T01:01:20.839375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d5f7e7d4aa84c0dcf79f22e4f9ece549"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.089375Z"/>
+<entry
+   committed-rev="2"
+   name="weaponinfo.h"
+   text-time="2006-04-11T01:01:20.855000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="6fdd7c903315bf26b19d3b0b3f7cc2b1"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.136250Z"/>
+<entry
+   committed-rev="2"
+   name="crc.h"
+   text-time="2006-04-11T01:01:20.855000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8ff810b9b7e4c384f8a1d25f3d3bf3cb"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.245625Z"/>
+<entry
+   committed-rev="2"
+   name="cvardef.h"
+   text-time="2006-04-11T01:01:20.870625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="974bb19dad5867b219ab99cd5a6dd117"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.308125Z"/>
+<entry
+   committed-rev="2"
+   name="demo_api.h"
+   text-time="2006-04-11T01:01:20.886250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="22c5cd50b4a305b77bc654cfeb787c53"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.511250Z"/>
+<entry
+   committed-rev="2"
+   name="hltv.h"
+   text-time="2006-04-11T01:01:20.870625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="3fc9b10ffa7acfa8fe47a5c6422b3b8f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.464375Z"/>
+<entry
+   committed-rev="2"
+   name="netadr.h"
+   text-time="2006-04-11T01:01:20.870625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="39d0a439f03f27361bbace07fa3a5d5a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.355000Z"/>
+<entry
+   committed-rev="2"
+   name="ref_params.h"
+   text-time="2006-04-11T01:01:20.901875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="03a968a177b453d9ad520b41b5dcf841"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.730000Z"/>
+<entry
+   committed-rev="2"
+   name="engine_launcher_api.h"
+   text-time="2006-04-11T01:01:20.901875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ffac29d1678c81165056b42f6494e9c6"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.667500Z"/>
+<entry
+   committed-rev="2"
+   name="director_cmds.h"
+   text-time="2006-04-11T01:01:20.901875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="6527af05f54a6bb1d961c592821a86fa"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.776875Z"/>
+<entry
+   committed-rev="2"
+   name="particledef.h"
+   text-time="2006-04-11T01:01:20.917500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="645c614ad97f2cd042d4277d10cb17ea"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.886250Z"/>
+<entry
+   committed-rev="2"
+   name="interface.cpp"
+   text-time="2006-04-11T01:01:20.917500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="2bfd24019b6f1b2b1cd06b255af588bd"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:18.995625Z"/>
+<entry
+   committed-rev="2"
+   name="event_flags.h"
+   text-time="2006-04-11T01:01:20.933125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="cf22449d97f8304f5e1ccbaf1e9a3816"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.042500Z"/>
+<entry
+   committed-rev="2"
+   name="screenfade.h"
+   text-time="2006-04-11T01:01:20.933125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="371cd2c5c111549ed88c7602f7644538"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.105000Z"/>
+<entry
+   committed-rev="2"
+   name="studio_event.h"
+   text-time="2006-04-11T01:01:20.948750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="01e4bfd3304456a0e8f7fdabf641c744"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.151875Z"/>
+<entry
+   committed-rev="2"
+   name="con_nprint.h"
+   text-time="2006-04-11T01:01:20.948750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="eb3cf4b8cf2cbbc20b1618db6e395e71"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.198750Z"/>
+<entry
+   committed-rev="2"
+   name="event_api.h"
+   text-time="2006-04-11T01:01:20.964375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="eecc9ed3043fa038544c7e2be6950bec"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.370625Z"/>
+<entry
+   committed-rev="2"
+   name="ivoicetweak.h"
+   text-time="2006-04-11T01:01:20.964375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e20c84a9f39b1b9ee97c2e1810423043"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.261250Z"/>
+<entry
+   committed-rev="2"
+   name="dll_state.h"
+   text-time="2006-04-11T01:01:20.980000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="0743f9ec752c4e7839db9758c35277db"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.464375Z"/>
+<entry
+   committed-rev="2"
+   name="dlight.h"
+   text-time="2006-04-11T01:01:20.980000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8d17092fbb192642d87a6cf506c68033"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.417500Z"/>
+<entry
+   committed-rev="2"
+   name="entity_state.h"
+   text-time="2006-04-11T01:01:20.980000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4f882c27e8050f9b25219d1fd6c7ef08"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.573750Z"/>
+<entry
+   committed-rev="2"
+   name="net_api.h"
+   text-time="2006-04-11T01:01:20.995625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5555cb81019f635a0c2fc8dd6c28022c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.730000Z"/>
+<entry
+   committed-rev="2"
+   name="mathlib.h"
+   text-time="2006-04-11T01:01:20.995625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b778fddb08d9d21568206970d8585f06"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.839375Z"/>
+<entry
+   committed-rev="2"
+   name="exefuncs.h"
+   text-time="2006-04-11T01:01:20.995625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="22c2ec07a45c75939da42f48e7a1547a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.901875Z"/>
+<entry
+   committed-rev="2"
+   name="beamdef.h"
+   text-time="2006-04-11T01:01:21.011250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="289ebce91ca48553947f2d80888d1ed8"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:19.995625Z"/>
+<entry
+   committed-rev="2"
+   name="in_buttons.h"
+   text-time="2006-04-11T01:01:21.026875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="78a3ab01bf528cfdf45ab62ee02e2682"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:20.058125Z"/>
+<entry
+   committed-rev="2"
+   name="const.h"
+   text-time="2006-04-11T01:01:21.026875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="aafffd4b0007f70771d649a25faf0830"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:20.698750Z"/>
+<entry
+   committed-rev="2"
+   name="qfont.h"
+   text-time="2006-04-11T01:01:21.042500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9071aa7cbdc55516af7b3d260dd96a1a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:20.745625Z"/>
+</wc-entries>

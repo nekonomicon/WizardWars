@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="11"
+   name=""
+   committed-date="2005-04-26T21:02:55.685448Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/metamod/metamod/msvc"
+   last-author="eggy"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="9"
+   name="metamod.dsw"
+   text-time="2006-04-11T01:00:51.995625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="ddee3a97a17d9e16a03ced71b76c11c5"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:51.855000Z"/>
+<entry
+   committed-rev="9"
+   name="metamod.def"
+   text-time="2006-04-11T01:00:52.026875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="2cb2909b862db928eececb74cc0cc3d0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:51.886250Z"/>
+<entry
+   committed-rev="9"
+   name="metamod.dsp"
+   text-time="2006-04-11T01:00:52.042500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="c222cf9a19305637bd0e7b3557785164"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:51.995625Z"/>
+</wc-entries>

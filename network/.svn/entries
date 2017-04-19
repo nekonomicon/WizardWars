@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2005-03-14T13:32:23.046351Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/network"
+   last-author="eggy"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="Delta.txt"
+   text-time="2006-04-11T01:01:21.073750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="15fe2fbdaa2eef32a7507335d145a27a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:21.073750Z"/>
+<entry
+   committed-rev="2"
+   name="delta.lst"
+   text-time="2006-04-11T01:01:21.089375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e2bb42560f84420d5e5cd0cf01b73bde"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:21.073750Z"/>
+</wc-entries>

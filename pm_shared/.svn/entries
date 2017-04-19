@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="52"
+   name=""
+   committed-date="2005-12-11T07:57:47.899947Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/pm_shared"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="pm_debug.c"
+   text-time="2006-04-11T01:02:48.214375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4f23c16164aff624df2281d66f3f953f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:45.698750Z"/>
+<entry
+   committed-rev="2"
+   name="pm_defs.h"
+   text-time="2006-04-11T01:02:48.214375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d4462d31e6ed65b4a5ba88f3635dd913"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:45.917500Z"/>
+<entry
+   committed-rev="2"
+   name="pm_materials.h"
+   text-time="2006-04-11T01:02:48.230000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="80a22636c897b63a464ee653d21ed829"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:45.964375Z"/>
+<entry
+   committed-rev="52"
+   name="pm_shared.c"
+   text-time="2006-04-11T01:02:48.245625Z"
+   committed-date="2005-12-11T07:57:47.899947Z"
+   checksum="f1395eba4327526b63b9189ec2e08f59"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:47.776875Z"/>
+<entry
+   committed-rev="2"
+   name="pm_movevars.h"
+   text-time="2006-04-11T01:02:48.245625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="dfeb7876cfdc76f889f02a33226e4ec5"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:47.823750Z"/>
+<entry
+   committed-rev="2"
+   name="pm_math.c"
+   text-time="2006-04-11T01:02:48.245625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9937b30d429eb0b9d68fe4f1c5b695f9"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:48.042500Z"/>
+<entry
+   committed-rev="2"
+   name="pm_debug.h"
+   text-time="2006-04-11T01:02:48.261250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="0efaa9802e2c8569dd358ddd39adca05"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:48.105000Z"/>
+<entry
+   committed-rev="2"
+   name="pm_shared.h"
+   text-time="2006-04-11T01:02:48.261250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="a96408441897045e2435b68f08729caa"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:48.151875Z"/>
+<entry
+   committed-rev="2"
+   name="pm_info.h"
+   text-time="2006-04-11T01:02:48.261250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e74ced330d0945ca4549558cf5df88fd"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:48.198750Z"/>
+</wc-entries>

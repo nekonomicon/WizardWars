@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="81"
+   name=""
+   committed-date="2006-02-15T12:23:12.127736Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/metamod/hpb_bot_plugin"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="81"
+   name="bot_start.cpp"
+   text-time="2006-04-11T01:01:16.714375Z"
+   committed-date="2006-02-15T12:23:12.127736Z"
+   checksum="fd3c87c65ff78c23a0593c46e8c99c32"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:06.245625Z"/>
+<entry
+   committed-rev="78"
+   name="bot_navigate.cpp"
+   text-time="2006-04-11T01:01:16.730000Z"
+   committed-date="2006-01-03T13:22:21.943647Z"
+   checksum="ac7bfa1cddc28e5c285b31527873618e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:07.011250Z"/>
+<entry
+   committed-rev="49"
+   name="bot_func.h"
+   text-time="2006-04-11T01:01:16.730000Z"
+   committed-date="2005-10-24T21:41:54.594056Z"
+   checksum="fab7bdaccf8e7d4d340724724722c074"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:07.073750Z"/>
+<entry
+   committed-rev="78"
+   name="engine.cpp"
+   text-time="2006-04-11T01:01:16.730000Z"
+   committed-date="2006-01-03T13:22:21.943647Z"
+   checksum="01032956c75c85e83f155d8c7efc01b1"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:07.339375Z"/>
+<entry
+   committed-rev="81"
+   name="bot_combat.cpp"
+   text-time="2006-04-11T01:01:16.745625Z"
+   committed-date="2006-02-15T12:23:12.127736Z"
+   checksum="fc3081f1baec9dc0d53d219bfdda653b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:08.339375Z"/>
+<entry
+   committed-rev="9"
+   name="waypoint.cpp"
+   text-time="2006-04-11T01:01:16.761250Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="a9a747bd0c536f1192c3cb710a0f795d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:09.245625Z"/>
+<entry
+   committed-rev="9"
+   name="HPB_bot_mm.dsp"
+   text-time="2006-04-11T01:01:16.745625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="d842d6b32d9712ee89cc6b19abacde9b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:08.511250Z"/>
+<entry
+   committed-rev="70"
+   name="dll.cpp"
+   text-time="2006-04-11T01:01:16.761250Z"
+   committed-date="2005-12-13T05:46:46.841003Z"
+   checksum="61f8a082706bb2ad0143ed437fc6a9b0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:10.151875Z"/>
+<entry
+   committed-rev="78"
+   name="util.cpp"
+   text-time="2006-04-11T01:01:16.792500Z"
+   committed-date="2006-01-03T13:22:21.943647Z"
+   checksum="ca73924e31f1ffb00d6d83990951b73b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:10.526875Z"/>
+<entry
+   committed-rev="9"
+   name="waypoint.h"
+   text-time="2006-04-11T01:01:16.792500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="91f3f8427db2c7e86d1e8567699053d5"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:12.230000Z"/>
+<entry
+   name="tools"
+   kind="dir"/>
+<entry
+   committed-rev="9"
+   name="HPB_bot_mm.dsw"
+   text-time="2006-04-11T01:01:16.808125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="443e2da93a8db72f64830f67f75bbf11"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:12.230000Z"/>
+<entry
+   committed-rev="9"
+   name="HPB_bot_mm.def"
+   text-time="2006-04-11T01:01:16.823750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="53ecd9e75e6780861f199aa3dd36ec64"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:12.776875Z"/>
+<entry
+   committed-rev="81"
+   name="bot_client.cpp"
+   text-time="2006-04-11T01:01:16.808125Z"
+   committed-date="2006-02-15T12:23:12.127736Z"
+   checksum="708bf066cb5cf68d56663b7376f8fc60"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:12.761250Z"/>
+<entry
+   committed-rev="9"
+   name="bot_chat.cpp"
+   text-time="2006-04-11T01:01:16.823750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="8295ec3586a1393f6b247821819f2464"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:13.011250Z"/>
+<entry
+   committed-rev="81"
+   name="bot.cpp"
+   text-time="2006-04-11T01:01:16.839375Z"
+   committed-date="2006-02-15T12:23:12.127736Z"
+   checksum="edb349ac89478851ed64b8d8df0655b6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:14.261250Z"/>
+<entry
+   committed-rev="78"
+   name="bot_weapons.h"
+   text-time="2006-04-11T01:01:16.839375Z"
+   committed-date="2006-01-03T13:22:21.943647Z"
+   checksum="9e4a07e34e906fb06a3f47c4fe8d4bb9"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:14.417500Z"/>
+<entry
+   committed-rev="9"
+   name="bot_models.cpp"
+   text-time="2006-04-11T01:01:16.855000Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="9ec99c8ea12b4190dab7f6690a99d1a3"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:14.573750Z"/>
+<entry
+   committed-rev="78"
+   name="bot_client.h"
+   text-time="2006-04-11T01:01:16.855000Z"
+   committed-date="2006-01-03T13:22:21.943647Z"
+   checksum="21070ad1edf703e97b1e02dc44d05588"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:14.636250Z"/>
+<entry
+   committed-rev="78"
+   name="h_export.cpp"
+   text-time="2006-04-11T01:01:16.855000Z"
+   committed-date="2006-01-03T13:22:21.943647Z"
+   checksum="e4091cc90abc8b18e155f253b11d56b3"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:14.730000Z"/>
+<entry
+   committed-rev="78"
+   name="bot.h"
+   text-time="2006-04-11T01:01:16.870625Z"
+   committed-date="2006-01-03T13:22:21.943647Z"
+   checksum="f652d1ff04a5fdb8c2cdee3d6f5c55ec"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:15.058125Z"/>
+<entry
+   committed-rev="9"
+   name="ReadMe.txt"
+   text-time="2006-04-11T01:01:16.870625Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="a83771418a29e0e819dbb0bdad525e4f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:16.651875Z"/>
+<entry
+   committed-rev="23"
+   name="Makefile"
+   text-time="2006-04-11T01:01:16.886250Z"
+   committed-date="2005-05-20T02:04:38.105367Z"
+   checksum="18edb4652d8587a158b3d62dd54becf4"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:16.714375Z"/>
+</wc-entries>

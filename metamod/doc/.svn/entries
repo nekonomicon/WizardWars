@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="9"
+   name=""
+   committed-date="2005-04-25T06:36:41.455333Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/metamod/doc"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   name="txt"
+   kind="dir"/>
+<entry
+   committed-rev="9"
+   name="plugins.ini"
+   text-time="2006-04-11T01:00:47.417500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="19bf782e02f5a92daa5936289f06e6f9"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:38.948750Z"/>
+<entry
+   committed-rev="9"
+   name="config.ini"
+   text-time="2006-04-11T01:00:47.417500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="5a2cbc0544dc56c616887a2e3fe30070"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:42.620625Z"/>
+<entry
+   name="html"
+   kind="dir"/>
+<entry
+   committed-rev="9"
+   name="TODO"
+   text-time="2006-04-11T01:00:47.433125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="9a553f0ec97a00a1523f1bbffde7aea7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:46.464375Z"/>
+<entry
+   committed-rev="9"
+   name="Changelog"
+   text-time="2006-04-11T01:00:47.433125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="412d71d1b7440483ad69263f25f6d57c"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:47.401875Z"/>
+<entry
+   committed-rev="9"
+   name="README.txt"
+   text-time="2006-04-11T01:00:47.448750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="7ee2c3d55c4ce9bf48f29835d0b0188d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:47.417500Z"/>
+</wc-entries>

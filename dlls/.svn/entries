@@ -1,0 +1,1624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="83"
+   name=""
+   committed-date="2006-02-20T09:48:24.397358Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/dlls"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="69"
+   name="tf_item_goal.h"
+   text-time="2006-04-11T01:02:30.714375Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="762131d9853659db02f0f26efe297313"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:45.964375Z"/>
+<entry
+   committed-rev="2"
+   name="plane.cpp"
+   text-time="2006-04-11T01:02:30.714375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="84b2c3fc521556f678b0eff1d6bc4d04"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:45.964375Z"/>
+<entry
+   committed-rev="5"
+   name="tf_teamset.h"
+   text-time="2006-04-11T01:02:30.730000Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="aee93755d3eafd26e2344c4aa24d2c24"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:45.964375Z"/>
+<entry
+   committed-rev="79"
+   name="ww_gamerules.cpp"
+   text-time="2006-04-11T01:02:30.730000Z"
+   committed-date="2006-02-14T14:09:39.207532Z"
+   checksum="eda4b45faf6873f9b3ec48646a5867b2"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:45.980000Z"/>
+<entry
+   committed-rev="2"
+   name="playermonster.cpp"
+   text-time="2006-04-11T01:02:30.745625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="96d27c7c1f600b03adcaba754a068626"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:45.980000Z"/>
+<entry
+   committed-rev="42"
+   name="ww_lightningsatchel.cpp"
+   text-time="2006-04-11T01:02:30.745625Z"
+   committed-date="2005-05-31T06:08:36.752791Z"
+   checksum="66d28656c36206f43f7beb518f1b24d8"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:45.980000Z"/>
+<entry
+   committed-rev="5"
+   name="ww_windwizard.h"
+   text-time="2006-04-11T01:02:30.745625Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="ffd3f28fc95552a4af6277388422d606"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:46.026875Z"/>
+<entry
+   committed-rev="2"
+   name="trains.h"
+   text-time="2006-04-11T01:02:30.792500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="1092020b553d0d074c4607e8fcea81d2"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:46.136250Z"/>
+<entry
+   committed-rev="2"
+   name="flyingmonster.h"
+   text-time="2006-04-11T01:02:30.792500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="892bdf638fa3da82e9862201d00fad70"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:46.245625Z"/>
+<entry
+   committed-rev="2"
+   name="explode.h"
+   text-time="2006-04-11T01:02:30.792500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="73f48628ec5cab38cf803793db8dd13f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:46.292500Z"/>
+<entry
+   committed-rev="2"
+   name="scriptevent.h"
+   text-time="2006-04-11T01:02:30.808125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="73feeca06df801a1155afff4fade15a0"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:46.355000Z"/>
+<entry
+   committed-rev="5"
+   name="scripted.cpp"
+   text-time="2006-04-11T01:02:30.808125Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="538c4c51d4d70e284fc4081aee253a5e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:46.980000Z"/>
+<entry
+   committed-rev="43"
+   name="tf_ent.cpp"
+   text-time="2006-04-11T01:02:30.808125Z"
+   committed-date="2005-08-02T12:34:21.394796Z"
+   checksum="51b1a6f27e81eeb467f0c2bc86244caf"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:47.526875Z"/>
+<entry
+   committed-rev="73"
+   name="hl.def"
+   text-time="2006-04-11T01:02:30.823750Z"
+   committed-date="2005-12-20T13:56:12.284677Z"
+   checksum="b60438768a66513eb44a23d050d7c777"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:47.573750Z"/>
+<entry
+   committed-rev="5"
+   name="tf_globals.h"
+   text-time="2006-04-11T01:02:30.823750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="03456859bf0851ee7f7a1ead1f3b1005"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:47.683125Z"/>
+<entry
+   committed-rev="5"
+   name="healthkit.h"
+   text-time="2006-04-11T01:02:30.839375Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="009abbed1476ea2b93f8e16b74a78434"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:47.730000Z"/>
+<entry
+   committed-rev="5"
+   name="globals.cpp"
+   text-time="2006-04-11T01:02:30.855000Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="84851eabe9df4460d620a072658be3d4"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:47.839375Z"/>
+<entry
+   committed-rev="21"
+   name="ww_deathwizard.cpp"
+   text-time="2006-04-11T01:02:30.855000Z"
+   committed-date="2005-05-15T22:53:08.426070Z"
+   checksum="f402b70877e4c9c79a483a66aeebfc1f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:47.776875Z"/>
+<entry
+   committed-rev="69"
+   name="ww_earthseal.cpp"
+   text-time="2006-04-11T01:02:30.855000Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="1ba7680ee8d114653a6d3c15d7c2b236"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:47.948750Z"/>
+<entry
+   committed-rev="75"
+   name="ww_dragon.cpp"
+   text-time="2006-04-11T01:02:30.870625Z"
+   committed-date="2005-12-21T14:09:05.415524Z"
+   checksum="73f648f26672098fc68653d6df7173d6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:48.214375Z"/>
+<entry
+   committed-rev="5"
+   name="ww_firewizard.h"
+   text-time="2006-04-11T01:02:30.870625Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="9a1e4ad99b68b666060ac6cb13276c47"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:48.261250Z"/>
+<entry
+   committed-rev="2"
+   name="hl.dep"
+   text-time="2006-04-11T01:02:30.886250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="aba652a1454582f718399db9b2cd39f6"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:48.480000Z"/>
+<entry
+   committed-rev="5"
+   name="tf_teamset.cpp"
+   text-time="2006-04-11T01:02:30.886250Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="821866fc8f78ffbfe21b1232521dde46"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:48.526875Z"/>
+<entry
+   committed-rev="68"
+   name="ww_naturewizard.cpp"
+   text-time="2006-04-11T01:02:30.917500Z"
+   committed-date="2005-12-13T00:52:35.418132Z"
+   checksum="2dbec801e781496f50b2e7a451e68974"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:48.683125Z"/>
+<entry
+   committed-rev="5"
+   name="ww_thornbush.h"
+   text-time="2006-04-11T01:02:30.917500Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="13a4cbf352a9f153c243c77f8ad86ee0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:48.792500Z"/>
+<entry
+   committed-rev="49"
+   name="ww_windwizard.cpp"
+   text-time="2006-04-11T01:02:30.933125Z"
+   committed-date="2005-10-24T21:41:54.594056Z"
+   checksum="36044ae1750a9225c1d55a797689395d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:48.948750Z"/>
+<entry
+   committed-rev="2"
+   name="activitymap.h"
+   text-time="2006-04-11T01:02:30.933125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9f8d8bd0bf17a4af4ff5b9dd7203ac1b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:48.855000Z"/>
+<entry
+   committed-rev="2"
+   name="activity.h"
+   text-time="2006-04-11T01:02:30.933125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="7b0ae76d623c2f292c2ff66755b541c2"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:49.120625Z"/>
+<entry
+   committed-rev="5"
+   name="func_break.h"
+   text-time="2006-04-11T01:02:30.948750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="320849f62df2f6c5f0bfbeca4e6367d1"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:49.230000Z"/>
+<entry
+   committed-rev="79"
+   name="ww_wizards.h"
+   text-time="2006-04-11T01:02:30.948750Z"
+   committed-date="2006-02-14T14:09:39.207532Z"
+   checksum="333819da52a3dfbffb313b0e0eec4198"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:49.276875Z"/>
+<entry
+   committed-rev="5"
+   name="util.cpp"
+   text-time="2006-04-11T01:02:30.964375Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="c9bde7fda43e52d13205c902b14bc159"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:50.558125Z"/>
+<entry
+   committed-rev="2"
+   name="squad.h"
+   text-time="2006-04-11T01:02:30.964375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="36eae0e3565f7931f5e70b933f97bc43"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:50.605000Z"/>
+<entry
+   committed-rev="34"
+   name="ww_firewizard.cpp"
+   text-time="2006-04-11T01:02:30.980000Z"
+   committed-date="2005-05-24T07:07:21.962480Z"
+   checksum="0b99d00cc66ab96a5b9c1819db9d72e3"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:50.761250Z"/>
+<entry
+   committed-rev="78"
+   name="hl.vcproj"
+   text-time="2006-04-11T01:02:30.995625Z"
+   committed-date="2006-01-03T13:22:21.943647Z"
+   checksum="c36c3422ac32a535bfb355ed69cb6fa2"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:51.042500Z"/>
+<entry
+   committed-rev="5"
+   name="ww_seals.cpp"
+   text-time="2006-04-11T01:02:30.995625Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="46b6e42cea725cb0a1ad7bf787cbea23"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:51.136250Z"/>
+<entry
+   committed-rev="5"
+   name="sound.cpp"
+   text-time="2006-04-11T01:02:31.011250Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="e993248b3f8cbf3506ff1f4a27910621"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:52.261250Z"/>
+<entry
+   committed-rev="5"
+   name="tf_info_timer.h"
+   text-time="2006-04-11T01:02:31.011250Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="a481ecf2a6de33c2844d4e968f54a267"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:52.323750Z"/>
+<entry
+   committed-rev="2"
+   name="defaultai.cpp"
+   text-time="2006-04-11T01:02:31.026875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="050abeb120c1595326c8f843eb5ba475"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:52.636250Z"/>
+<entry
+   committed-rev="21"
+   name="func_break.cpp"
+   text-time="2006-04-11T01:02:31.026875Z"
+   committed-date="2005-05-15T22:53:08.426070Z"
+   checksum="88766c22c6af951cf20efaeadf2dbf02"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:53.214375Z"/>
+<entry
+   committed-rev="2"
+   name="AI_BaseNPC_Schedule.cpp"
+   text-time="2006-04-11T01:02:31.042500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4cef4991cdbb896c42bf9e35d4890635"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:53.808125Z"/>
+<entry
+   committed-rev="12"
+   name="extdll.h"
+   text-time="2006-04-11T01:02:31.058125Z"
+   committed-date="2005-04-30T01:13:24.587702Z"
+   checksum="0b17ea677993d9a02091fb0bf83500d0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:53.901875Z"/>
+<entry
+   committed-rev="2"
+   name="soundent.h"
+   text-time="2006-04-11T01:02:31.058125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d6afddbcddfefd25ab493d3ba82c8e2f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:54.073750Z"/>
+<entry
+   committed-rev="5"
+   name="ww_earthwizard.h"
+   text-time="2006-04-11T01:02:31.058125Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="4907862b73f7fad9497114d2e09d4bd3"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:54.073750Z"/>
+<entry
+   committed-rev="2"
+   name="animating.cpp"
+   text-time="2006-04-11T01:02:31.073750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="a0bb59068406a0c7a093160b62416c0e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:54.308125Z"/>
+<entry
+   committed-rev="5"
+   name="tf_info_teamspawn.h"
+   text-time="2006-04-11T01:02:31.073750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="677c7d7e3b710cf0300513f962cd383b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:54.308125Z"/>
+<entry
+   committed-rev="21"
+   name="nodes.cpp"
+   text-time="2006-04-11T01:02:31.089375Z"
+   committed-date="2005-05-15T22:53:08.426070Z"
+   checksum="b02ec873910b474da0ff23d4655d8adb"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:56.323750Z"/>
+<entry
+   committed-rev="5"
+   name="ww_dragonwizard.cpp"
+   text-time="2006-04-11T01:02:31.089375Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="575ee706431239acf067f1c5e312cf4a"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:56.433125Z"/>
+<entry
+   committed-rev="2"
+   name="spectator.h"
+   text-time="2006-04-11T01:02:31.105000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8e7d87874e145fd35da4b9fbb3f6fd3c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:01:56.480000Z"/>
+<entry
+   committed-rev="83"
+   name="monsters.cpp"
+   text-time="2006-04-11T01:02:31.120625Z"
+   committed-date="2006-02-20T09:48:24.397358Z"
+   checksum="d2f882dc40e15489e23bdd2b6b389066"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:58.511250Z"/>
+<entry
+   committed-rev="47"
+   name="weapons.cpp"
+   text-time="2006-04-11T01:02:31.120625Z"
+   committed-date="2005-08-07T06:15:04.824801Z"
+   checksum="6e35a3c6e79a29260e38fddc45298f06"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:59.355000Z"/>
+<entry
+   committed-rev="5"
+   name="tf_info_detect.cpp"
+   text-time="2006-04-11T01:02:31.136250Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="c1ea86bd31811813b564a8c33d93721d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:59.417500Z"/>
+<entry
+   committed-rev="5"
+   name="subs.cpp"
+   text-time="2006-04-11T01:02:31.136250Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="b1bfd7a20ec989b97626d77463bb98db"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:59.730000Z"/>
+<entry
+   committed-rev="18"
+   name="ggrenade.cpp"
+   text-time="2006-04-11T01:02:31.136250Z"
+   committed-date="2005-05-12T09:57:15.592318Z"
+   checksum="db5c35d8b70f230990b735c7357a2009"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:00.042500Z"/>
+<entry
+   committed-rev="69"
+   name="cbase.cpp"
+   text-time="2006-04-11T01:02:31.151875Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="33e60ae4ce89ef66559480f12df19283"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:00.636250Z"/>
+<entry
+   committed-rev="2"
+   name="cdll_dll.h"
+   text-time="2006-04-11T01:02:31.151875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="75a02ac0d5e97c0330b16a01de88e0e6"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:00.698750Z"/>
+<entry
+   committed-rev="5"
+   name="ww_windsatchel.cpp"
+   text-time="2006-04-11T01:02:31.183125Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="cca1cd7b040d81d7cdf62e6743e345ce"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:00.792500Z"/>
+<entry
+   committed-rev="5"
+   name="ww_archmage.cpp"
+   text-time="2006-04-11T01:02:31.183125Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="70d774e7708186c2df2bd8d2c0c457c9"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:00.855000Z"/>
+<entry
+   committed-rev="2"
+   name="animation.h"
+   text-time="2006-04-11T01:02:31.183125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8db29ce5c7c90f90de27462020c20d35"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:00.901875Z"/>
+<entry
+   committed-rev="5"
+   name="ww_earthsatchel.cpp"
+   text-time="2006-04-11T01:02:31.198750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="e9b1e76071dc38fd63cdbb55ebb3ed3d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:00.964375Z"/>
+<entry
+   committed-rev="44"
+   name="ww_goblin.cpp"
+   text-time="2006-04-11T01:02:31.198750Z"
+   committed-date="2005-08-02T12:44:54.339658Z"
+   checksum="4df8634a9e0458e875d01f82c2865ab6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:01.167500Z"/>
+<entry
+   committed-rev="2"
+   name="squadmonster.h"
+   text-time="2006-04-11T01:02:31.198750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c6a226bd0b3dbdd30afb0aaafce154ff"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:01.276875Z"/>
+<entry
+   committed-rev="79"
+   name="ww_archsatchel.cpp"
+   text-time="2006-04-11T01:02:31.214375Z"
+   committed-date="2006-02-14T14:09:39.207532Z"
+   checksum="80f437491c3376a8b7ceb3f3b60d1e7e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:01.386250Z"/>
+<entry
+   committed-rev="2"
+   name="soundent.cpp"
+   text-time="2006-04-11T01:02:31.214375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="606d030c659033ccc195315695b33e3e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:01.589375Z"/>
+<entry
+   committed-rev="71"
+   name="ww_lifesatchel.cpp"
+   text-time="2006-04-11T01:02:31.261250Z"
+   committed-date="2005-12-13T06:47:15.360604Z"
+   checksum="cbfcd1b0ba986889d187f1a08d43d193"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:02.230000Z"/>
+<entry
+   committed-rev="2"
+   name="h_ai.cpp"
+   text-time="2006-04-11T01:02:31.245625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="934cd682b87fe27a44437eb103f692db"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:02.136250Z"/>
+<entry
+   committed-rev="5"
+   name="explode.cpp"
+   text-time="2006-04-11T01:02:31.245625Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="9e80d45d589bf1fa8cc5604d1c7b04e5"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:01.964375Z"/>
+<entry
+   committed-rev="2"
+   name="flyingmonster.cpp"
+   text-time="2006-04-11T01:02:31.230000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="1f4a3a3fe3307b1dd47144b21206ca9f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:01.761250Z"/>
+<entry
+   committed-rev="69"
+   name="player.h"
+   text-time="2006-04-11T01:02:31.261250Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="eb0b5c192ad399129d4aa478cdf6498f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:02.667500Z"/>
+<entry
+   committed-rev="2"
+   name="defaultai.h"
+   text-time="2006-04-11T01:02:31.276875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b7197e2d63e3e0bb78cc05ad5ffd432d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:02.870625Z"/>
+<entry
+   committed-rev="64"
+   name="tf_info_teamspawn.cpp"
+   text-time="2006-04-11T01:02:31.261250Z"
+   committed-date="2005-12-12T04:00:12.514607Z"
+   checksum="c8ffd27f795bda66c5cabf47ef76b90c"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:02.761250Z"/>
+<entry
+   committed-rev="5"
+   name="pathcorner.cpp"
+   text-time="2006-04-11T01:02:31.276875Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="ffde289756aec519a71499107f4c680f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:03.089375Z"/>
+<entry
+   committed-rev="63"
+   name="ww_gamerules.h"
+   text-time="2006-04-11T01:02:31.308125Z"
+   committed-date="2005-12-12T02:19:53.338903Z"
+   checksum="503ecb7ff34db22066e9c034cfd18766"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:03.136250Z"/>
+<entry
+   committed-rev="21"
+   name="tf_globals.cpp"
+   text-time="2006-04-11T01:02:31.308125Z"
+   committed-date="2005-05-15T22:53:08.426070Z"
+   checksum="83810650df6cda4003a9d38e5ca99885"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:03.245625Z"/>
+<entry
+   committed-rev="71"
+   name="ww_lifewizard.cpp"
+   text-time="2006-04-11T01:02:31.308125Z"
+   committed-date="2005-12-13T06:47:15.360604Z"
+   checksum="023f45e8e5720344815b9c1234abfb2f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:03.355000Z"/>
+<entry
+   committed-rev="2"
+   name="skill.cpp"
+   text-time="2006-04-11T01:02:31.323750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4c2ac75fc829b91feb8145b27f62a8dd"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:03.401875Z"/>
+<entry
+   committed-rev="5"
+   name="monsters.h"
+   text-time="2006-04-11T01:02:31.339375Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="41cfc29fb83fbd7371d78538e1787c95"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:03.886250Z"/>
+<entry
+   committed-rev="21"
+   name="animation.cpp"
+   text-time="2006-04-11T01:02:31.323750Z"
+   committed-date="2005-05-15T22:53:08.426070Z"
+   checksum="01f79c921416e07d8c69dcc16ec75aac"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:03.667500Z"/>
+<entry
+   committed-rev="18"
+   name="items.cpp"
+   text-time="2006-04-11T01:02:31.339375Z"
+   committed-date="2005-05-12T09:57:15.592318Z"
+   checksum="5f380aa4adcf1b23a3f043d6709bd588"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:04.261250Z"/>
+<entry
+   committed-rev="18"
+   name="h_battery.cpp"
+   text-time="2006-04-11T01:02:31.339375Z"
+   committed-date="2005-05-12T09:57:15.592318Z"
+   checksum="52d6d45006c528d937d0b8dd777a5870"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:04.042500Z"/>
+<entry
+   committed-rev="69"
+   name="ww_villager.cpp"
+   text-time="2006-04-11T01:02:31.370625Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="c7dda7e25863aafd48c1181a5c384dca"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:04.683125Z"/>
+<entry
+   committed-rev="2"
+   name="scripted.h"
+   text-time="2006-04-11T01:02:31.370625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="81ed3a5544ef4040ac232edcbb97ded4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:04.417500Z"/>
+<entry
+   committed-rev="5"
+   name="tf_baseents.cpp"
+   text-time="2006-04-11T01:02:31.386250Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="39dee4bd35d37491a53e14020186f02b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:04.792500Z"/>
+<entry
+   committed-rev="79"
+   name="ww_wizards.cpp"
+   text-time="2006-04-11T01:02:31.386250Z"
+   committed-date="2006-02-14T14:09:39.207532Z"
+   checksum="0d7cb698940741a700933e52f8f5bbbb"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:05.105000Z"/>
+<entry
+   committed-rev="78"
+   name="ww_skeleton.cpp"
+   text-time="2006-04-11T01:02:31.401875Z"
+   committed-date="2006-01-03T13:22:21.943647Z"
+   checksum="3a8b85188bfbf65c5568b12ecd7bb436"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:05.901875Z"/>
+<entry
+   committed-rev="2"
+   name="schedule.h"
+   text-time="2006-04-11T01:02:31.401875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5290ba6d0e86106734d898946beeef59"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:05.323750Z"/>
+<entry
+   committed-rev="2"
+   name="wizardwarsdefs.h"
+   text-time="2006-04-11T01:02:31.401875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:05.917500Z"/>
+<entry
+   committed-rev="69"
+   name="tf_globalinfo.cpp"
+   text-time="2006-04-11T01:02:31.417500Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="4d6f1e69a6de2881ac797948771f18e8"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:06.323750Z"/>
+<entry
+   committed-rev="5"
+   name="ww_sentrycrystal.h"
+   text-time="2006-04-11T01:02:31.433125Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="9c197bbeaf46f5b677387fda9062f9f0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:06.386250Z"/>
+<entry
+   committed-rev="65"
+   name="game.cpp"
+   text-time="2006-04-11T01:02:31.448750Z"
+   committed-date="2005-12-12T08:18:12.488183Z"
+   checksum="2e17d102cda3b0dc77d23625fddb2ff9"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:06.808125Z"/>
+<entry
+   committed-rev="5"
+   name="tf_teamcheck.cpp"
+   text-time="2006-04-11T01:02:31.448750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="9f5a051c506e328d9400056ca0730f91"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:06.808125Z"/>
+<entry
+   committed-rev="69"
+   name="ww_natureseal.cpp"
+   text-time="2006-04-11T01:02:31.448750Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="5e6b6c1211661218574e733f3f7dc0c4"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:06.917500Z"/>
+<entry
+   committed-rev="5"
+   name="ww_lightningwizard.cpp"
+   text-time="2006-04-11T01:02:31.464375Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="f04e5d42cb4ff82a66b776927f3923b3"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:06.964375Z"/>
+<entry
+   committed-rev="5"
+   name="util.h"
+   text-time="2006-04-11T01:02:31.464375Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="7ccaf76f0238660f8899b1e1f3c7d107"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:07.495625Z"/>
+<entry
+   committed-rev="2"
+   name="skill.h"
+   text-time="2006-04-11T01:02:31.480000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="df1e657eea9de9197713aba184f2812f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:07.605000Z"/>
+<entry
+   committed-rev="5"
+   name="tf_info_timer.cpp"
+   text-time="2006-04-11T01:02:31.480000Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="bb90cfd9e22b83079bc29af6e6ab4fd6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:07.761250Z"/>
+<entry
+   committed-rev="22"
+   name="triggers.cpp"
+   text-time="2006-04-11T01:02:31.511250Z"
+   committed-date="2005-05-16T10:56:34.086964Z"
+   checksum="7360814eef2ad40962078bb14419a4a7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:08.933125Z"/>
+<entry
+   committed-rev="82"
+   name="hl.lib"
+   text-time="2006-04-11T01:02:31.511250Z"
+   committed-date="2006-02-15T13:46:20.373782Z"
+   checksum="333821838f745a19f1879c26e9ff4fa9"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:10.698750Z"/>
+<entry
+   committed-rev="2"
+   name="basemonster.h"
+   text-time="2006-04-11T01:02:31.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c10480d6c1ba376ffcdc98b16f345cc0"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:09.355000Z"/>
+<entry
+   committed-rev="5"
+   name="h_cycler.cpp"
+   text-time="2006-04-11T01:02:31.526875Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="dd805599d7ec0b6d125750bc4386e7f2"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:10.901875Z"/>
+<entry
+   committed-rev="5"
+   name="gamerules.h"
+   text-time="2006-04-11T01:02:31.542500Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="8b911cbe1e90b9bcd6e1ae60460f2e12"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:11.495625Z"/>
+<entry
+   committed-rev="69"
+   name="tf_item_goal.cpp"
+   text-time="2006-04-11T01:02:31.526875Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="b0434b0cc20ebee5c5ee3277267bec44"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:11.230000Z"/>
+<entry
+   committed-rev="2"
+   name="lights.cpp"
+   text-time="2006-04-11T01:02:31.542500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="a7bcb706c6900c186ee4ce7f689fae75"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:11.605000Z"/>
+<entry
+   committed-rev="5"
+   name="ww_dragonsatchel.cpp"
+   text-time="2006-04-11T01:02:31.558125Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="5e3cde8e14e5433e5339309f11b5b162"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:11.698750Z"/>
+<entry
+   committed-rev="2"
+   name="maprules.h"
+   text-time="2006-04-11T01:02:31.573750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="7f6155363519171e2a1b06d777dc5faa"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:11.761250Z"/>
+<entry
+   committed-rev="2"
+   name="monsterevent.h"
+   text-time="2006-04-11T01:02:31.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="f284106b36a1a5c33ec77c324e681415"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:12.401875Z"/>
+<entry
+   committed-rev="23"
+   name="buttons.cpp"
+   text-time="2006-04-11T01:02:31.573750Z"
+   committed-date="2005-05-20T02:04:38.105367Z"
+   checksum="eefe3ebdd594065108438c31b1bebe14"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:12.339375Z"/>
+<entry
+   committed-rev="2"
+   name="decals.h"
+   text-time="2006-04-11T01:02:31.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5e8216f84d9b4c1e3e5c4ffbdd173378"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:12.448750Z"/>
+<entry
+   committed-rev="69"
+   name="ww_lifeseal.cpp"
+   text-time="2006-04-11T01:02:31.589375Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="27d8b38b74774cebcf3f4fbd4a52ffbd"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:12.558125Z"/>
+<entry
+   committed-rev="21"
+   name="ww_sentrycrystal.cpp"
+   text-time="2006-04-11T01:02:31.605000Z"
+   committed-date="2005-05-15T22:53:08.426070Z"
+   checksum="d2ff2323420c60c925e52d66dce32991"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:12.667500Z"/>
+<entry
+   committed-rev="5"
+   name="spectator.cpp"
+   text-time="2006-04-11T01:02:31.605000Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="d8b7f7a094dae3d9fa1d140a0bfd07d9"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:12.761250Z"/>
+<entry
+   committed-rev="62"
+   name="monstermaker.cpp"
+   text-time="2006-04-11T01:02:31.636250Z"
+   committed-date="2005-12-12T02:10:03.870217Z"
+   checksum="19d7189e3f5756c34e72b4bcb3f7ec9f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:13.198750Z"/>
+<entry
+   committed-rev="2"
+   name="saverestore.h"
+   text-time="2006-04-11T01:02:31.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="29384deec49fbb66b87c4b3e31015ce0"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:12.933125Z"/>
+<entry
+   committed-rev="5"
+   name="talkmonster.h"
+   text-time="2006-04-11T01:02:31.636250Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="799c95e597561e9c96d9eda5e236166f"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:13.401875Z"/>
+<entry
+   committed-rev="5"
+   name="healthkit.cpp"
+   text-time="2006-04-11T01:02:31.651875Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="1e366c3b7ae82352bdc101b1541c6304"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:13.573750Z"/>
+<entry
+   committed-rev="79"
+   name="client.cpp"
+   text-time="2006-04-11T01:02:31.651875Z"
+   committed-date="2006-02-14T14:09:39.207532Z"
+   checksum="84272f9f506fdd47596bf3eb3c3885e8"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:14.792500Z"/>
+<entry
+   committed-rev="69"
+   name="ww_iceseal.cpp"
+   text-time="2006-04-11T01:02:31.667500Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="e7f800c78a1dac7b3eb653f0dcfe32ef"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:15.636250Z"/>
+<entry
+   committed-rev="71"
+   name="cbase.h"
+   text-time="2006-04-11T01:02:31.667500Z"
+   committed-date="2005-12-13T06:47:15.360604Z"
+   checksum="9f4167668705b3369cc04082f2e68479"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:15.542500Z"/>
+<entry
+   committed-rev="5"
+   name="bmodels.cpp"
+   text-time="2006-04-11T01:02:31.683125Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="6959e1dd2c942ae0633eea3e70f99218"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:16.183125Z"/>
+<entry
+   committed-rev="5"
+   name="ww_emitter.cpp"
+   text-time="2006-04-11T01:02:31.698750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="ce4bd4955afb43590c4eac9c11687781"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:16.761250Z"/>
+<entry
+   committed-rev="82"
+   name="doors.cpp"
+   text-time="2006-04-11T01:02:31.683125Z"
+   committed-date="2006-02-15T13:46:20.373782Z"
+   checksum="da8f78843605c3df1a6e1ac380bde6a5"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:16.714375Z"/>
+<entry
+   committed-rev="2"
+   name="enginecallback.h"
+   text-time="2006-04-11T01:02:31.714375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d3f861c4a1ec63b7d46b1fc6d3f5bbee"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:17.620625Z"/>
+<entry
+   committed-rev="5"
+   name="observer.cpp"
+   text-time="2006-04-11T01:02:31.714375Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="e35a3529c4ae7e197b3c961123678076"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:17.464375Z"/>
+<entry
+   committed-rev="5"
+   name="world.cpp"
+   text-time="2006-04-11T01:02:31.698750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="89e07dd1d0c13f01257045e69626d3ad"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:17.245625Z"/>
+<entry
+   committed-rev="5"
+   name="ww_satchels.h"
+   text-time="2006-04-11T01:02:31.745625Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="45190bb21ef0d3a34dda9cab3fb40610"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:17.995625Z"/>
+<entry
+   committed-rev="2"
+   name="monsterstate.cpp"
+   text-time="2006-04-11T01:02:31.730000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="a629132c43e337cbb4830cd05211240d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:17.995625Z"/>
+<entry
+   committed-rev="5"
+   name="h_export.cpp"
+   text-time="2006-04-11T01:02:31.730000Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="33015e544e471ce11bdb565108f268fa"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:17.776875Z"/>
+<entry
+   committed-rev="5"
+   name="plats.h"
+   text-time="2006-04-11T01:02:31.714375Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="5733d27cafa603fa6e802fecf5faf1b3"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:17.730000Z"/>
+<entry
+   committed-rev="68"
+   name="ww_thornbush.cpp"
+   text-time="2006-04-11T01:02:31.761250Z"
+   committed-date="2005-12-13T00:52:35.418132Z"
+   checksum="11615e349659328284df05ab08301a59"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:18.308125Z"/>
+<entry
+   committed-rev="79"
+   name="player.cpp"
+   text-time="2006-04-11T01:02:31.776875Z"
+   committed-date="2006-02-14T14:09:39.207532Z"
+   checksum="d14f748421a8a560d944444b133abb2a"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:21.292500Z"/>
+<entry
+   committed-rev="69"
+   name="ww_dragonseal.cpp"
+   text-time="2006-04-11T01:02:31.776875Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="4a32f748d7a5a10b5a680e42f474eab7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:21.339375Z"/>
+<entry
+   committed-rev="5"
+   name="ww_icewizard.cpp"
+   text-time="2006-04-11T01:02:31.776875Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="49cfb5d0868651485e8453d978a46fee"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:21.495625Z"/>
+<entry
+   committed-rev="5"
+   name="ww_naturewizard.h"
+   text-time="2006-04-11T01:02:31.792500Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="9d5ab14249dba115c74c2014181481ae"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:21.558125Z"/>
+<entry
+   committed-rev="5"
+   name="talkmonster.cpp"
+   text-time="2006-04-11T01:02:31.792500Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="1ff3636bc58658559e1d98f7c3e172c9"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:22.245625Z"/>
+<entry
+   committed-rev="21"
+   name="combat.cpp"
+   text-time="2006-04-11T01:02:31.808125Z"
+   committed-date="2005-05-15T22:53:08.426070Z"
+   checksum="3e13dc380c3ec1e9e4cd1660aae2f225"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:23.105000Z"/>
+<entry
+   committed-rev="69"
+   name="ww_lightningseal.cpp"
+   text-time="2006-04-11T01:02:31.808125Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="1a1bedcce290fa16e67dfcdb9ecc34e0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:23.245625Z"/>
+<entry
+   committed-rev="71"
+   name="ww_deathsatchel.cpp"
+   text-time="2006-04-11T01:02:31.823750Z"
+   committed-date="2005-12-13T06:47:15.360604Z"
+   checksum="ce71674ddf4582aface160ec560f100d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:23.261250Z"/>
+<entry
+   committed-rev="69"
+   name="ww_deathseal.cpp"
+   text-time="2006-04-11T01:02:31.839375Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="aa6d1339ea1516d1ed7604d492c8f067"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:23.308125Z"/>
+<entry
+   committed-rev="5"
+   name="ww_icesatchel.cpp"
+   text-time="2006-04-11T01:02:31.839375Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="92e95e97f2ee93c17587a7f28936e8d8"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:23.370625Z"/>
+<entry
+   committed-rev="5"
+   name="ww_lifewizard.h"
+   text-time="2006-04-11T01:02:31.855000Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="414b3a2200fd940a9413fe37e7c8053a"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:23.417500Z"/>
+<entry
+   committed-rev="5"
+   name="plats.cpp"
+   text-time="2006-04-11T01:02:31.855000Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="a17d542360db7413642ba1afdf0d137e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:24.386250Z"/>
+<entry
+   committed-rev="2"
+   name="client.h"
+   text-time="2006-04-11T01:02:31.870625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="bae5e9e9587767405edb0da84c3c7e8a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:24.480000Z"/>
+<entry
+   committed-rev="18"
+   name="ww_satchels.cpp"
+   text-time="2006-04-11T01:02:31.870625Z"
+   committed-date="2005-05-12T09:57:15.592318Z"
+   checksum="13a361199d1d4bb690a0121758276ae6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:24.589375Z"/>
+<entry
+   committed-rev="69"
+   name="ww_windseal.cpp"
+   text-time="2006-04-11T01:02:31.870625Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="427a33951b78401de67c8c702e9d5f42"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:24.651875Z"/>
+<entry
+   committed-rev="5"
+   name="effects.h"
+   text-time="2006-04-11T01:02:31.886250Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="c40b310df62a5b425ccd4a1563898258"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:24.855000Z"/>
+<entry
+   committed-rev="21"
+   name="multiplay_gamerules.cpp"
+   text-time="2006-04-11T01:02:31.886250Z"
+   committed-date="2005-05-15T22:53:08.426070Z"
+   checksum="378e9bee92f029132f949303f1314c6e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:25.714375Z"/>
+<entry
+   committed-rev="5"
+   name="tf_info_goal.cpp"
+   text-time="2006-04-11T01:02:31.917500Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="9364ff0bc2d8c26fe53a54370ed3dbcb"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:25.870625Z"/>
+<entry
+   committed-rev="5"
+   name="h_battery.h"
+   text-time="2006-04-11T01:02:31.933125Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="f33ae989c1c2d2586af4ca72c2539b7b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:25.917500Z"/>
+<entry
+   committed-rev="2"
+   name="items.h"
+   text-time="2006-04-11T01:02:31.933125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="dd46ee5c97db95372845987979388d95"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:25.980000Z"/>
+<entry
+   committed-rev="2"
+   name="hl.mak"
+   text-time="2006-04-11T01:02:31.948750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="409f63e0decd3a288cab6f7a40ba4af7"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:26.355000Z"/>
+<entry
+   committed-rev="5"
+   name="ww_seals.h"
+   text-time="2006-04-11T01:02:31.948750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="f402661fb4ab0ce3ed81a2723750314c"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:26.401875Z"/>
+<entry
+   committed-rev="5"
+   name="doors.h"
+   text-time="2006-04-11T01:02:31.948750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="d3884d0ec48b4868e59500cd6b674744"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:26.448750Z"/>
+<entry
+   committed-rev="5"
+   name="ww_earthwizard.cpp"
+   text-time="2006-04-11T01:02:31.964375Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="30bbcc99d33fb5fc1b0ee3144031781b"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:26.558125Z"/>
+<entry
+   committed-rev="5"
+   name="ww_icewizard.h"
+   text-time="2006-04-11T01:02:31.980000Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="d7cbc432ca4fdd521cea863a0d652ed3"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:26.605000Z"/>
+<entry
+   committed-rev="2"
+   name="plane.h"
+   text-time="2006-04-11T01:02:31.980000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="db0feff7f425861f80f3c6081301d3fb"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:26.667500Z"/>
+<entry
+   committed-rev="5"
+   name="ww_firesatchel.cpp"
+   text-time="2006-04-11T01:02:31.995625Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="d1e2e213dc74c76cc157d3b5814e1173"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:26.714375Z"/>
+<entry
+   committed-rev="12"
+   name="vector.h"
+   text-time="2006-04-11T01:02:31.995625Z"
+   committed-date="2005-04-30T01:13:24.587702Z"
+   checksum="6e48f50a4fc067dc3a368f93d27e73a0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:26.823750Z"/>
+<entry
+   committed-rev="22"
+   name="hl.dsp"
+   text-time="2006-04-11T01:02:32.011250Z"
+   committed-date="2005-05-16T10:56:34.086964Z"
+   checksum="1f83f2e4da49e2b06594fad98a5cc613"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:27.089375Z"/>
+<entry
+   committed-rev="69"
+   name="ww_fireseal.cpp"
+   text-time="2006-04-11T01:02:32.011250Z"
+   committed-date="2005-12-13T03:23:02.163502Z"
+   checksum="e81559622900e560abdf6bceb8600459"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:27.151875Z"/>
+<entry
+   committed-rev="5"
+   name="tf_globalinfo.h"
+   text-time="2006-04-11T01:02:32.026875Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="2c3c84342293205edddc649eb18d69d5"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:27.245625Z"/>
+<entry
+   committed-rev="2"
+   name="nodes.h"
+   text-time="2006-04-11T01:02:32.042500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="50b0d47e92ef91218ec4a1c531586eda"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:27.589375Z"/>
+<entry
+   committed-rev="5"
+   name="ww_dragonwizard.h"
+   text-time="2006-04-11T01:02:32.042500Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="435dfe36fefcc7d57986c1cbb967800d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:27.636250Z"/>
+<entry
+   committed-rev="2"
+   name="game.h"
+   text-time="2006-04-11T01:02:32.058125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="71302ea8bf951c8f3bcc654a4440194f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:27.683125Z"/>
+<entry
+   committed-rev="2"
+   name="hl.dsw"
+   text-time="2006-04-11T01:02:32.073750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="85afee1e932ab7d9f6527a1f0c6d174e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:27.745625Z"/>
+<entry
+   committed-rev="5"
+   name="effects.cpp"
+   text-time="2006-04-11T01:02:32.073750Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="ee37ab8f21c5f16765576a979a476292"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:28.542500Z"/>
+<entry
+   committed-rev="25"
+   name="ww_naturesatchel.cpp"
+   text-time="2006-04-11T01:02:32.089375Z"
+   committed-date="2005-05-23T01:44:00.441950Z"
+   checksum="cedc3f45c146c5b3baf233cbac9ab6eb"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:28.651875Z"/>
+<entry
+   committed-rev="4"
+   name="weapons.h"
+   text-time="2006-04-11T01:02:32.120625Z"
+   committed-date="2005-04-04T12:03:59.561682Z"
+   checksum="dcd1c3fe406e66f38ca01b778d30809d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:29.042500Z"/>
+<entry
+   committed-rev="5"
+   name="tf_info_detect.h"
+   text-time="2006-04-11T01:02:32.120625Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="8ebb032345177a35b3e6aa3a1c7be646"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:29.042500Z"/>
+<entry
+   committed-rev="47"
+   name="ww_sheep.cpp"
+   text-time="2006-04-11T01:02:32.120625Z"
+   committed-date="2005-08-07T06:15:04.824801Z"
+   checksum="9c34ca1c077a73818f0205426496c1c1"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:29.136250Z"/>
+<entry
+   committed-rev="5"
+   name="tf_teamcheck.h"
+   text-time="2006-04-11T01:02:32.136250Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="5d3bf896cf8ec7e3fa20dd018d21e007"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:29.198750Z"/>
+<entry
+   committed-rev="23"
+   name="tf_ent.h"
+   text-time="2006-04-11T01:02:32.136250Z"
+   committed-date="2005-05-20T02:04:38.105367Z"
+   checksum="eafb4dfc3227ac647963f7567323db57"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:29.401875Z"/>
+<entry
+   committed-rev="5"
+   name="gamerules.cpp"
+   text-time="2006-04-11T01:02:32.151875Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="75d73ec5ec018a8be0ac9483dbcba619"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:29.620625Z"/>
+<entry
+   committed-rev="2"
+   name="genericmonster.cpp"
+   text-time="2006-04-11T01:02:32.151875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="079ed160c2168c1919f74608690c493c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:29.776875Z"/>
+<entry
+   committed-rev="2"
+   name="squadmonster.cpp"
+   text-time="2006-04-11T01:02:32.167500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="597821a640c3d00460030b3cffd0d27e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:30.105000Z"/>
+<entry
+   committed-rev="5"
+   name="ww_lightningwizard.h"
+   text-time="2006-04-11T01:02:32.167500Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="a92c562f9cc9a68441d2b281982d1fa0"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:30.151875Z"/>
+<entry
+   committed-rev="5"
+   name="ww_deathwizard.h"
+   text-time="2006-04-11T01:02:32.167500Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="1e3bcf2595921711abad5b9389d3fd71"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:30.198750Z"/>
+<entry
+   committed-rev="2"
+   name="maprules.cpp"
+   text-time="2006-04-11T01:02:32.230000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4ee2e8b3f8b2224807d33be7bfb5ffdc"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:30.589375Z"/>
+<entry
+   committed-rev="5"
+   name="ww_archmage.h"
+   text-time="2006-04-11T01:02:32.230000Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="3f9e9c024de6007ac835cdcbdf2a7bf8"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:30.589375Z"/>
+<entry
+   committed-rev="5"
+   name="tf_info_goal.h"
+   text-time="2006-04-11T01:02:32.245625Z"
+   committed-date="2005-04-24T04:08:45.642950Z"
+   checksum="4cf3142c56d279e0d94177539c7f2d07"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:30.636250Z"/>
+<entry
+   committed-rev="46"
+   name="ww_dragon.h"
+   text-time="2006-04-11T01:02:32.261250Z"
+   committed-date="2005-08-03T01:41:19.169019Z"
+   checksum="0e00626c80a6ce42dd545f94eb736a01"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:02:30.683125Z"/>
+</wc-entries>

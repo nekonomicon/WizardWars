@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="81"
+   name=""
+   committed-date="2006-02-15T12:23:12.127736Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/metamod"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   name="tools"
+   kind="dir"/>
+<entry
+   committed-rev="9"
+   name="GPL.txt"
+   text-time="2006-04-11T01:01:16.933125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="393a5ca445f6965873eca0259a17f833"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:00:38.745625Z"/>
+<entry
+   name="doc"
+   kind="dir"/>
+<entry
+   name="metamod"
+   kind="dir"/>
+<entry
+   committed-rev="9"
+   name="ABOUT.txt"
+   text-time="2006-04-11T01:01:16.933125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="bade4533fc9b18681b1197a29b44915e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:06.214375Z"/>
+<entry
+   name="hpb_bot_plugin"
+   kind="dir"/>
+<entry
+   committed-rev="9"
+   name="README.txt"
+   text-time="2006-04-11T01:01:16.933125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="f74589c03944f6e8a6996fda067768c2"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:06.230000Z"/>
+<entry
+   committed-rev="9"
+   name="Config.mak"
+   text-time="2006-04-11T01:01:16.948750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="e9ae99c310a7ad4ecbcd7e737aec1ee7"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:16.917500Z"/>
+<entry
+   committed-rev="9"
+   name="Makefile"
+   text-time="2006-04-11T01:01:16.948750Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="a64d3a28c18e81c0eff0304844a6d223"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:16.917500Z"/>
+</wc-entries>

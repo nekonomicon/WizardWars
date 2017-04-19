@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2005-03-14T13:32:23.046351Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/utils/vgui/include"
+   last-author="eggy"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="2"
+   name="VGUI_RepaintSignal.h"
+   text-time="2006-04-11T01:02:41.292500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="df16456786fa238fa6d533ad4a3b5232"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:37.683125Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_StackLayout.h"
+   text-time="2006-04-11T01:02:41.292500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ffe87b16e94d647f573ff98407603dfb"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:37.683125Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_DataInputStream.h"
+   text-time="2006-04-11T01:02:41.308125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="20b399b451e7a4f5abff1110fe3dd75b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:37.698750Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_TextEntry.h"
+   text-time="2006-04-11T01:02:41.323750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="94568979dfc0d5e34b6127063f122b62"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:37.870625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Font.h"
+   text-time="2006-04-11T01:02:41.308125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="81e420fe3eae0817eca9fb1a7425fadf"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:37.698750Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_BitmapTGA.h"
+   text-time="2006-04-11T01:02:41.323750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="537169c96d993bbc1eb1304c87b5f524"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:37.886250Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_FileInputStream.h"
+   text-time="2006-04-11T01:02:41.370625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="bcd4727197e10394126134a46cc476bb"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.042500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ActionSignal.h"
+   text-time="2006-04-11T01:02:41.355000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ff76278d28596f3aea40501d7f9576c4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.026875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Button.h"
+   text-time="2006-04-11T01:02:41.355000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="a5078023809ecfa25579952a4b78be3e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:37.980000Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_InputStream.h"
+   text-time="2006-04-11T01:02:41.323750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b43b79a9fbea31c2da3fd495061f01b7"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:37.917500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ScrollPanel.h"
+   text-time="2006-04-11T01:02:41.370625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="26e8f9257b1f2c12daa9f0d3b004a773"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.151875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Label.h"
+   text-time="2006-04-11T01:02:41.386250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4d9d35375893a242a27788e083a6c0a8"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.292500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_WizardPanel.h"
+   text-time="2006-04-11T01:02:41.386250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="61f450b73b470e2c8bc36782ad24a43b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.323750Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_FocusChangeSignal.h"
+   text-time="2006-04-11T01:02:41.401875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c70520c7226e3fc55bb5a442ac76a202"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.370625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_KeyCode.h"
+   text-time="2006-04-11T01:02:41.386250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9ca65716450d72cbf6bde22d1690fb42"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.355000Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_SurfaceBase.h"
+   text-time="2006-04-11T01:02:41.401875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="49b998a4fba93437407a2c2eabefab17"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.386250Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_TextImage.h"
+   text-time="2006-04-11T01:02:41.417500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="53026d6ee1e0801116a0cc3ec108e2bb"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.386250Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_TickSignal.h"
+   text-time="2006-04-11T01:02:41.417500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="1992c9d5fba7baae9055f38bbadc6581"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.401875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_IntLabel.h"
+   text-time="2006-04-11T01:02:41.433125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="655c53f0a7bf89698bda60d1aaa0f133"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.417500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_EtchedBorder.h"
+   text-time="2006-04-11T01:02:41.433125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="6c720a4807b294fcc773b6ad3dfb63d2"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.417500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_InputSignal.h"
+   text-time="2006-04-11T01:02:41.433125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="173689f7c700f31f9038936b3935a22e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.417500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Panel.h"
+   text-time="2006-04-11T01:02:41.448750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="1c7c015b0e5fbf189e659f62701cf246"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.495625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Menu.h"
+   text-time="2006-04-11T01:02:41.448750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="7493462ea83dcb9fcf926a0ff0dce631"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.511250Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Dar.h"
+   text-time="2006-04-11T01:02:41.480000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ee6d0c8a24e15c1711b53b8f37476b81"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.526875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_TablePanel.h"
+   text-time="2006-04-11T01:02:41.480000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="9054dcf54f4b35d46bc9b8359b8a3f26"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.558125Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Desktop.h"
+   text-time="2006-04-11T01:02:41.480000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="be45137f0d24438a9c820479cf2c45ee"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.573750Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_BorderLayout.h"
+   text-time="2006-04-11T01:02:41.495625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="df1ba5ee5458e4b624f05cfc47ed0511"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.620625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Bitmap.h"
+   text-time="2006-04-11T01:02:41.495625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="6dd8e9b063af6112919b9689659dbb47"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.667500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Layout.h"
+   text-time="2006-04-11T01:02:41.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c053b9903696a3b24c829c828768e156"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.730000Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Cursor.h"
+   text-time="2006-04-11T01:02:41.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d824f368d3482ce11d4ee582400e752b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.776875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ButtonController.h"
+   text-time="2006-04-11T01:02:41.511250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b2982b9e113b447aeaf90a526280e9f8"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.823750Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_MenuSeparator.h"
+   text-time="2006-04-11T01:02:41.526875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="320996b475ea53f6edcfb49b0acef8bf"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.839375Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_TabPanel.h"
+   text-time="2006-04-11T01:02:41.526875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="1964fc364d10b9f98a71443c18cdd6c4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.886250Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_TaskBar.h"
+   text-time="2006-04-11T01:02:41.542500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e4a32170e7b89944c273c0c2f970e387"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.933125Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_FrameSignal.h"
+   text-time="2006-04-11T01:02:41.558125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="1a0ce91d3a4af90224567a1037d83345"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.042500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ButtonGroup.h"
+   text-time="2006-04-11T01:02:41.558125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b09bae6c04185ae0b3fee1ec63aebeb8"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.042500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_PopupMenu.h"
+   text-time="2006-04-11T01:02:41.542500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c49d675faec6bb550dce9170096c9eca"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:38.995625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_RadioButton.h"
+   text-time="2006-04-11T01:02:41.558125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5bc2bca86149f43963f493d512939402"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.245625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_MessageBox.h"
+   text-time="2006-04-11T01:02:41.573750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="75367b6ec95bb5a9a29cb657adcf05cb"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.261250Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_FocusNavGroup.h"
+   text-time="2006-04-11T01:02:41.589375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b3f84b5eec2ae7d5bdc9fdf22dc4d30b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.261250Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Scheme.h"
+   text-time="2006-04-11T01:02:41.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5a8d7f3537f5d47a0c8613911ff6bca8"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.355000Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_RaisedBorder.h"
+   text-time="2006-04-11T01:02:41.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="dea8b7743add7eff449e80b4e5679784"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.355000Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_String.h"
+   text-time="2006-04-11T01:02:41.605000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="cb6f6117bbf1c2a5371657a8f06840d3"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.370625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ComboKey.h"
+   text-time="2006-04-11T01:02:41.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="2237bef7923c35ab86e74527b9082d06"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.417500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_HeaderPanel.h"
+   text-time="2006-04-11T01:02:41.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="801c853b9e36909b6b91a3547061ccca"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.417500Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_CheckButton.h"
+   text-time="2006-04-11T01:02:41.620625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b998d9991e32fd900fa1ea2479236984"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.464375Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ToggleButton.h"
+   text-time="2006-04-11T01:02:41.636250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="dae285d36a602d8cecb1a20f96e6c9ed"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.526875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_App.h"
+   text-time="2006-04-11T01:02:41.651875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="7ba07f9182f3954c5e952c29756e68e9"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.651875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Image.h"
+   text-time="2006-04-11T01:02:41.667500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="467a4e1fc8a474a4437733046c40113b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.714375Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ChangeSignal.h"
+   text-time="2006-04-11T01:02:41.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="e92971f0dc920b04265693141411149b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.839375Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_MouseCode.h"
+   text-time="2006-04-11T01:02:41.683125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="5bbdc615ed53248fc29ca13cc02c6cc4"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.823750Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ScrollBar.h"
+   text-time="2006-04-11T01:02:41.667500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="add8d4e4e87b580ea7089230dd4f01c9"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.745625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ConfigWizard.h"
+   text-time="2006-04-11T01:02:41.698750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c1b043cad2a0ceaae3d2ea51a99ea8c2"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.901875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_BorderPair.h"
+   text-time="2006-04-11T01:02:41.745625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b47c758f39203b26e72aac56bc16ed37"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.995625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_LayoutInfo.h"
+   text-time="2006-04-11T01:02:41.714375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ec43ad68aca00f51778988046fe1d00f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.948750Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ProgressBar.h"
+   text-time="2006-04-11T01:02:41.698750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="522b032584e031cd9e29b4632bec28eb"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:39.901875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_TextGrid.h"
+   text-time="2006-04-11T01:02:41.745625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="166bba21da46682f9ea5dcd41d307016"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.058125Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_TreeFolder.h"
+   text-time="2006-04-11T01:02:41.761250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4e21f550ef2b86472aa1a077f55bcdf2"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.230000Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ListPanel.h"
+   text-time="2006-04-11T01:02:41.761250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="6d0a8023d63e33b96a429372df7d7ded"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.105000Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_MiniApp.h"
+   text-time="2006-04-11T01:02:41.761250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="27ff77b61155fe0a248e8976f829a76c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.245625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_LoweredBorder.h"
+   text-time="2006-04-11T01:02:41.776875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="10ddfbb92331caa4894a54ec0138e36a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.276875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_ImagePanel.h"
+   text-time="2006-04-11T01:02:41.776875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="65d4be14c9f84fb15aeecef94515c863"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.276875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_TextPanel.h"
+   text-time="2006-04-11T01:02:41.776875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="ab6b147d3dafbef52119e4db413641ee"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.339375Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_EditPanel.h"
+   text-time="2006-04-11T01:02:41.808125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="b9b53ea1d9a54561b5b95d576d6e5704"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.370625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_FlowLayout.h"
+   text-time="2006-04-11T01:02:41.808125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="d32b6caf989be698773d83115effe17b"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.605000Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_SurfaceGL.h"
+   text-time="2006-04-11T01:02:41.823750Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="4a4f038c009d34ca3a2a4a818db9798f"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.620625Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_BuildGroup.h"
+   text-time="2006-04-11T01:02:41.839375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="89d9959ac59087e8c9b77b5ee6f69f1a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.636250Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Border.h"
+   text-time="2006-04-11T01:02:41.839375Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="60f868edc2a268725e663e58569cb11d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.651875Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Color.h"
+   text-time="2006-04-11T01:02:41.855000Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="386d9155344c3e4e1699bd4ab0eeca07"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.683125Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI.h"
+   text-time="2006-04-11T01:02:41.870625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="3d66f91f5c188e009674e47aa9d9392c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.823750Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Slider.h"
+   text-time="2006-04-11T01:02:41.870625Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="cd01a56305dbcfaaf915eb9db0c3a7af"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.933125Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_DesktopIcon.h"
+   text-time="2006-04-11T01:02:41.886250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="6553e16246a344c3ded46bc764942c0c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:40.933125Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_MenuItem.h"
+   text-time="2006-04-11T01:02:41.886250Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="bc6fbd68465c3e6787f617927d8b691c"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:41.058125Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_GridLayout.h"
+   text-time="2006-04-11T01:02:41.901875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="6c8e97f055a974b8fd0eee6419da4eec"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:41.073750Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_LineBorder.h"
+   text-time="2006-04-11T01:02:41.901875Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="34a4d15f66ce084786b7208b0c91f1aa"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:41.089375Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Surface.h"
+   text-time="2006-04-11T01:02:41.917500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="8e56dbb4e2bd5bdd8c8414a85c13fe8d"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:41.198750Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_Frame.h"
+   text-time="2006-04-11T01:02:41.917500Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="c27c8d0f9220bcde8451aa1c46f2224a"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:41.230000Z"/>
+<entry
+   committed-rev="2"
+   name="VGUI_IntChangeSignal.h"
+   text-time="2006-04-11T01:02:41.933125Z"
+   committed-date="2005-03-14T13:32:23.046351Z"
+   checksum="79ee40fb1dbbc0381676f56ade69ad8e"
+   last-author="eggy"
+   kind="file"
+   prop-time="2006-04-11T01:02:41.230000Z"/>
+</wc-entries>

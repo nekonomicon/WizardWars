@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="9"
+   name=""
+   committed-date="2005-04-25T06:36:41.455333Z"
+   url="http://202.63.54.179/repos/wizardwars_src/trunk/metamod/hpb_bot_plugin/tools/bot_logo"
+   last-author="Codiac"
+   kind="dir"
+   uuid="ee1ead5f-3cf2-0310-a58d-c3047bbb124c"
+   revision="83"/>
+<entry
+   committed-rev="9"
+   name="file.cpp"
+   text-time="2006-04-11T01:01:11.761250Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="9218dcb419f03350eeead9550bf6f482"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:10.901875Z"/>
+<entry
+   committed-rev="9"
+   name="bot_logo.cpp"
+   text-time="2006-04-11T01:01:11.776875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="d2606549640cb197e8a8a29b3cc391bc"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:11.433125Z"/>
+<entry
+   committed-rev="9"
+   name="bot_logo.rc"
+   text-time="2006-04-11T01:01:11.776875Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="ed2bbc25a4b6189289691db98727680d"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:11.542500Z"/>
+<entry
+   committed-rev="9"
+   name="bot_logo.dsp"
+   text-time="2006-04-11T01:01:11.792500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="df309635cbf929d552cc3c3d12997ea6"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:11.651875Z"/>
+<entry
+   committed-rev="9"
+   name="bot_logo.h"
+   text-time="2006-04-11T01:01:11.792500Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="d237efd228e6427631497bef6b2b6729"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:11.698750Z"/>
+<entry
+   committed-rev="9"
+   name="resource.h"
+   text-time="2006-04-11T01:01:11.808125Z"
+   committed-date="2005-04-25T06:36:41.455333Z"
+   checksum="2dce0bfae9e369d2feedc008e1300e0e"
+   last-author="Codiac"
+   kind="file"
+   prop-time="2006-04-11T01:01:11.761250Z"/>
+</wc-entries>

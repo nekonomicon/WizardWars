@@ -1,0 +1,1766 @@
+#include "extdll.h"
+#include "util.h"
+#include "cbase.h"
+#include "effects.h"
+#include "saverestore.h"
+#include "weapons.h"
+#include "nodes.h"
+#include "doors.h"
+#include "game.h"
+#include "gamerules.h"
+#include "items.h"
+#include "player.h"
+
+#include "tf_globals.h"
+#include "tf_globalinfo.h"
+#include "tf_ent.h"
+#include "tf_teamcheck.h"
+#include "tf_item_goal.h"
+
+
+unsigned int TFEntity::_count = 0;
+TFEntity * TFEntity::m_pHead = NULL;
+TFEntity * TFEntity::m_pTail = NULL;
+
+
+TFEntity::TFEntity()
+{
+	m_szName[0]				= '\0';
+
+	m_iId					= 0;
+	m_iState				= 0;
+	m_iGroupId				= 0;
+	m_iOwner				= 0;
+
+	m_iInitialState			= 0;
+
+	m_iGoalActivation		= 0;
+	m_iGoalEffects			= 0;
+	m_iGoalResults			= 0;
+
+	m_vOrigin				= Vector( 0, 0, 0 );
+	m_vAngles				= Vector( 0, 0, 0 );
+
+	m_iModel				= 0;
+	m_iMaster				= 0;
+
+	m_flPauseTime			= 0.0f;
+	m_flDelayTime			= 0.0f;
+	m_flActiveTime			= 0.0f;
+	m_flStayActive			= 0.0f;
+
+	memset( m_iMessages,  0, sizeof(int) * TF_MSG_LASTMSG   );
+	memset( m_iTeamScores, 0, sizeof(int) * TF_TEAM_MAXTEAMS );
+
+	m_iTeamScore			= 0;
+
+	m_iGiveFrags			= 0;
+	m_iGiveLives			= 0;
+	m_iGiveHealth			= 0;
+	m_iGiveShells			= 0;
+	m_iGiveNails			= 0;
+	m_iGiveRockets			= 0;
+	m_iGiveCells			= 0;
+	m_iGiveArmor			= 0;
+	m_iGiveArmorType		= 0;
+	m_iGiveGren1			= 0;
+	m_iGiveGren2			= 0;
+	m_iGiveDetpack			= 0;
+	m_iGiveMedkit			= 0;
+
+	m_flGodTime				= 0.0f;
+	m_flQuadTime			= 0.0f;
+	m_flInvisTime			= 0.0f;
+	m_flRadTime				= 0.0f;
+
+	m_iHudItems				= 0;
+
+	m_iGoalToActivate		= 0;
+	m_iGoalToInActivate		= 0;
+	m_iGoalToRemove			= 0;
+	m_iGoalToRestore		= 0;
+
+	m_iItemToGive			= 0;
+	m_iItemToRemove			= 0;
+	m_iItemToReturn			= 0;
+
+	m_iGroupToActivate		= 0;
+	m_iGroupToInActivate	= 0;
+	m_iGroupToRemove		= 0;
+	m_iGroupToRestore		= 0;
+
+	m_iSpawnToRemove		= 0;
+	m_iSpawnToRestore		= 0;
+	m_iSpawnGroupToRemove	= 0;
+	m_iSpawnGroupToRestore	= 0;
+
+	m_iGoalOnReturn			= 0;
+
+	m_iElseGoal				= 0;
+
+	m_iReqTeam				= 0;
+	m_iTeamCheck			= 0;
+	m_iOwnerTeamCheck		= 0;
+
+	m_iAllActive			= 0;
+	m_iAllActiveGoal		= 0;
+
+	m_iAllCarried			= 0;
+	m_iAllCarriedGoal		= 0;
+
+	m_iAllCarriedSingle		= 0;
+	m_iAllCarriedSingleGoal	= 0;
+
+	m_iApplyTeam			= 0;
+	m_iApplyNotTeam			= 0;
+	m_flGoalRadius			= 0.0f;
+
+
+	m_iGoalIsActive			= 0;
+	m_iGoalIsInActive		= 0;
+	m_iGoalIsRemoved		= 0;
+
+	m_iItemIsNeeded			= 0;
+	m_iItemFromGroup		= 0;
+	m_iItemFromNotGroup		= 0;
+	m_iItemGroupToRemove	= 0;
+
+	m_iItemHasMoved			= 0;
+	m_iItemNotHasMoved		= 0;
+
+	m_iGroupIsActive		= 0;
+	m_iGroupIsInActive		= 0;
+	m_iGroupIsRemoved		= 0;
+
+	_count++;
+	myCount = _count;
+
+	m_pPrev = NULL;
+	m_pNext = NULL;
+
+	if( m_pHead == NULL )
+		m_pHead = this;
+
+	if( m_pTail != NULL )
+		m_pTail->m_pNext = this;
+
+	m_pPrev = m_pTail;
+	m_pTail = this;
+}
+
+// 1.2.5 Breakables remove crash fix
+void TFEntity::TFRemove()
+{
+	if(m_pPrev && m_pNext) // In middle
+	{
+		m_pPrev->m_pNext = m_pNext;
+		m_pNext->m_pPrev = m_pPrev;
+	}
+	// 1.2.7 #21 this sometimes get called twice, fireball
+	// so we need to specify this
+	else if(m_pHead == this && m_pTail == this) // Only one in list
+	{
+		m_pHead = NULL;
+		m_pTail = NULL;
+	}
+	else if(this == m_pHead)
+	{
+		m_pHead = m_pNext;
+		m_pNext->m_pPrev = NULL;
+	}
+	// 1.2.7 #21 this sometimes get called twice, fireball
+	// so we need to specify this
+	else if(m_pTail == this)
+	{
+		m_pTail = m_pPrev;
+		m_pPrev->m_pNext = NULL;
+	}
+
+	m_pNext = NULL;
+	m_pPrev = NULL;
+	_count--;
+}
+
+
+void TFEntity::DebugOutputAll( void )
+{
+	FILE * pFile = NULL;
+
+	pFile = fopen( "tfdebug.txt", "w" );
+
+	if( !pFile )
+		return;
+
+	fclose( pFile );
+
+	for( TFEntity * pTF = m_pHead; pTF != NULL; pTF = pTF->m_pNext )
+	{
+		if( pTF->m_pPrev == NULL && pTF != m_pHead )
+			break;
+
+		pTF->DebugOutput();
+	}
+}
+
+
+inline void DebugOut( FILE * pFile, const char * pszField, int iValue, bool bString )
+{
+	if( iValue == 0 )
+		return;
+
+	char szOutput[512];
+
+	sprintf( szOutput, "	%s: ", pszField );
+
+	int iLen = strlen( szOutput );
+
+	int i;
+	for( i = iLen; i <= 40; i++ )
+		strcat( szOutput, " " );
+
+	char szTemp[64];
+
+	// assume string for high values
+	if( bString )
+		sprintf( szTemp, "%s", STRING( iValue ) );
+	else
+		sprintf( szTemp, "%i", iValue );
+
+	strcat( szOutput, szTemp );
+	strcat( szOutput, "\n" );
+
+	fprintf( pFile, szOutput );
+
+	return;
+}
+
+
+void TFEntity::DebugOutput( void )
+{
+	FILE * pFile = NULL;
+
+	pFile = fopen( "tfdebug.txt", "a" );
+
+	if( !pFile )
+		return;
+
+//	int iCount = 0;
+
+	fprintf( pFile, "%s", STRING( tfpev->classname ) );
+
+	if( tfpev->netname )
+		fprintf( pFile, " : %s", STRING( tfpev->netname ) );
+
+	fprintf( pFile, "\n" );
+
+	DebugOut( pFile, "Id",					m_iId					, false );
+	DebugOut( pFile, "Group",				m_iGroupId				, false );
+	DebugOut( pFile, "Owner",				m_iOwner				, false );
+	DebugOut( pFile, "State",				m_iState				, false );
+	DebugOut( pFile, "Init State",			m_iInitialState			, false );
+	DebugOut( pFile, "TeamCheck",			m_iTeamCheck			, false );
+	DebugOut( pFile, "OwnerCheck",			m_iOwnerTeamCheck		, false );
+	DebugOut( pFile, "Activation",			m_iGoalActivation		, false );
+	DebugOut( pFile, "Effects",				m_iGoalEffects			, false );
+	DebugOut( pFile, "Results",				m_iGoalResults			, false );
+	DebugOut( pFile, "Req Team",			m_iReqTeam				, false );
+	DebugOut( pFile, "Req Goal Active",		m_iGoalIsActive			, false );
+	DebugOut( pFile, "Req Goal Inactive",	m_iGoalIsInActive		, false );
+	DebugOut( pFile, "Req Goal Removed",	m_iGoalIsRemoved		, false );
+	DebugOut( pFile, "Req Group Active",	m_iGroupIsActive		, false );
+	DebugOut( pFile, "Req Group Inactive",	m_iGroupIsInActive		, false );
+	DebugOut( pFile, "Req Group Removed",	m_iGroupIsRemoved		, false );
+	DebugOut( pFile, "Req Item",			m_iItemIsNeeded			, false );
+	DebugOut( pFile, "Req Item Group",		m_iItemFromGroup		, false );
+	DebugOut( pFile, "Req Item Not Group",	m_iItemFromNotGroup		, false );
+	DebugOut( pFile, "Req Item Moved",		m_iItemHasMoved			, false );
+	DebugOut( pFile, "Req Item Not Moved",	m_iItemNotHasMoved		, false );
+	DebugOut( pFile, "Activate Goal",		m_iGoalToActivate		, false );
+	DebugOut( pFile, "Inactivate Goal",		m_iGoalToInActivate		, false );
+	DebugOut( pFile, "Remove Goal",			m_iGoalToRemove			, false );
+	DebugOut( pFile, "Restore Goal",		m_iGoalToRestore		, false );
+	DebugOut( pFile, "Activate Group",		m_iGroupToActivate		, false );
+	DebugOut( pFile, "Inactivate Group",	m_iGroupToInActivate	, false );
+	DebugOut( pFile, "Remove Group",		m_iGroupToRemove		, false );
+	DebugOut( pFile, "Restore Group",		m_iGroupToRestore		, false );
+	DebugOut( pFile, "Give Item",			m_iItemToGive			, false );
+	DebugOut( pFile, "Remove Item",			m_iItemToRemove			, false );
+	DebugOut( pFile, "Return Item",			m_iItemToReturn			, false );
+	DebugOut( pFile, "Remove Item Group",	m_iItemGroupToRemove	, false );
+	DebugOut( pFile, "Remove Spawn",		m_iSpawnToRemove		, false );
+	DebugOut( pFile, "Restore Spawn",		m_iSpawnToRestore		, false );
+	DebugOut( pFile, "Remove Spawn Group",	m_iSpawnGroupToRemove	, false );
+	DebugOut( pFile, "Restore Spawn Group",	m_iSpawnGroupToRestore	, false );
+	DebugOut( pFile, "Activate on Return",	m_iGoalOnReturn			, false );
+	DebugOut( pFile, "Activate on Failer",	m_iElseGoal				, false );
+	DebugOut( pFile, "Apply to Team",		m_iApplyTeam			, false );
+	DebugOut( pFile, "Apply to Not Team",	m_iApplyNotTeam			, false );
+	DebugOut( pFile, "Apply to Radius",		m_flGoalRadius			, false );
+
+	DebugOut( pFile, "Global Name",			tfpev->globalname		, true  );
+	DebugOut( pFile, "Net Name",			tfpev->netname			, true  );
+	DebugOut( pFile, "Target",				tfpev->target			, true  );
+	DebugOut( pFile, "Target Name",			tfpev->targetname		, true  );
+	DebugOut( pFile, "Global Name",			tfpev->globalname		, true  );
+	DebugOut( pFile, "Model",				tfpev->model			, true  );
+
+	fprintf( pFile, "\n" );
+
+	fclose( pFile );
+}
+
+
+//------------------------------------------------------------------------------
+// ParseSettings:
+//	Parsing settings
+//------------------------------------------------------------------------------
+BOOL TFEntity::ParseSettings( const char * key, const char * value )
+{
+	if( !key || !value )
+		return FALSE;
+
+	if( TFStrEq( 1, key, "goal_no" ) )
+	{
+		m_iId = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "group_no" ) )
+	{
+		m_iGroupId = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "goal_state" ) )
+	{
+		int iValue = atoi( value );
+
+		if( iValue == 1 )
+			m_iInitialState = TF_GOALSTATE_ACTIVE;
+		else if( iValue == 2 )
+			m_iInitialState = TF_GOALSTATE_INACTIVE;
+		else if( iValue == 3 )
+			m_iInitialState = TF_GOALSTATE_REMOVED;
+		else
+			m_iInitialState = TF_GOALSTATE_INACTIVE;
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "owned_by" ) )
+	{
+		m_iOwner = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "team_no" ) )
+	{
+		m_iReqTeam = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "mdl" ) )
+	{
+		m_iModel = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "master" ) )
+	{
+		m_iMaster = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	
+	else if( TFStrEq( 1, key, "wait" ) )
+	{
+		m_flStayActive = atof( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "goal_activation", "g_a" ) )
+	{
+		m_iGoalActivation = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "goal_effects", "g_e" ) )
+	{
+		m_iGoalEffects = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "goal_result", "g_r" ) )
+	{
+		m_iGoalResults = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "items_allowed" ) )
+	{
+		m_iItemIsNeeded = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "has_item_from_group", "h_i_g" ) )
+	{
+		m_iItemFromGroup = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "hasnt_item_from_group", "n_i_g" ) )
+	{
+		m_iItemFromNotGroup = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "if_item_has_moved" ) )
+	{
+		m_iItemHasMoved = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "if_item_hasnt_moved" ) )
+	{
+		m_iItemNotHasMoved = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "if_goal_is_active" ) )
+	{
+		m_iGoalIsActive = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "if_goal_is_inactive" ) )
+	{
+		m_iGoalIsInActive = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "if_goal_is_removed" ) )
+	{
+		m_iGoalIsRemoved = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "if_group_is_active" ) )
+	{
+		m_iGroupIsActive = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "if_group_is_inactive" ) )
+	{
+		m_iGroupIsInActive = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "if_group_is_removed" ) )
+	{
+		m_iGroupIsRemoved = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "activate_goal_no" ) )
+	{
+		m_iGoalToActivate = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "inactivate_goal_no" ) )
+	{
+		m_iGoalToInActivate = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "teamcheck" ) )
+	{
+		m_iTeamCheck = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "remove_goal_no", "rv_g" ) )
+	{
+		m_iGoalToRemove = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "restore_goal_no", "rs_g" ) )
+	{
+		m_iGoalToRestore = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "activate_group_no" ) )
+	{
+		m_iGroupToActivate = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "inactivate_group_no" ) )
+	{
+		m_iGroupToInActivate = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "remove_group_no", "rv_gr" ) )
+	{
+		m_iGroupToRemove = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "restore_group_no", "rs_gr" ) )
+	{
+		m_iGroupToRestore = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "remove_spawnpoint", "rv_s" ) )
+	{
+		m_iSpawnToRemove = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "restore_spawnpoint", "rs_s" ) )
+	{
+		m_iSpawnToRestore = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "remove_spawngroup", "rv_s_h" ) )
+	{
+		m_iSpawnGroupToRemove = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "restore_spawngroup", "rs_s_h" ) )
+	{
+		m_iSpawnGroupToRestore = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "all_active" ) )
+	{
+		m_iAllActive = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "last_impulse" ) )
+	{
+		m_iAllActiveGoal = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "distance" ) )
+	{
+		m_iAllCarried = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "pain_finished" ) )
+	{
+		m_iAllCarriedGoal = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "speed" ) )
+	{
+		m_iAllCarriedSingle = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "attack_finished" ) )
+	{
+		m_iAllCarriedSingleGoal = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "impulse" ) )
+	{
+		m_iGoalOnReturn = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "else_goal" ) )
+	{
+		m_iElseGoal = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "maxammo_shells" ) )
+	{
+		m_iApplyTeam = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "maxammo_nails" ) )
+	{
+		m_iApplyNotTeam = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "t_length" ) )
+	{
+		m_flGoalRadius = atof( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "items" ) )
+	{
+		m_iItemToGive = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "axhitme" ) )
+	{
+		m_iItemToRemove = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "return_item_no" ) )
+	{
+		m_iItemToReturn = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "remove_item_group", "r_i_g" ) )
+	{
+		m_iItemGroupToRemove = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "delay_time" ) )
+	{
+		m_flDelayTime = atof( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "pausetime" ) )
+	{
+		m_flPauseTime = atof( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "frags" ) )
+	{
+		m_iGiveFrags = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "lives" ) )
+	{
+		m_iGiveLives = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "health" ) )
+	{
+		m_iGiveHealth = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "armorvalue" ) )
+	{
+		m_iGiveArmor = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "armorclass" ) )
+	{
+		m_iGiveArmorType = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "ammo_shells", "a_s" ) )
+	{
+		m_iGiveShells = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "ammo_nails", "a_n" ) )
+	{
+		m_iGiveNails = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "ammo_rockets", "a_r" ) )
+	{
+		m_iGiveRockets = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "ammo_cells", "a_c" ) )
+	{
+		m_iGiveCells = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "no_grenades_1" ) )
+	{
+		m_iGiveGren1 = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "no_grenades_2" ) )
+	{
+		m_iGiveGren2 = atoi( value );
+
+		return TRUE;
+	}
+	
+	else if( TFStrEq( 2, key, "ammo_detpack", "a_d" ) )
+	{
+		m_iGiveDetpack = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "ammo_medikit", "a_m" ) )
+	{
+		m_iGiveMedkit = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "invincible_finished" ) )
+	{
+		m_flGodTime = atof( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "invisible_finished" ) )
+	{
+		m_flInvisTime = atof( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "super_damage_finished" ) )
+	{
+		m_flQuadTime = atof( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "radsuit_finished" ) )
+	{
+		m_flRadTime = atof( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "count" ) )
+	{
+		m_iTeamScore = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "increase_team" ) )
+	{
+		m_iTeamScores[ TF_TEAM_NONE ] = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "increase_team1" ) )
+	{
+		m_iTeamScores[ TF_TEAM_BLUE ] = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "increase_team2" ) )
+	{
+		m_iTeamScores[ TF_TEAM_RED ] = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "increase_team3" ) )
+	{
+		m_iTeamScores[ TF_TEAM_YELLOW ] = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "increase_team4" ) )
+	{
+		m_iTeamScores[ TF_TEAM_GREEN ] = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "owned_by_teamcheck" ) )
+	{
+		m_iOwnerTeamCheck = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "deathtype" ) )
+	{
+		m_iMessages[ TF_MSG_DEATH ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 4, key, "broadcast", "b_b", "netname_broadcast", "n_b" ) )
+	{
+		m_iMessages[ TF_MSG_BROADCAST ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "message" ) )
+	{
+		m_iMessages[ TF_MSG_BROADCAST_AP ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 4, key, "team_broadcast", "b_t", "netname_team_broadcast", "n_t" ) )
+	{
+		m_iMessages[ TF_MSG_BROADCAST_AP_TEAM ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 4, key, "non_team_broadcast", "b_n", "netname_non_team_broadcast", "n_n" ) )
+	{
+		m_iMessages[ TF_MSG_BROADCAST_AP_NONTEAM ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 3, key, "owners_team_broadcast", "b_o", "n_o" ) )
+	{
+		m_iMessages[ TF_MSG_BROADCAST_OWNER ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "non_owners_team_broadcast" ) )
+	{
+		m_iMessages[ TF_MSG_BROADCAST_NONOWNER ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "team_drop", "netname_team_drop" ) )
+	{
+		m_iMessages[ TF_MSG_DROP_OWNER ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 2, key, "non_team_drop", "netname_non_team_drop" ) )
+	{
+		m_iMessages[ TF_MSG_DROP_NONOWNER ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "noise" ) )
+	{
+		m_iMessages[ TF_MSG_SOUND ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "noise3" ) )
+	{
+		m_iMessages[ TF_MSG_RETURN_AP_TEAM ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "noise4" ) )
+	{
+		m_iMessages[ TF_MSG_RETURN_OWNER ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "speak" ) )
+	{
+		m_iMessages[ TF_MSG_SPEAK ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "ap_speak" ) )
+	{
+		m_iMessages[ TF_MSG_SPEAK_AP ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "team_speak" ) )
+	{
+		m_iMessages[ TF_MSG_SPEAK_AP_TEAM ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "non_team_speak" ) )
+	{
+		m_iMessages[ TF_MSG_SPEAK_AP_NONTEAM ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "owners_team_speak" ) )
+	{
+		m_iMessages[ TF_MSG_SPEAK_OWNER ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "non_owners_team_speak" ) )
+	{
+		m_iMessages[ TF_MSG_SPEAK_NONOWNER ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "endround_time" ) )
+	{
+		m_iMessages[ TF_MSG_ENDROUND_TIME ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "endround_owned_by" ) )
+	{
+		m_iMessages[ TF_MSG_ENDROUND_OWNER ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+	
+	else if( TFStrEq( 1, key, "endround_non_owned_by" ) )
+	{
+		m_iMessages[ TF_MSG_ENDROUND_NONOWNER ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+	
+	else if( TFStrEq( 1, key, "endround_team1" ) )
+	{
+		m_iMessages[ TF_MSG_ENDROUND_TEAM1 ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+	
+	else if( TFStrEq( 1, key, "endround_team2" ) )
+	{
+		m_iMessages[ TF_MSG_ENDROUND_TEAM2 ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+	
+	else if( TFStrEq( 1, key, "endround_team3" ) )
+	{
+		m_iMessages[ TF_MSG_ENDROUND_TEAM3 ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "endround_team4" ) )
+	{
+		m_iMessages[ TF_MSG_ENDROUND_TEAM4 ] = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "playerclass" ) )
+	{
+		m_iReqClass = atoi( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "netname" ) )
+	{
+		m_iName = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+	else if( TFStrEq( 1, key, "targetname" ) )
+	{
+		m_iTargetName = ALLOC_STRING( value );
+
+		return TRUE;
+	}
+
+
+	return FALSE;
+}
+
+
+BOOL TFEntity::CheckActivation( CBaseEntity * pEntity )
+{
+	Debug( "Checking activation for goal(%s).", GoalName() );
+
+	TFEntity * pTF = NULL;
+
+	// check if the player meets our standards
+	if( pEntity != NULL )
+	{
+		if( m_iTeamCheck != 0 )
+		{
+			TFTeamCheck * pTeamCheck = NULL;
+
+			for( pTF = m_pHead; pTF != NULL; pTF = pTF->m_pNext )
+			{
+				if( pTF->m_iTargetName == m_iTeamCheck )
+				{
+					pTeamCheck = (TFTeamCheck *)pTF;
+					break;
+				}
+			}
+
+			if( !pTeamCheck )
+			{
+				if( pEntity->pev->team != pTeamCheck->GetTeam() )
+					return Failed( "other->team(%i) != teamcheck->team(%i)",
+						pEntity->pev->team, pTeamCheck->GetTeam() );
+			}
+		}
+
+		if( m_iReqTeam != 0 && pEntity->pev->team != m_iReqTeam )
+			return Failed( "other->team(%i) != reqired->team(%i)",
+				pEntity->pev->team, m_iReqTeam );
+
+		if( m_iReqClass != 0 && pEntity->pev->playerclass != m_iReqClass )
+			return Failed( "other->playerclass(%i) != required->playerclass(%i)",
+				pEntity->pev->team, m_iReqClass );
+	}
+
+	// update the owner if we are based on a teamcheck
+	if( m_iOwnerTeamCheck != 0 )
+	{
+		TFTeamCheck * pTeamCheck = NULL;
+
+		for( pTF = m_pHead; pTF != NULL; pTF = pTF->m_pNext )
+		{
+			if( pTF->m_iTargetName == m_iOwnerTeamCheck )
+			{
+				pTeamCheck = (TFTeamCheck *)pTF;
+				break;
+			}
+		}
+
+		if( pTeamCheck != NULL )
+			m_iOwner = pTeamCheck->GetTeam();
+	}
+
+	BOOL bGoalFound  = FALSE;
+	BOOL bItemFound  = FALSE;
+	BOOL bGroupFound = FALSE;
+	BOOL bItGrpFound = FALSE;
+
+	for( pTF = m_pHead; pTF != NULL; pTF = pTF->m_pNext )
+	{
+		int iId		= pTF->m_iId;
+		int iGroup	= pTF->m_iGroupId;
+		int iState	= pTF->m_iState;
+
+		if( pTF->m_pPrev == NULL && pTF != m_pHead )
+			break;
+
+		if( iId != 0 )
+		{
+			if( iId == m_iGoalIsActive )
+			{
+				if( iState != TF_GOALSTATE_ACTIVE )
+					return Failed( "required goal(%s) was not active", pTF->GoalName() );
+
+				bGoalFound = TRUE;
+			}
+
+			if( iId == m_iGoalIsInActive )
+			{
+				if( iState != TF_GOALSTATE_INACTIVE )
+					return Failed( "required goal(%s) was not inactive", pTF->GoalName() );
+				
+				bGoalFound = TRUE;
+			}
+
+			if( iId == m_iGoalIsRemoved )
+			{
+				if( iState != TF_GOALSTATE_REMOVED )
+					return Failed( "required goal(%s) was not removed", pTF->GoalName() );
+				
+				bGoalFound = TRUE;
+			}
+		}
+
+		if( iGroup != 0 )
+		{
+			if( iGroup == m_iGroupIsActive )
+			{
+				if( iState != TF_GOALSTATE_ACTIVE )
+					return Failed( "Goal(%s) in required group(%i) was not active",
+						pTF->GoalName(), m_iGroupIsActive );
+
+				bGroupFound = TRUE;
+			}
+
+			if( iGroup == m_iGroupIsInActive )
+			{
+				if( iState != TF_GOALSTATE_INACTIVE )
+					return Failed( "Goal(%s) in required group(%i) was not inactive",
+						pTF->GoalName(), m_iGroupIsInActive );
+
+				bGroupFound = TRUE;
+			}
+
+			if( iGroup == m_iGroupIsRemoved )
+			{
+				if( iState != TF_GOALSTATE_REMOVED )
+					return Failed( "Goal(%s) in required group(%i) was not removed",
+						pTF->GoalName(), m_iGroupIsRemoved );
+
+				bGroupFound = TRUE;
+			}
+		}
+
+		if( pTF->Classify() == TF_ENT_ITEM_GOAL )
+		{
+			if( iId != 0 )
+			{
+				if( iId == m_iItemHasMoved )
+				{
+					if( !pTF->IsMoved() )
+						return Failed( "required item(%s) has not moved", pTF->GoalName() );
+
+					bItemFound = TRUE;
+				}
+
+				if( iId == m_iItemNotHasMoved )
+				{
+					if( pTF->IsMoved() )
+						return Failed( "required item(%s) has moved", pTF->GoalName() );
+
+					bItemFound = TRUE;
+				}
+
+				if( iId == m_iItemIsNeeded )
+				{
+					if( pTF->GetPlayer() == NULL )
+						return Failed( "player does not have required item(%s)", pTF->GoalName() );
+
+					if( pTF->GetPlayer() != pEntity )
+						return Failed( "player does not have required item(%s)", pTF->GoalName() );
+
+					bItemFound = TRUE;
+				}
+			}
+
+			if( iGroup != 0 )
+			{
+				if( iGroup == m_iItemFromGroup )
+				{
+					if( pTF->GetPlayer() == NULL )
+						return Failed( "player(%s) does not have item(%s) from required group(%i)",
+							STRING( pEntity->pev->netname ), pTF->GoalName(), m_iItemFromGroup );
+
+					if( pTF->GetPlayer() != pEntity )
+						return Failed( "player(%s) does not have item(%s) from required group(%i)",
+							STRING( pEntity->pev->netname ), pTF->GoalName(), m_iItemFromGroup );
+
+					bItGrpFound = TRUE;
+				}
+
+				if( iGroup == m_iItemFromNotGroup )
+				{
+					if( pTF->GetPlayer() != NULL )
+					{
+						if( pTF->GetPlayer() == pEntity )
+							return Failed( "player(%s) has item(%s) from banned group(%i)",
+								STRING( pEntity->pev->netname ), pTF->GoalName(), m_iItemFromNotGroup );
+					}
+
+					bItGrpFound = TRUE;
+				}
+			}
+		}
+	}
+
+	if( !bGoalFound )
+	{
+		if( m_iGoalIsActive  )
+			return Failed( "no goal(%i) found but one was required", m_iGoalIsActive );
+
+		if( m_iGoalIsInActive )
+			return Failed( "no goal(%i) found but one was required", m_iGoalIsInActive );
+		
+		if( m_iGoalIsRemoved )
+			return Failed( "no goal(%i) found but one was required", m_iGoalIsRemoved );
+	}
+
+	if( !bItemFound )
+	{
+		if( m_iItemHasMoved )
+			return Failed( "no item(%i) found but one was required", m_iItemHasMoved );
+		
+		if( m_iItemNotHasMoved )
+			return Failed( "no item(%i) found but one was required", m_iItemNotHasMoved );
+		
+		if( m_iItemIsNeeded )
+			return Failed( "no item(%i) found but one was required", m_iItemIsNeeded );
+	}
+
+	if( !bGroupFound )
+	{
+		if( m_iGroupIsActive )
+			return Failed( "no goal in group(%i) found but one was required", m_iGroupIsActive );
+		
+		if( m_iGroupIsInActive )
+			return Failed( "no goal in group(%i) found but one was required", m_iGroupIsInActive );
+		
+		if( m_iGroupIsRemoved )
+			return Failed( "no goal in group(%i) found but one was required", m_iGroupIsRemoved );
+	}
+
+	if( !bItGrpFound )
+	{
+		if( m_iItemFromGroup )
+			return Failed( "no item in group(%i) found but one was required", m_iItemFromGroup );
+
+		if( m_iItemFromNotGroup )
+			return Failed( "no item in group(%i) found but one was required", m_iItemFromNotGroup );
+	}
+
+	if( m_iGoalActivation & TF_GOAL_ACTIVATION_IF_AP_FAILS_CRITERIA )
+	{
+		Debug( "Check activation failed. Criteria reversed." );
+		return FALSE;
+	}
+
+	Debug( "Check activation sucessful." );
+
+	return TRUE;
+}
+
+
+void TFEntity::ProcessGoals( CBaseEntity * pEntity )
+{
+	CBaseEntity * pMod = pEntity;
+
+	if( m_iGoalResults & TF_GOAL_RESULT_SUB_GOALS_DONT_APPLY_MODS )
+		pMod = NULL;
+
+	for( TFEntity * pTF = m_pHead; pTF != NULL; pTF = pTF->m_pNext )
+	{
+		int iId		= pTF->m_iId;
+		int iGroup	= pTF->m_iGroupId;
+
+		if( pTF->m_pPrev == NULL && pTF != m_pHead )
+			break;
+
+		// process teamspawn
+		if( pTF->Classify() == TF_ENT_INFO_TEAMSPAWN )
+		{
+			if( iId != 0 )
+			{
+				if( iId == m_iSpawnToRemove )
+					pTF->GoalRemove( pMod );
+
+				if( iId == m_iSpawnToRestore )
+					pTF->GoalRestore( pMod );
+			}
+
+			if( iGroup != 0 )
+			{
+				if( iGroup == m_iSpawnGroupToRestore )
+					pTF->GoalRemove( pMod );
+
+				if( iGroup == m_iSpawnGroupToRestore )
+					pTF->GoalRestore( pMod );
+			}
+
+			continue;
+		}
+
+		// process goals
+		if( iId != 0 )
+		{
+			if( iId == m_iGoalToActivate )
+			{
+				Debug( "Goal(%s) trying to activate goal(%s)", GoalName(), pTF->GoalName() );
+				pTF->GoalActivate( pMod );
+			}
+
+			if( iId == m_iGoalToInActivate )
+			{
+				Debug( "Goal(%s) trying to inactivate goal(%s)", GoalName(), pTF->GoalName() );
+				pTF->GoalInActivate( pMod );
+			}
+
+			if( iId == m_iGoalToRemove )
+			{
+				Debug( "Goal(%s) trying to remove goal(%s)", GoalName(), pTF->GoalName() );
+				pTF->GoalRemove( pMod );
+			}
+
+			if( iId == m_iGoalToRestore )
+			{
+				Debug( "Goal(%s) trying to restore goal(%s)", GoalName(), pTF->GoalName() );
+				pTF->GoalRestore( pMod );
+			}
+		}
+
+		// process groups
+		if( iGroup != 0 )
+		{
+			if( iGroup == m_iGroupToActivate )
+			{
+				Debug( "Goal(%s) trying to activate goal(%s) in group(%i)", GoalName(), pTF->GoalName(), m_iGroupToActivate );
+				pTF->GoalActivate( pMod );
+			}
+
+			if( iGroup == m_iGroupToInActivate )
+			{
+				Debug( "Goal(%s) trying to inactivate goal(%s) in group(%i)", GoalName(), pTF->GoalName(), m_iGroupToInActivate );
+				pTF->GoalInActivate( pMod );
+			}
+
+			if( iGroup == m_iGroupToRemove )
+			{
+				Debug( "Goal(%s) trying to remove goal(%s) in group(%i)", GoalName(), pTF->GoalName(), m_iGroupToRemove );
+				pTF->GoalRemove( pMod );
+			}
+
+			if( iGroup == m_iGroupToRestore )
+			{
+				Debug( "Goal(%s) trying to restore goal(%s) in group(%i)", GoalName(), pTF->GoalName(), m_iGroupToRestore );
+				pTF->GoalRestore( pMod );
+			}
+		}
+
+		if( pTF->Classify() == TF_ENT_ITEM_GOAL )
+		{
+			if( iId != 0 )
+			{
+				if( iId == m_iItemToGive )
+				{
+					Debug( "Goal(%s) trying to give item(%s)", GoalName(), pTF->GoalName() );
+					pTF->GoalActivate( pMod );
+				}
+
+				if( iId == m_iItemToRemove  )
+				{
+					Debug( "Goal(%s) trying to remove item(%s)", GoalName(), pTF->GoalName() );
+					pTF->GoalRemove( pMod );
+				}
+
+				if( iId == m_iItemToReturn )
+				{
+					Debug( "Goal(%s) trying to return item(%s)", GoalName(), pTF->GoalName() );
+					pTF->GoalReturn( pMod );
+				}
+			}
+
+			if( iGroup != 0 )
+			{
+				if( iGroup == m_iItemGroupToRemove )
+				{
+					Debug( "Goal(%s) trying to remove item(%s) from group(%i)", GoalName(), pTF->GoalName(), m_iItemGroupToRemove );
+					pTF->GoalRemove( pMod );
+				}
+			}
+		}
+	}
+
+	ProcessEffects( pEntity );
+	
+	if( m_iMessages[ TF_MSG_SOUND ] != 0 )
+		EMIT_SOUND( ENT(tfpev), CHAN_STATIC, STRING( m_iMessages[ TF_MSG_SOUND ] ), 1.0, ATTN_NORM );
+
+
+	GoalGrab( pEntity );
+
+	CBaseEntity * pThis = CBaseEntity::Instance( tfpev );
+	if( pThis != NULL )
+		pThis->SUB_UseTargets( pMod, USE_TOGGLE, 0 );
+
+	m_flInActiveTime = gpGlobals->time + m_flStayActive;
+
+	if( m_iGoalResults & TF_GOAL_RESULT_REMOVE_IMMEDIATELY )
+	{
+		GoalRemove( pMod );
+		m_flInActiveTime = 0.0f;
+	}
+}
+
+
+void TFEntity::ProcessEffects( CBaseEntity * pEntity )
+{
+	g_pTFGlobalInfo->AddTeamScore( TF_TEAM_RED,	m_iTeamScores[ TF_TEAM_RED	] );
+	g_pTFGlobalInfo->AddTeamScore( TF_TEAM_BLUE,   m_iTeamScores[ TF_TEAM_BLUE   ] );
+	g_pTFGlobalInfo->AddTeamScore( TF_TEAM_YELLOW, m_iTeamScores[ TF_TEAM_YELLOW ] );
+	g_pTFGlobalInfo->AddTeamScore( TF_TEAM_GREEN,  m_iTeamScores[ TF_TEAM_GREEN  ] );
+
+	if( m_iTeamCheck != 0 )
+	{
+		TFTeamCheck * pTeamCheck = NULL;
+
+		for( TFEntity * pTF = m_pHead; pTF != NULL; pTF = pTF->m_pNext )
+		{
+			if( pTF->m_iTargetName == m_iOwnerTeamCheck )
+			{
+				pTeamCheck = (TFTeamCheck *)pTF;
+				break;
+			}
+		}
+
+		if( pTeamCheck != NULL )
+			g_pTFGlobalInfo->AddTeamScore( pTeamCheck->GetTeam(), m_iTeamScores[ TF_TEAM_NONE ] );
+	}
+
+	if( pEntity != NULL )
+	{
+		g_pTFGlobalInfo->AddTeamScore( pEntity->pev->team, m_iTeamScore );
+		g_pTFGlobalInfo->AddTeamLives( pEntity->pev->team, m_iGiveLives );
+	}
+
+	int i;
+	for( i = 1; i <= gpGlobals->maxClients; i++ )
+	{
+		CBasePlayer * pPlayer = (CBasePlayer *)UTIL_PlayerByIndex( i );
+
+		if( !pPlayer )
+			continue;
+
+		PlayerMessage( pEntity, pPlayer );
+		
+		if( m_iGoalEffects & TF_GOAL_EFFECT_CHECK_APA_INDIVIDUALLY )
+		{
+			if( !CheckActivation( pPlayer ) )
+				continue;
+		}
+
+		if( pEntity != NULL )
+		{
+			BOOL bPass = FALSE;
+
+			if( pEntity->entindex() == pPlayer->entindex() )
+			{
+				if( m_iGoalEffects & TF_GOAL_EFFECT_AP )
+					bPass = TRUE;
+			}
+			else
+			{
+				if( m_iGoalEffects & TF_GOAL_EFFECT_NONAP )
+					bPass = TRUE;
+			}
+
+			if( pEntity->pev->team == pPlayer->pev->team )
+			{
+				if( m_iGoalEffects & TF_GOAL_EFFECT_AP_TEAM )
+					bPass = TRUE;
+			}
+			else
+			{
+				if( m_iGoalEffects & TF_GOAL_EFFECT_AP_NONTEAM )
+					bPass = TRUE;
+			}
+
+			if( !bPass )
+			{
+				if( m_iGoalEffects & TF_GOAL_EFFECT_AP )
+					continue;
+				
+				if( m_iGoalEffects & TF_GOAL_EFFECT_NONAP )
+					continue;
+				
+				if( m_iGoalEffects & TF_GOAL_EFFECT_AP_TEAM )
+					continue;
+
+				if( m_iGoalEffects & TF_GOAL_EFFECT_AP_NONTEAM )
+					continue;
+			}
+		}
+
+		if( m_flGoalRadius != 0.0f )
+		{
+			if( ( pPlayer->pev->origin - tfpev->origin ).Length() > m_flGoalRadius )
+				continue;
+
+			if( m_iGoalEffects & TF_GOAL_EFFECT_WALLS_OBSTRUCT )
+			{
+				TraceResult tr;
+
+				UTIL_TraceLine( tfpev->origin, pPlayer->pev->origin, ignore_monsters, ENT(tfpev), &tr );
+
+				if( tr.flFraction != 1.0f )
+					continue;
+			}
+		}
+
+		if( m_iGoalEffects & TF_GOAL_EFFECT_SAME_ENVIRO )
+		{
+			if( ( tfpev->waterlevel == 3 ? TRUE : FALSE ) != ( pPlayer->pev->waterlevel == 3 ? TRUE : FALSE ) )
+				continue;
+		}
+
+		if( m_iApplyTeam != 0 && pPlayer->pev->team != m_iApplyTeam )
+			continue;
+
+		if( m_iApplyNotTeam != 0 && pPlayer->pev->team == m_iApplyNotTeam )
+			continue;
+
+		PlayerEffect( pEntity, pPlayer );
+	}
+
+	if( m_iGoalResults & TF_GOAL_RESULT_REMOVE_BUILDINGS )
+		g_pTFGlobalInfo->DestroyBuildings();
+
+	if( m_iGoalResults & TF_GOAL_RESULT_SCORES_INTERMISSION_END )
+		g_pGameRules->EndMultiplayerGame();
+}
+
+
+void TFEntity::PlayerMessage( CBaseEntity * pEntity, CBasePlayer * pPlayer )
+{
+	if( !pPlayer )
+		return;
+
+	int iMsg = 0;
+	int iSpk = 0;
+
+	if( m_iMessages[ TF_MSG_BROADCAST_AP ] != 0 && pPlayer == pEntity )
+		iMsg = m_iMessages[ TF_MSG_BROADCAST_AP ];
+
+	else if( m_iMessages[ TF_MSG_BROADCAST_AP_TEAM ] != 0 && pPlayer->pev->team == pEntity->pev->team )
+		iMsg = m_iMessages[ TF_MSG_BROADCAST_AP_TEAM ];
+
+	else if( m_iMessages[ TF_MSG_BROADCAST_OWNER ] != 0 && pPlayer->pev->team == m_iOwner )
+		iMsg = m_iMessages[ TF_MSG_BROADCAST_OWNER ];
+
+	else if( m_iMessages[ TF_MSG_BROADCAST_AP_NONTEAM ] != 0 && pPlayer->pev->team != pEntity->pev->team )
+		iMsg = m_iMessages[ TF_MSG_BROADCAST_AP_NONTEAM ];
+
+	else if( m_iMessages[ TF_MSG_BROADCAST_NONOWNER ] != 0 && pPlayer->pev->team != m_iOwner )
+		iMsg = m_iMessages[ TF_MSG_BROADCAST_NONOWNER ];
+
+	else if( m_iMessages[ TF_MSG_BROADCAST ] != 0 && pPlayer->pev->team != m_iOwner )
+		iMsg = m_iMessages[ TF_MSG_BROADCAST ];
+
+	if( m_iMessages[ TF_MSG_SPEAK_AP ] != 0 && pPlayer == pEntity )
+		iSpk = m_iMessages[ TF_MSG_SPEAK_AP ];
+
+	else if( m_iMessages[ TF_MSG_SPEAK_AP_TEAM ] != 0 && pEntity && pPlayer->pev->team == pEntity->pev->team )
+		iSpk = m_iMessages[ TF_MSG_SPEAK_AP_TEAM ];
+
+	else if( m_iMessages[ TF_MSG_SPEAK_OWNER ] != 0 && pPlayer->pev->team == m_iOwner )
+		iSpk = m_iMessages[ TF_MSG_SPEAK_OWNER ];
+
+	else if( m_iMessages[ TF_MSG_SPEAK_AP_NONTEAM ] != 0 && pEntity && pPlayer->pev->team != pEntity->pev->team )
+		iSpk = m_iMessages[ TF_MSG_SPEAK_AP_NONTEAM ];
+
+	else if( m_iMessages[ TF_MSG_SPEAK_NONOWNER ] != 0 && pPlayer->pev->team != m_iOwner )
+		iSpk = m_iMessages[ TF_MSG_SPEAK_NONOWNER ];
+
+	else if( m_iMessages[ TF_MSG_SPEAK ] != 0 )
+		iSpk = m_iMessages[ TF_MSG_SPEAK ];
+
+	if( iMsg != 0 )
+	{
+		MESSAGE_BEGIN( MSG_ONE, gmsgHudText, NULL, pPlayer->edict() );
+			WRITE_STRING( STRING( iMsg ) );
+			if( pEntity != NULL && pEntity->IsPlayer() )
+				WRITE_STRING( STRING( pEntity->pev->netname ) );
+		MESSAGE_END();
+	}
+
+	if( iSpk != 0 )
+	{
+		char szTemp[256];
+		const char * pszSpeak = STRING( iSpk );
+
+		if( pszSpeak[0] != '\"' )
+			_snprintf( szTemp, 256, "speak \"%s\"\n", pszSpeak );
+		else
+			_snprintf( szTemp, 256, "speak %s\n", pszSpeak );
+
+		CLIENT_COMMAND( pPlayer->edict(), szTemp );
+	}
+}
+		
+void TFEntity::PlayerEffect( CBaseEntity * pEntity, CBasePlayer * pPlayer )
+{		
+	if( m_iGiveFrags != 0 )
+		pPlayer->AddPoints( m_iGiveFrags, TRUE );
+
+	if( m_iGiveHealth > 0 )
+		pPlayer->TakeHealth( m_iGiveHealth, DMG_GENERIC );
+
+	if( m_iGiveHealth < 0 )
+		pPlayer->TakeDamage( VARS(0), VARS(0), -m_iGiveHealth, DMG_GENERIC );
+
+	if( m_iGoalResults & TF_GOAL_RESULT_FORCE_RESPAWN_NO_DIE )
+		pPlayer->Spawn();
+
+	pPlayer->GiveAmmo( TF_AMMO_SHELLS,		m_iGiveShells	);
+	pPlayer->GiveAmmo( TF_AMMO_NAILS,		m_iGiveNails	);
+	pPlayer->GiveAmmo( TF_AMMO_ROCKETS,		m_iGiveRockets	);
+	pPlayer->GiveAmmo( TF_AMMO_CELLS,		m_iGiveCells	);
+	pPlayer->GiveAmmo( TF_AMMO_DETPACK,		m_iGiveDetpack	);
+	pPlayer->GiveAmmo( TF_AMMO_MEDKIT,		m_iGiveMedkit	);
+	pPlayer->GiveAmmo( TF_AMMO_GREN1,		m_iGiveGren1	);
+	pPlayer->GiveAmmo( TF_AMMO_GREN2,		m_iGiveGren2	);
+
+	pPlayer->GiveArmor( m_iGiveArmorType,	m_iGiveArmor	);
+
+	if( m_flGodTime != 0.0f )
+		pPlayer->SetTimer( TIMER_INVULNERABILITY, m_flGodTime );
+
+	if( m_flQuadTime != 0.0f )
+		pPlayer->SetTimer( TIMER_SUPERDAMAGE, m_flQuadTime );
+
+	if( m_flInvisTime != 0.0f )
+		pPlayer->SetTimer( TIMER_INVISIBILITY, m_flInvisTime );
+
+	if( m_flRadTime != 0.0f )
+		pPlayer->SetTimer( TIMER_PROTECTION, m_flRadTime );
+
+	pPlayer->SetHudItems( m_iHudItems, TRUE );
+
+	if( m_iGoalResults & TF_GOAL_RESULT_PREVENT_SPY_DISGUISE )
+		pPlayer->AllowSpy( FALSE );
+}
+
+
+const char * TFEntity::GoalName( void )
+{
+	if( m_szName[0] != 0 )
+		return m_szName;
+
+	sprintf( m_szName, "%i:%i", m_iId, m_iGroupId );
+
+	if( tfpev != NULL )
+	{
+		if( tfpev->netname != 0 )
+		{
+			strcat( m_szName, ":" );
+			strcat( m_szName, STRING( tfpev->netname ) );
+		}
+
+		if( tfpev->targetname != 0 )
+		{
+			strcat( m_szName, ":" );
+			strcat( m_szName, STRING( tfpev->targetname ) );
+		}
+	}
+
+	return m_szName;
+}
+
+
+void TFEntity::Debug( const char * pszFormat, ... )
+{
+	if( tf_debug.value == 0.0f )
+		return;
+
+	va_list		args;
+	char		buffer[1024];
+
+	va_start( args, pszFormat );
+	vsprintf( buffer, pszFormat, args );
+	va_end( args );
+
+// 1.2.8 Log this damn you!
+//	ALERT( at_console, "TFd: %s\n", buffer );
+	ALERT( at_logged, "TFd: %f,  %s\n", gpGlobals->time, buffer );
+}
+
+
+BOOL TFEntity::Failed( const char * pszReason, ... )
+{
+	if( tf_debug.value != 0.0f )
+	{
+		va_list		args;
+		char		buffer[1024];
+
+		va_start( args, pszReason );
+		vsprintf( buffer, pszReason, args );
+		va_end( args );
+
+		Debug( "Check activation failed. Reason: %s.", buffer );
+	}
+
+	if( m_iGoalActivation & TF_GOAL_ACTIVATION_IF_AP_FAILS_CRITERIA )
+	{
+		Debug( "Check activation sucessful. Criteria reversed." );
+		return TRUE;
+	}
+
+	return FALSE;
+}
